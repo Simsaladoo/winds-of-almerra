@@ -5,31 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Diagoona Template - Contact page</title>
+    <title>Winds of Almerra - Media</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
     <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
-    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
-<!--
+    <link href="css/almerra.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="img/favicon.ico">
 
-TemplateMo 550 Diagoona
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 
-https://templatemo.com/tm-550-diagoona
-
--->
-</head>
 <body>
-    <div class="tm-container">
+    <div class="tm-container">        
         <div>
             <div class="tm-row pt-4">
                 <div class="tm-col-left">
-                    <div class="tm-site-header media">
-                        <i class="fas fa-umbrella-beach fa-3x mt-1 tm-logo"></i>
-                        <div class="media-body">
-                            <h1 class="tm-sitename text-uppercase">diagoona</h1>
-                            <p class="tm-slogon">new bootstrap template</p>
-                        </div>        
-                    </div>
+
+                    <!-- Logo -->
+                    <img src="./img/logo.png" alt="logo" class="logo-image">
+
                 </div>
                 <div class="tm-col-right">
                     <nav class="navbar navbar-expand-lg" id="tm-main-nav">
@@ -40,19 +47,19 @@ https://templatemo.com/tm-550-diagoona
                         </button>
                         <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
                             <ul class="navbar-nav text-uppercase">
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="index.html">Home</a>
+                                <li class="nav-item active">
+                                    <a class="nav-link tm-nav-link" href="index.html">Homepage</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link tm-nav-link" href="about.html">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="services.html">Services</a>
-                                </li>                            
-                                <li class="nav-item active">
-                                    <a class="nav-link tm-nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link tm-nav-link" href="media.html">Media<span class="sr-only">(current)</span></a>
                                 </li>
-                            </ul>                            
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="buildinfo.html">Build Info</a>
+                                </li>
+                            </ul>
                         </div>                        
                     </nav>
                 </div>
@@ -60,24 +67,23 @@ https://templatemo.com/tm-550-diagoona
             
             <div class="tm-row">
                 <div class="tm-col-left"></div>
-                <main class="tm-col-right tm-contact-main"> <!-- Content -->
-                    <section class="tm-content tm-contact">
-                        <h2 class="mb-4 tm-content-title">Contact Us</h2>
-                        <p class="mb-85">Etiam et egestas arcu. Fusce congue quis elit vitae commodo. Cras neque mauris, vehicula in ipsum sit amet, faucibus aliquam arcu.</p>
-                        <form id="contact-form" action="" method="POST">
-                            <div class="form-group mb-4">
-                                <input type="text" name="name" class="form-control" placeholder="Name" required="" />
+                <main class="tm-col-right">
+                    <section class="tm-content">
+                        <div class="media my-3 mb-5 tm-service-media tm-service-media-img-l">
+                            <div class="media-body tm-service-text">
+                                <h2 class="mb-4 tm-content-title">Footage</h2>
+                                <p>Our AI is slowly getting better at combat, with more improved reading of the opponents stance</p>
+
                             </div>
-                            <div class="form-group mb-4">
-                                <input type="email" name="email" class="form-control" placeholder="Email" required="" />
-                            </div>
-                            <div class="form-group mb-5">
-                                <textarea rows="6" name="message" class="form-control" placeholder="Message..." required=""></textarea>
-                            </div>
-                            <div class="text-right">
-                                <button type="submit" class="btn btn-big btn-primary">Send It</button>
-                            </div>
-                        </form>
+                        </div>
+                        <div class="video-container">
+                            <iframe
+                                src="https://www.youtube.com/embed/videoseries?list=PLLcxd4soKLM6ebqlardgRkrnSnlG_CmT_"
+                                allow="autoplay; encrypted-media"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
                     </section>
                 </main>
             </div>
@@ -98,9 +104,10 @@ https://templatemo.com/tm-550-diagoona
                     | Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-text-link">TemplateMo</a></p>
                 </footer>
             </div>  
-        </div>
+        </div>        
 
-        <div class="tm-bg"> <!-- Diagonal background design -->
+        <!-- Diagonal background design -->
+        <div class="tm-bg">
             <div class="tm-bg-left"></div>
             <div class="tm-bg-right"></div>
         </div>
@@ -109,6 +116,7 @@ https://templatemo.com/tm-550-diagoona
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/templatemo-script.js"></script>
+    <script src="js/almerra-script.js"></script>
 </body>
+
 </html>

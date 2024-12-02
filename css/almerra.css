@@ -1,10 +1,19 @@
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
+    /*font-family: 'Open Sans', Arial, sans-serif;
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 300;*/
     overflow-x: hidden;
     color: white;
     background-color: #2C353C;
+
+    font-family: 'MorrisRoman';
+}
+
+@font-face {
+    font-family: 'MorrisRoman';
+    src: url('fonts/MorrisRoman-Black.ttf') format('ttf')
+    font-weight: normal;
+    font-style: normal;
 }
 
 a { 
@@ -12,10 +21,21 @@ a {
     text-decoration: none;
 }
 
+.logo-image {
+    position: absolute;
+    display: inline-block;
+    height: auto;          /* Maintain aspect ratio */
+    margin: 0px;          /* Add space around the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
 ul { padding: 0; }
 a:hover { text-decoration: none; }
 button:focus { outline: none; }
-p { line-height: 1.9; }
+p {
+    line-height: 1.9;
+    font-family: 'MorrisRoman';
+}
 .tm-logo { margin-right: 20px; }
 .tm-slogan { font-size: 0.8rem; }
 
@@ -108,7 +128,10 @@ p { line-height: 1.9; }
     justify-content: space-between;  
 }
 
-.tm-row { display: flex; }
+.tm-row {
+    display: flex;
+
+}
 
 .tm-col-left {
     width: 50%;

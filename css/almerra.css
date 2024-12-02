@@ -12,6 +12,13 @@ a {
     text-decoration: none;
 }
 
+.logo-image {
+    display: inline-block;
+    height: auto;          /* Maintain aspect ratio */
+    margin: 20px;          /* Add space around the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
 ul { padding: 0; }
 a:hover { text-decoration: none; }
 button:focus { outline: none; }

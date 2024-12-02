@@ -10,14 +10,25 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
     <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
     <link href="css/almerra.css" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="img/favicon.png">
-
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 
 <!-- Head -->
-
-
 </head>
-
 <body>
     <div class="tm-container">
         <div>
@@ -25,12 +36,14 @@
                 <div class="tm-col-left">
 
                     <!-- Logo -->
-                    <img src="./img/logo.png" alt="logo">
+                    <img src="./img/logo.png" alt="logo" class="logo-image">
 
                 </div>
                 <div class="tm-col-right">
                     <!-- This is supposed to load the nav menu -->
+                    <!--
                     <div id="navbar"></div>
+                    -->
 
                     <nav class="navbar navbar-expand-lg" id="tm-main-nav">
                         <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" 
@@ -62,10 +75,18 @@
                 <div class="tm-col-left"></div>
                 <main class="tm-col-right">
                     <section class="tm-content">
-                        <h2 class="mb-5 tm-content-title">Winds of Almerra</h2>
-                        <p class="mb-5">Latest arena footage</p>
+                        <h2 class="mb-5 tm-content-title">Latest arena footage</h2>
                         <hr class="mb-5">
-                        <p class="mb-5">News</p>
+                        <div class="video-container">
+                            <iframe
+                                src="https://www.youtube.com/embed/videoseries?list=PLLcxd4soKLM6ebqlardgRkrnSnlG_CmT_"
+                                allow="autoplay; encrypted-media"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <br/>
+                        <h2 class="mb-5 tm-content-title">Social News</h2>
+                        <hr class="mb-5">
 
                     </section>
                 </main>

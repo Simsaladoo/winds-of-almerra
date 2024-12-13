@@ -19,14 +19,12 @@ AUTHOR_FEED_RSS = None
 LINKS = (
     ("Pelican", "https://getpelican.com/"),
     ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
     ("You can modify those links in your config file", "#"),
 )
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ("YouTube", "https://www.youtube.com/@Simsaladoo/videos")
 )
 
 DEFAULT_PAGINATION = 3

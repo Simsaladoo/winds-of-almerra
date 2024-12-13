@@ -40,11 +40,43 @@
                                 allowfullscreen>
                             </iframe>
                         </div>
-                        <p>Some notes about whatever this video is supposed to tell people.  Buncha things could possibly go here, but maybe not.</p>
+                        <p>Some notes about whatever this video is supposed to tell people.  Buncha things could possibly go here, but maybe not.</
                         <br/>
-                        <h2 class="mb-5 tm-content-title">Social News</h2>
+
+                        <!-- Pagination -->
+                        <h2>News</h2>
                         <hr class="mb-5">
-                        <p>We're not very social at the moment.</p>
+                        <p>Check back later for more updates...</p>
+
+                        <div id="htmlOutput"></div>
+
+                        <!-- Replace this crap -->
+                        <article>
+                        <script src="js/marked.min.js"></script>
+                            <script>
+                                // Define the path to the Markdown file
+                                const markdownPath = './posts/post1.md';
+
+                                // Fetch the Markdown file
+                                fetch(markdownPath)
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error('File not found');
+                                        }
+                                        return response.text(); // Read the file as text
+                                    })
+                                    .then(markdownText => {
+                                        // Convert Markdown to HTML
+                                        const htmlContent = marked.parse(markdownText);
+                                        // Insert the HTML content into the page
+                                        document.getElementById('htmlOutput').innerHTML = htmlContent;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error loading the Markdown file:', error);
+                                    });
+                            </script>
+                        </article>
+
                     </section>
                 </main>
             </div>

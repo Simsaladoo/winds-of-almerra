@@ -4,7 +4,40 @@ body {
     font-weight: 300;*/
     overflow-x: hidden;
     color: white;
-    background-color: #2C353C;
+    color: rgb(0, 0, 0);
+    min-height: 100%;
+    background:
+    repeating-radial-gradient(#111 0 0.0001%,#333 0 0.00015%)
+    60% 60%/3000px 3000px,
+    repeating-conic-gradient(#111 0 0.0001%,#333 0 0.00015%)
+    40% 40%/3000px 3000px;
+    background-blend-mode: difference;
+    /*filter: blur(10px) contrast(150) brightness(80);*/
+}
+
+
+.cropped-image {
+  width: 100%; /* Set container width */
+  height: 250px; /* Set container height */
+  overflow: hidden; /* Prevents overflow */
+  background-color: #f0f0f0; /* For better visibility */
+}
+
+.cropped-image img{
+  width: 100%; /* Adjust image width to container */
+  height: 100%; /* Adjust image height to container */
+  object-fit: cover; /* Ensures no stretching */
+}
+
+.banner {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.content {
+  flex-grow: 1; /* Makes this div fill remaining space */
+  padding: 20px;
+
 }
 
 @font-face {
@@ -13,6 +46,8 @@ src: url('fonts/MorrisRoman-Black.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
+
+
 
 a { 
     transition: all 0.3s ease; 
@@ -27,6 +62,19 @@ a {
     height: auto;          /* Maintain aspect ratio */
     margin: 0px;          /* Add space around the image */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    width:25%; /* you can use % */
+    height: auto;
+
+}
+
+.logo-image-tiny {
+    position: absolute;
+    height: auto;          /* Maintain aspect ratio */
+    margin: 0px;          /* Add space around the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    width:20%; /* you can use % */
+    top:0px;
+    object-fit: cover; /* Ensures no stretching */
 }
 
 ul { padding: 0; }
@@ -76,7 +124,9 @@ p {
     height: 100%;
 }
 
-.tm-bg-right { background-color: rgba(0,0,0,0.5); }
+.tm-bg-right {
+    background-color: rgba(0,0,0,0.5);
+}
 
 .tm-bg-left {
     border-right: 230px solid rgba(0,0,0,0.5);
@@ -116,7 +166,40 @@ p {
     display: flex;
     font-family: 'MorrisRoman';
     color: rgb(255, 171, 73);
+}
+
+
+.tm-center-page-header {
+    display: grid;
+    font-family: 'MorrisRoman';
+    color: rgb(255, 171, 73);
     font-size: 1.5rem;
+    margin: auto;
+    color: rgb(255,255, 255);
+}
+
+.tm-center-page {
+    display: grid;
+    font-family: 'MorrisRoman';
+    color: rgb(255, 171, 73);
+    font-size: 1.5rem;
+    margin: auto;
+    background: rgba(0,0,0,0.75);
+}
+
+.tm-col-center {
+    display: grid;
+    font-family: 'MorrisRoman';
+    font-size: 1.0rem;
+    margin: auto;
+
+    /*background: rgba(255,171,71,1.0);*/
+    background: rgba(0,0,0,0.75);
+
+
+    width: 100%;
+    align-content: center;
+    margin-top: 0px;
 }
 
 .tm-col-left {
@@ -135,8 +218,11 @@ p {
 
 .tm-content {
     max-width: 660px;
-    margin-top: 50px;
+    margin-top: 0px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
 }
 
 .tm-about { max-width: 525px; }
@@ -181,8 +267,12 @@ hr { border-top: 1px solid white; }
 
 .tm-site-footer {
     padding: 40px 0 20px;
-    max-width: 660px;
-    font-size: 0.95rem;
+    width: 100%;
+    text-align:center;
+}
+
+.small-p {
+    font-size: 0.55rem;
 }
 
 .tm-col-footer { padding-left: 0; }
@@ -271,6 +361,7 @@ textarea {
     .tm-content { margin-top: 20px; }
     .tm-site-footer { padding-top: 40px; }
     .tm-col-left { width: 40%; }
+    .tm-col-left-tiny { width: 20%; }
 
     .tm-col-right {
         width: 60%;
@@ -365,8 +456,17 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    color: rgb(0,0, 0);
+    height: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    color: rgb(255, 171, 73);
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: rgb(255,255, 255);
 }

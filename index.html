@@ -9,6 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
     <link href="css/almerra.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="img/favicon.ico">
+    <script src="js/marked.min.js"></script>
 
 </head>
 <body>
@@ -31,70 +32,31 @@
                 <div class="tm-col-left"></div>
                 <main class="tm-col-right">
                     <section class="tm-content">
-                        <h2 class="mb-5 tm-content-title">Latest arena footage</h2>
-                        <hr class="mb-5">
-                        <div class="video-container">
-                            <iframe
-                                src="https://www.youtube.com/embed/videoseries?list=PLLcxd4soKLM6ebqlardgRkrnSnlG_CmT_"
-                                allow="autoplay; encrypted-media"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <p>Some notes about whatever this video is supposed to tell people.  Buncha things could possibly go here, but maybe not.</
-                        <br/>
-
-                        <!-- Pagination -->
                         <h2>News</h2>
-                        <hr class="mb-5">
-                        <p>Check back later for more updates...</p>
-
+                        <hr class="custom-bar">
                         <div id="htmlOutput"></div>
-
-                        <!-- Replace this crap -->
                         <article>
-                        <script src="js/marked.min.js"></script>
-                            <script>
-                                // Define the path to the Markdown file
-                                const markdownPath = './posts/post1.md';
+                            <div id="markdown-container">
+                                <div id="content"></div>
+                                <a id="read-more" href="buildinfo.html">Read More</a>
+                            </div>
 
-                                // Fetch the Markdown file
-                                fetch(markdownPath)
-                                    .then(response => {
-                                        if (!response.ok) {
-                                            throw new Error('File not found');
-                                        }
-                                        return response.text(); // Read the file as text
-                                    })
-                                    .then(markdownText => {
-                                        // Convert Markdown to HTML
-                                        const htmlContent = marked.parse(markdownText);
-                                        // Insert the HTML content into the page
-                                        document.getElementById('htmlOutput').innerHTML = htmlContent;
-                                    })
-                                    .catch(error => {
-                                        console.error('Error loading the Markdown file:', error);
-                                    });
-                            </script>
+                            <script src="js/preview-script.js"></script>
                         </article>
-
                     </section>
                 </main>
             </div>
         </div>
-        <div class="tm-row">
-            <div class="tm-col-left text-center"></div>
-            <div class="tm-col-right tm-col-footer">
-                <footer class="tm-site-footer text-right">
-                    <p class="mb-0">Copyright 2024 SimsLab</p>
-                </footer>
-            </div>  
-        </div>
+
+        <footer class="tm-site-footer">
+            <p>Copyright 2024 SimsLab</p>
+        </footer>
+
         <div class="tm-bg">
             <div class="tm-bg-left"></div>
             <div class="tm-bg-right"></div>
         </div>
     </div>
-
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>

@@ -1,7 +1,4 @@
 body {
-    /*font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 17px;
-    font-weight: 300;*/
     overflow-x: hidden;
     color: white;
     color: rgb(0, 0, 0);
@@ -12,7 +9,6 @@ body {
     repeating-conic-gradient(#111 0 0.0001%,#333 0 0.00015%)
     40% 40%/3000px 3000px;
     background-blend-mode: difference;
-    /*filter: blur(10px) contrast(150) brightness(80);*/
 }
 
 
@@ -106,6 +102,45 @@ p {
 }
 
 
+/* Pagination container styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Pagination button styling */
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Disabled button styling */
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Hover effect */
+.pagination button:hover:not(:disabled) {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Active button styling */
+.pagination button:focus:not(:disabled) {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
 /* Page Background */
 .tm-bg {
     position: absolute;
@@ -172,8 +207,8 @@ p {
 .tm-center-page-header {
     display: grid;
     font-family: 'MorrisRoman';
-    color: rgb(255, 171, 73);
-    font-size: 1.5rem;
+    color: rgb(255, 171, 73) !important;
+    font-size: 2rem;
     margin: auto;
     color: rgb(255,255, 255);
 }
@@ -222,7 +257,16 @@ p {
     padding-right: 20px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full viewport height */
+}
+
+#content {
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+#read-more {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .tm-about { max-width: 525px; }
@@ -242,7 +286,13 @@ p {
 font-size: 2.0rem;
 }
 
-hr { border-top: 1px solid white; }
+
+hr.custom-bar {
+    border: 1px solid white;
+    height: 1px;
+    width:100%;
+    margin: 0px;
+}
 
 .btn {
     padding: 10px 25px;
@@ -266,7 +316,7 @@ hr { border-top: 1px solid white; }
 }
 
 .tm-site-footer {
-    padding: 40px 0 20px;
+    padding: 0px;
     width: 100%;
     text-align:center;
 }
@@ -372,6 +422,7 @@ textarea {
     .tm-col-footer { padding-left: 0; }
 }
 
+
 @media (max-width: 768px) {
     .tm-row { flex-direction: column; }
 
@@ -415,10 +466,6 @@ textarea {
         padding-left: 30px;
     }
 
-    .tm-col-footer {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
 }
 
 @media (max-width: 460px) {

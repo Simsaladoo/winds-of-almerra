@@ -9,6 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
     <link href="css/almerra.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="img/favicon.ico">
+    <script src="js/marked.min.js"></script>
 
 </head>
 <body>
@@ -32,7 +33,12 @@
             <!-- Area -->
             <div class="tm-center-page tm-content">
                 <div class="content">
-				    <h2 class="tm-center-page-header" style="text-align:center">Latest Build Updates</h2>
+				    <h2 class="tm-center-page-header" style="text-align:center">Latest News</h2>
+                    <hr class="custom-bar">
+                    <div class="blogcontent" id="blogcontent"></div>
+                    <div class="pagination" id="pagination"></div>
+
+                    <script src="js/blog.js"></script> <!-- External JS File -->
                 </div>
 
                 <footer class="tm-site-footer">

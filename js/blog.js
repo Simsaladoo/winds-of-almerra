@@ -1,8 +1,5 @@
 // Paths to the Markdown files (e.g., files in the same directory or a server)
-const markdownFiles = [
-    'posts/post1.md',
-    'posts/post2.md',
-];
+import markdownFiles from '../components/post_list.json'
 
 const itemsPerPage = 1; // Number of files per page
 let currentPage = 1;

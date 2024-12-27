@@ -1,12 +1,35 @@
-// Paths to the Markdown files (e.g., files in the same directory or a server)
-const markdownFiles = [
-    'posts/post1.md',
-    'posts/post2.md',
-];
+let markdownFiles;
+
+// Define an asynchronous function
+async function loadData() {
+  try {
+    // Fetch the JSON data and wait for it to resolve
+    const response = await fetch('./js/post_list.json');
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    // Parse the JSON response
+    markdownFiles = await response.json();
+
+    // Now you can use the markdownFiles variable
+    console.log("Fetched data:", markdownFiles);
+    renderContent();
+    renderPagination();
+  } catch (error) {
+    console.error('Error loading JSON:', error);
+  }
+}
+
+// Call the function to load the data
+loadData();
+
+
+
 
 const itemsPerPage = 1; // Number of files per page
 let currentPage = 1;
-const totalPages = Math.ceil(markdownFiles.length / itemsPerPage);
 
 // Function to fetch and render the content of a Markdown file
 async function fetchMarkdownContent(filePath) {
@@ -58,6 +81,7 @@ function renderPagination() {
     paginationDiv.appendChild(prevButton);
 
     // Page numbers
+    const totalPages = Math.ceil(markdownFiles.length / itemsPerPage);
     for (let i = 1; i <= totalPages; i++) {
         const pageButton = document.createElement('button');
         pageButton.textContent = i;
@@ -84,6 +108,3 @@ function renderPagination() {
     paginationDiv.appendChild(nextButton);
 }
 
-// Initial render
-renderContent();
-renderPagination();

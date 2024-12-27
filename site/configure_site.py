@@ -32,4 +32,4 @@ def export_posts_json():
     json_file.close()
 
 
-fill_post_paths()
+export_posts_json()

@@ -9,52 +9,50 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
     <link href="css/almerra.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="img/favicon.ico">
+    <script src="js/marked.min.js"></script>
 
 </head>
 <body>
-    <div class="tm-container">        
+    <div class="tm-container">
         <div>
-            <div class="tm-row pt-4">
-                <div class="tm-col-left">
+             <div class="cropped-image">
+                 <img src="./img/banner.png" alt="banner" class="banner">
+             </div>
 
-                    <!-- Logo -->
-                    <img src="./img/logo.png" alt="logo" class="logo-image">
+            <!-- Logo -->
+            <div class="tm-col-left-tiny">
+                <img src="./img/logo.png" alt="logo" class="logo-image-tiny">
+            </div>
 
-                </div>
-                <div class="tm-col-right">
-                    <div id="navbar"></div>
-                    <script src="components/navbar.js"></script> <!-- Script to load the navbar -->
-                </div>
+            <!-- End of Menu Area -->
+            <div class="tm-col-center">
+                <div id="navbar"></div>
+                <script src="js/navbar.js"></script> <!-- Script to load the navbar -->
             </div>
-            
-            <div class="tm-row">
-                <div class="tm-col-left"></div>
-                <main class="tm-col-right">
-                    <section class="tm-content">
-                        <h2 class="mb-5 tm-content-title">About</h2>
-                        <hr class="mb-5">
-                        <p>About Content</p>
-                    </section>
-                </main>
+
+            <!-- Area -->
+            <div class="tm-center-page tm-content">
+                <div class="content">
+                    <div id="content-container"></div>
+                </div>
+
+                <footer class="tm-site-footer">
+                    <img src="./img/simslab.png"></img>
+                    <p class="small-p">Copyright 2024 SimsLab</p>
+                </footer>
+
             </div>
+
         </div>
         <div class="tm-row">
-            <div class="tm-col-left text-center"></div>
-            <div class="tm-col-right tm-col-footer">
-                <footer class="tm-site-footer text-right">
-                    <p class="mb-0">Copyright 2024 SimsLab</p>
-                </footer>
-            </div>
+
         </div>
-        <div class="tm-bg">
-            <div class="tm-bg-left"></div>
-            <div class="tm-bg-right"></div>
+        <div class="tm-bg-center"></div><!-- Center page design -->
         </div>
     </div>
-
+    <script src="js/about.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/almerra-script.js"></script>
 </body>
 </html>

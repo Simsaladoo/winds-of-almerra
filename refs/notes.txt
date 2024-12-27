@@ -1,4 +1,8 @@
 // npm install gh-pages
 // gh-pages -d out
+
 // python -m http.server
 // http-server
+
+// to push:
+.\push.bat . "pubmitting update scripts"

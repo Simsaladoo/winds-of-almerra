@@ -33,7 +33,13 @@ body {
 .content {
   flex-grow: 1; /* Makes this div fill remaining space */
   padding: 20px;
+  opacity: 1;
+  transition: opacity 1.0s ease-in-out;
+}
 
+.fade-out {
+  opacity: 0;
+  transition: opacity 1.0s ease-in-out;
 }
 
 @font-face {
@@ -60,6 +66,7 @@ a {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
     width:25%; /* you can use % */
     height: auto;
+    pointer-events: none;
 
 }
 
@@ -71,6 +78,7 @@ a {
     width:20%; /* you can use % */
     top:0px;
     object-fit: cover; /* Ensures no stretching */
+    pointer-events: none;
 }
 
 ul { padding: 0; }
@@ -92,6 +100,7 @@ p {
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
+            margin-top: 10px;
         }
 .video-container iframe {
     position: absolute;
@@ -323,6 +332,7 @@ hr.custom-bar {
 
 .small-p {
     font-size: 0.55rem;
+    margin:0px;
 }
 
 .tm-col-footer { padding-left: 0; }
@@ -338,30 +348,7 @@ hr.custom-bar {
 .tm-service-img { margin-right: 25px; }
 .tm-service-img-r { margin-left: 25px; }
 
-/* Contact */
-.form-control,
-textarea {    
-    color: white;
-    background-color: transparent;
-    background-clip: padding-box;
-    border: none;
-    border-bottom: 1px solid #999A9B;
-    border-radius: 0;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    padding: 10px 0;
-    font-family: 'MorrisRoman';
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-}
 
-.form-control:focus {
-    color: white;
-    background-color: transparent;    
-    box-shadow: none;
-    border-color: #9CC;
-    outline: none;
-}
 
 .mb-85 { margin-bottom: 85px; }
 .tm-contact-main { max-width: 690px; }
@@ -440,7 +427,10 @@ textarea {
         padding-bottom: 0;
     }  
     
-    .tm-bg { flex-direction: column; }
+    .tm-bg {
+    flex-direction: column;
+    pointer-events: none;
+    }
 
     .tm-bg-left {
         height: 200px;        
@@ -494,10 +484,12 @@ nav ul {
     gap: 1em;
     padding: 0;
     margin: 0px;
+    font-size: 1.25rem;
 }
 
 nav ul li {
     display: inline;
+    position: relative;
 }
 
 nav ul li a {
@@ -516,4 +508,48 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
     color: rgb(255,255, 255);
+}
+
+nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    width:120px;
+    text-align:center;
+    font-family: 'Segoue UI';
+    font-size: 1.25rem;
+}
+
+.border-image {
+    position: absolute;
+    margin-left: -75px;
+    margin-top: 30px;
+    padding: 0px;
+    z-index: -1;
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+    background-color: rgba(0,0,0,0.79);
+}
+
+nav ul li ul.dropdown li {
+    padding: 0px;
+}
+
+nav ul li ul.dropdown li a {
+    text-decoration: none;
+    color: rgb(255, 171, 73);
+    display: block;
+    padding: 0px;
+}
+
+nav ul li ul.dropdown li a:hover {
+    color: white;  /* Change text color on hover */
+    background-color: #007bff; /* Change background color on hover (e.g., blue) */
 }

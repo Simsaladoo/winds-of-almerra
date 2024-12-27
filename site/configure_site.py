@@ -11,7 +11,7 @@ def get_posts_path():
 
 
 def get_post_list():
-    return f"{get_webdev_dir()}/components/post_list.json"
+    return f"{get_webdev_dir()}/js/post_list.json"
 
 
 def fill_post_paths():

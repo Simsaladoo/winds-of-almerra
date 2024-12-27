@@ -2,6 +2,8 @@
 
 Welcome to the brand-new **Almerra** website – your one-stop hub for all the latest news, updates, and exclusive content about the game we’re all so excited about. We’ve been hard at work behind the scenes, and we can’t wait to share everything we’ve been building with you. Whether you're an early supporter or just discovered our game, we’re thrilled to have you along for the ride!
 
+![Under Construction](../img/construction.jpg)
+
 ### What You’ll Find Here  
 
 Our goal is simple: To make this the best place for everything related to development of the game. Here’s a quick tour of what you can expect:

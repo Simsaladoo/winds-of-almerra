@@ -530,7 +530,7 @@ nav ul li ul.dropdown {
     margin-left: -75px;
     margin-top: 30px;
     padding: 0px;
-    z-index: -1;
+    z-index: 1;
 }
 
 nav ul li:hover ul.dropdown {

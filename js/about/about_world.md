@@ -1,6 +1,8 @@
-# The World of Almerra
+### The World of Almerra
 
-This is the content for section 1. You can write **bold** text, *italic* text, and even create lists:
-- Item 1
-- Item 2
-- Item 3
+### Time Compression
+
+Accessed via the World Map, time compression in Almerra allows for unrestricted passage to anywhere in the world within a short time as long as you are not in combat.
+ 
+The travel system is usable at anytime with the understanding that movement speeds will be greatly reduced as will the number of days required to reach the destination if you are not riding a mount or vessel.
+

@@ -33,6 +33,7 @@ body {
 .content {
   flex-grow: 1; /* Makes this div fill remaining space */
   padding: 20px;
+  margin-left: 75px;
   opacity: 1;
   transition: opacity 1.0s ease-in-out;
 }

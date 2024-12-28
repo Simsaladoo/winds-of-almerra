@@ -23,7 +23,7 @@ The game is still under heavy development, but we’ve got tons of exciting thin
 
 - **Demo Content:** Watch AI testing rounds of arena battles running the latest code tests, and more in-depth gameplay excerpts behind **Winds of Almerra**. It’s not just about the finished product—it’s about the journey!  
 
-[![DialogueTest](https://img.youtube.com/vi/8-PKAH59Xqk/0.jpg)](https://youtu.be/8-PKAH59Xqk)
+[![Arena](https://img.youtube.com/vi/8-PKAH59Xqk/0.jpg)](https://youtu.be/8-PKAH59Xqk)
 
 
 **Stay tuned, stay excited, and stay connected!** 🚀🎮

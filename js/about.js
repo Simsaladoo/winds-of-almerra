@@ -1,8 +1,8 @@
 // Paths to the Markdown files (e.g., files in the same directory or a server)
 const markdownFiles = [
-    '../components/nations.md',
-    '../components/world.md',
-    '../components/combat.md',
+    './nations.md',
+    './world.md',
+    './combat.md',
 ];
 
 const itemsPerPage = 1; // Number of files per page

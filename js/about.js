@@ -40,17 +40,17 @@ async function renderContent() {
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('content1').addEventListener('click', function() {
-        currentPage = 1;
+        currentPage = 0;
         renderContent();
     });
 
     document.getElementById('content2').addEventListener('click', function() {
-        currentPage = 2;
+        currentPage = 1;
         renderContent();
     });
 
     document.getElementById('content3').addEventListener('click', function() {
-        currentPage = 3;
+        currentPage = 2;
         renderContent();
     });
 });

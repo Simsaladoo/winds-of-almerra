@@ -1,34 +1,35 @@
 # The Nations of Almerra
 
-This is the content for section 1. You can write **bold** text, *italic* text, and even create lists:
+This is the header for the page.
 
 
 ### Alyssakin Freetribe
-![Nation1](../img//flags/FlagNative.png)
-- Item 1
-- Item 2
-- Item 3
+![Nation0](../img/flags/FlagNative.png)
+
+This is the content for section 1.
+
+
 
 ### Rowani Empire
-![Nation1](../img//flags/FlagRowani.png)
+![Nation1](../img/flags/FlagRowani.png)
 - Item 1
 - Item 2
 - Item 3
 
 ### Republic of Graata
-![Nation1](../img//flags/FlagGraata.png)
+![Nation2](../img/flags/FlagGraata.png)
 - Item 1
 - Item 2
 - Item 3
 
 ### Neagese Dynasty
-![Nation1](../img//flags/FlagNeagese.png)
+![Nation3](../img/flags/FlagNeagese.png)
 - Item 1
 - Item 2
 - Item 3
 
 ### Monayan Kingdom
-![Nation1](../img//flags/FlagMons.png)
+![Nation4](../img/flags/FlagMons.png)
 - Item 1
 - Item 2
 - Item 3

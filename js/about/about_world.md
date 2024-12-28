@@ -1,6 +1,4 @@
-### The World of Almerra
-
-### Time Compression
+### World Travel
 
 Accessed via the World Map, time compression in Almerra allows for unrestricted passage to anywhere in the world within a short time as long as you are not in combat.
  

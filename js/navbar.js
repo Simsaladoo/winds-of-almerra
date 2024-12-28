@@ -6,8 +6,9 @@ const navbarHTML = `
         <li>
             <a href="about.html">about</a>
             <ul class="dropdown">
-                <li><a href="#" id="content1">Nations</a></li>
-                <li><a href="#" id="content2">World</a></li>
+                <li><a href="#" id="content1">About</a></li>
+                <li><a href="#" id="content2">Nations</a></li>
+                <li><a href="#" id="content3">World</a></li>
                 <li><a href="#" id="content3">Combat</a></li>
             </ul>
         </li>

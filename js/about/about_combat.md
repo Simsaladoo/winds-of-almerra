@@ -1,4 +1,4 @@
-# Media
+### Combat
 
 This is the content for section 1. You can write **bold** text, *italic* text, and even create lists:
 - Item 1

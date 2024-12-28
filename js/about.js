@@ -26,14 +26,12 @@ async function fetchMarkdownContent(filePath) {
 // Function to render content for the current page
 async function renderContent() {
     const contentDiv = document.getElementById('content-container');
-    const startIdx = (currentPage - 1) * itemsPerPage;
-    const endIdx = startIdx + itemsPerPage;
     contentDiv.classList.add('fade-out');
 
     // Wait for fade-out to complete
     await new Promise(resolve => setTimeout(resolve, 500)); // Match duration of fade-out animation
 
-    const htmlContent = await fetchMarkdownContent(markdownFiles[0]);
+    const htmlContent = await fetchMarkdownContent(markdownFiles[currentPage]);
 
     contentDiv.innerHTML = htmlContent;
     contentDiv.classList.remove('fade-out');

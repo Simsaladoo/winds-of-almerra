@@ -11,7 +11,6 @@ const navbarHTML = `
                 <li><a href="#" id="content3">Combat</a></li>
             </ul>
         </li>
-        <li><a href="media.html">media</a></li>
         <li><a href="latestnews.html">latest news</a></li>
     </ul>
 </nav>

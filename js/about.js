@@ -6,7 +6,7 @@ const markdownFiles = [
 ];
 
 const itemsPerPage = 1; // Number of files per page
-let currentPage = 1;
+let currentPage = 0;
 
 
 async function fetchMarkdownContent(filePath) {

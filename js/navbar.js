@@ -12,7 +12,7 @@ const navbarHTML = `
             </ul>
         </li>
         <li><a href="media.html">media</a></li>
-        <li><a href="buildinfo.html">build info</a></li>
+        <li><a href="latestnews.html">latest news</a></li>
     </ul>
 </nav>
 `;

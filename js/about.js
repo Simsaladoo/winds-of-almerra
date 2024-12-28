@@ -1,14 +1,14 @@
 // Paths to the Markdown files (e.g., files in the same directory or a server)
 const markdownFiles = [
-    './nations.md',
-    './world.md',
-    './combat.md',
+    './js/nations.md',
+    './js/world.md',
+    './js/combat.md',
 ];
 
 const itemsPerPage = 1; // Number of files per page
 let currentPage = 1;
 
-// Function to fetch and render the content of a Markdown file
+
 async function fetchMarkdownContent(filePath) {
     try {
         const response = await fetch(filePath);
@@ -33,15 +33,9 @@ async function renderContent() {
     // Wait for fade-out to complete
     await new Promise(resolve => setTimeout(resolve, 500)); // Match duration of fade-out animation
 
-    // Clear current content
-    // contentDiv.innerHTML = '';
+    const htmlContent = await fetchMarkdownContent(markdownFiles[0]);
 
-
-    // Fetch and render Markdown files for the current page
-    for (let i = startIdx; i < endIdx && i < markdownFiles.length; i++) {
-        const htmlContent = await fetchMarkdownContent(markdownFiles[i]);
-        contentDiv.innerHTML = htmlContent;
-    }
+    contentDiv.innerHTML = htmlContent;
     contentDiv.classList.remove('fade-out');
 }
 

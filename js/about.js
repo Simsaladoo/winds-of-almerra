@@ -54,6 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
         currentPage = 2;
         renderContent();
     });
+
+    document.getElementById('content4').addEventListener('click', function() {
+        currentPage = 3;
+        renderContent();
+    });
 });
 
 

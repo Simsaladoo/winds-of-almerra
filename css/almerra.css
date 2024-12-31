@@ -262,7 +262,7 @@ p {
 }
 
 .tm-content {
-    max-width: 660px;
+    max-width: 90%;
     margin-top: 0px;
     padding-right: 20px;
     display: flex;
@@ -553,4 +553,35 @@ nav ul li ul.dropdown li a {
 nav ul li ul.dropdown li a:hover {
     color: white;  /* Change text color on hover */
     background-color: #007bff; /* Change background color on hover (e.g., blue) */
+}
+
+.primarybutton {
+    text-align: center;
+    font-size:  0.9rem;
+    text-align: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    border-radius: 2px;
+    border: solid 2px rgb(30, 30, 30);
+    background-color: rgb(30, 30, 30);
+    color: white;
+    margin-top: 60px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin: 20px;
+    transition: background-color 1s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1),
+    0 0 25px rgba(0, 0, 0, 1),
+    0 0 35px rgba(0, 0, 0, 1);
+  }
+
+.primarybutton:hover {
+    background: linear-gradient(to right, #3f74ff, #7b3fff);
+    box-shadow:
+    0 0 10px rgba(63, 116, 255, 0.6),
+    0 0 20px rgba(123, 63, 255, 0.4),
+    0 0 30px rgba(63, 116, 255, 0.2);
+    border: none;
+    cursor: pointer;
 }

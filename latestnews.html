@@ -8,8 +8,14 @@
     <title>Winds of Almerra - Builds</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
     <link href="css/almerra.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/github-calendar.css">
+
     <link rel="icon" type="image/png" href="img/favicon.ico">
     <script src="js/marked.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -36,10 +42,31 @@
                     <img class="border-image" src="./img/regal.png"></img>
 				    <h2><br/>Latest News</h2>
                     <hr class="custom-bar">
+
                     <div class="blogcontent" id="blogcontent"></div>
                     <div class="pagination" id="pagination"></div>
 
                     <script type="module" src="js/blog.js"></script> <!-- External JS File -->
+
+                    <img class="border-image" src="./img/regal.png"></img>
+
+				    <h2><br/>Development Activity</h2>
+                    <hr class="custom-bar">
+                    <p>Below you can see a preview of much development is done across the year.  We're always staying busy!</p>
+                    <div class="calendar">
+                        <br/>
+                        <!-- Loading stuff -->
+                        Loading the calendar...
+                    </div>
+
+                    <script src="./js/github-calendar.js"></script>
+                    <script>
+                        GitHubCalendar(".calendar", "Simsaladoo", {
+                            responsive: true,
+                            tooltips: true,
+                            global_stats: false // This disables the contribution stats
+                        });
+                    </script>
                 </div>
 
                 <footer class="tm-site-footer">

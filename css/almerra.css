@@ -477,6 +477,7 @@ hr.custom-bar {
 nav {
     color: rgb(255, 171, 73);
     padding: 1em;
+    z-index: 100;
 }
 
 nav ul {

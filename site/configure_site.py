@@ -9,7 +9,6 @@ def get_secrets_json():
     with open(json_file, 'r') as file:
         data = json.load(file)
     repositories = data.get("secrets", [])
-    print(f"{repositories[0]}")
     return repositories[0]
 
 

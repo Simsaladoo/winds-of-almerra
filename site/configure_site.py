@@ -19,6 +19,7 @@ def get_post_list():
 
 
 def fill_post_paths():
+    print(f"Filling posts path...")
     directory_path = get_posts_path()
     files = [file for file in os.listdir(directory_path) if os.path.isfile(os.path.join(directory_path, file))]
     post_ref = []
@@ -29,6 +30,7 @@ def fill_post_paths():
 
 
 def export_posts_json():
+    print(f"Exporting posts...")
     data = fill_post_paths()
     output_file =get_post_list()
     with open(output_file, "w") as json_file:
@@ -36,4 +38,5 @@ def export_posts_json():
     json_file.close()
 
 
-export_posts_json()
+if __name__ == "__main__":
+    export_posts_json()

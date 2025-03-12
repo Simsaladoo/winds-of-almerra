@@ -1,6 +1,7 @@
 import os
 import json
 import subprocess
+from manage import get_secrets_json
 
 def get_webdev_dir():
     '''
@@ -47,6 +48,8 @@ def push_updates():
     export_posts_json()
     print(f"Pushing updates...")
     try:
+        subprocess.run(["git", "config", "user.email", f"{get_secrets_json()['email']}"])
+        subprocess.run(["git", "config", "user.name", f"{get_secrets_json()['name']}"])
         subprocess.run(["git", "-C", get_webdev_dir(), "add", "."], check=True)
         subprocess.run(["git", "-C", get_webdev_dir(), "commit", "-m", "Auto commit"], check=True)
         subprocess.run(["git", "-C", get_webdev_dir(), "push", get_remote_name(), get_branch_name()], check=True)

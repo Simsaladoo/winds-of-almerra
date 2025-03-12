@@ -3,7 +3,11 @@ import json
 
 
 def get_webdev_dir():
-    return f"D:/UE/Tailwind_R E B U I L D/Resources/Code/Website"
+    '''
+    D:/UE/Tailwind_R E B U I L D/Resources/Code/Website/site
+    '''
+    current_path = os.path.dirname(os.path.abspath(__file__))
+    return f"{os.path.dirname(current_path)}"
 
 
 def get_posts_path():

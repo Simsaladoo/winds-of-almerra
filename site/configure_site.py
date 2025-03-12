@@ -36,6 +36,8 @@ def export_posts_json():
     with open(output_file, "w") as json_file:
         json.dump(data, json_file, indent=4)
     json_file.close()
+    print(f"Posts updated: {output_file}")
+    return output_file
 
 
 if __name__ == "__main__":

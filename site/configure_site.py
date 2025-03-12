@@ -1,10 +1,10 @@
 import os
 import json
-
+import subprocess
 
 def get_webdev_dir():
     '''
-    D:/UE/Tailwind_R E B U I L D/Resources/Code/Website/site
+    D:/UE/Tailwind_R E B U I L D/Resources/Code/Website
     '''
     current_path = os.path.dirname(os.path.abspath(__file__))
     return f"{os.path.dirname(current_path)}"
@@ -13,10 +13,14 @@ def get_webdev_dir():
 def get_posts_path():
     return f"{get_webdev_dir()}/posts"
 
-
 def get_post_list():
     return f"{get_webdev_dir()}/js/post_list.json"
 
+def get_remote_name():
+    return "origin"
+
+def get_branch_name():
+    return "main"
 
 def fill_post_paths():
     print(f"Filling posts path...")
@@ -27,7 +31,6 @@ def fill_post_paths():
         post_ref.append(f"posts/{post}")
     print(f"Posts: {post_ref}")
     return post_ref
-
 
 def export_posts_json():
     print(f"Exporting posts...")
@@ -40,5 +43,18 @@ def export_posts_json():
     return output_file
 
 
-if __name__ == "__main__":
+def push_updates():
     export_posts_json()
+    print(f"Pushing updates...")
+    try:
+        subprocess.run(["git", "-C", get_webdev_dir(), "add", "."], check=True)
+        subprocess.run(["git", "-C", get_webdev_dir(), "commit", "-m", "Auto commit"], check=True)
+        subprocess.run(["git", "-C", get_webdev_dir(), "push", get_remote_name(), get_branch_name()], check=True)
+        print("Repository updates pushed successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error: {e}")
+
+
+
+if __name__ == "__main__":
+    push_updates()

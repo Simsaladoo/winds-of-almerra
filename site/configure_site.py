@@ -1,24 +1,19 @@
 import os
 import json
 import subprocess
+import shutil
 
-
-def get_secrets_json():
-    json_file = f"{os.path.dirname(get_webdev_dir())}/secrets.json"
-    data = None
-    with open(json_file, 'r') as file:
-        data = json.load(file)
-    repositories = data.get("secrets", [])
-    return repositories[0]
-
-
-def get_webdev_dir():
+def get_module_path():
     '''
     D:/UE/Tailwind_R E B U I L D/Resources/Code/Website
     '''
-    current_path = os.path.dirname(os.path.abspath(__file__))
-    return f"{os.path.dirname(current_path)}"
+    return os.path.dirname(os.path.abspath(__file__))
 
+def get_post_source():
+    '''
+    D:/UE/Tailwind_R E B U I L D/Resources/Code/Website/posts
+    '''
+    return f"{os.path.dirname(os.path.dirname(get_module_path()))}/Docs/Almerra/posts"
 
 def get_posts_path():
     return f"{get_webdev_dir()}/posts"
@@ -32,6 +27,38 @@ def get_remote_name():
 def get_branch_name():
     return "main"
 
+
+def get_webdev_dir():
+    '''
+    D:/UE/Tailwind_R E B U I L D/Resources/Code/Website
+    '''
+    return f"{os.path.dirname(get_module_path())}"
+
+
+
+
+def copy_obsidian_posts():
+    print(f"Publishing posts: ")
+    print(f"Source: {get_post_source()}")
+    print(f"Target: {get_posts_path()}")
+    source = get_post_source()
+    destination = get_posts_path()
+    # Copy files
+    shutil.copytree(source, destination, dirs_exist_ok=True)
+
+
+
+
+def get_secrets_json():
+    json_file = f"{os.path.dirname(get_webdev_dir())}/secrets.json"
+    data = None
+    with open(json_file, 'r') as file:
+        data = json.load(file)
+    repositories = data.get("secrets", [])
+    return repositories[0]
+
+
+
 def fill_post_paths():
     print(f"Filling posts path...")
     directory_path = get_posts_path()
@@ -41,6 +68,7 @@ def fill_post_paths():
         post_ref.append(f"posts/{post}")
     print(f"Posts: {post_ref}")
     return post_ref
+
 
 def export_posts_json():
     print(f"Exporting posts...")
@@ -54,6 +82,7 @@ def export_posts_json():
 
 
 def push_updates():
+    copy_obsidian_posts()
     export_posts_json()
     print(f"Pushing updates...")
     try:

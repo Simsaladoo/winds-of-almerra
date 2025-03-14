@@ -98,8 +98,6 @@ def push_updates():
     export_posts_json()
     print(f"Pushing updates...")
     try:
-        subprocess.run(["git", "config", "user.email", f"{get_secrets_json().get('email')}"])
-        subprocess.run(["git", "config", "user.name", f"{get_secrets_json().get('name')}"])
         subprocess.run(["git", "-C", get_webdev_dir(), "add", "."], check=True)
         subprocess.run(["git", "-C", get_webdev_dir(), "commit", "-m", "Auto commit"], check=True)
         subprocess.run(["git", "-C", get_webdev_dir(), "push", get_remote_name(), get_branch_name()], check=True)

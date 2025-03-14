@@ -9,11 +9,19 @@ def get_module_path():
     '''
     return os.path.dirname(os.path.abspath(__file__))
 
+
+def source_docs_path():
+    '''
+    D:/UE/Tailwind_R E B U I L D/Resources/Code/Docs
+    '''
+    return f"{os.path.dirname(os.path.dirname(get_module_path()))}/Docs"
+
+
 def get_post_source():
     '''
-    D:/UE/Tailwind_R E B U I L D/Resources/Code/Website/posts
+    D:/UE/Tailwind_R E B U I L D/Resources/Code/Docs/Almerra/posts
     '''
-    return f"{os.path.dirname(os.path.dirname(get_module_path()))}/Docs/Almerra/posts"
+    return f"{source_docs_path()}/Almerra/posts"
 
 def get_posts_path():
     return f"{get_webdev_dir()}/posts"
@@ -82,6 +90,8 @@ def export_posts_json():
 
 
 def push_updates():
+    subprocess.run(["git", "-C", source_docs_path(), "pull"])
+    return
     copy_obsidian_posts()
     export_posts_json()
     print(f"Pushing updates...")

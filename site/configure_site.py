@@ -90,8 +90,10 @@ def export_posts_json():
 
 
 def push_updates():
+    subprocess.run(["git", "config", "user.email", f"{get_secrets_json().get('email')}"])
+    subprocess.run(["git", "config", "user.name", f"{get_secrets_json().get('name')}"])
     subprocess.run(["git", "-C", source_docs_path(), "pull"])
-    return
+
     copy_obsidian_posts()
     export_posts_json()
     print(f"Pushing updates...")

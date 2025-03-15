@@ -1,3 +1,6 @@
+document.getElementById("year").textContent = new Date().getFullYear();
+
+
 const initBg = (autoplay = true) => {
     const bgImgsNames = ['bg-1.png', 'bg-2.png', 'bg-3.png'];
     const bgImgs = bgImgsNames.map(img => "img/" + img);

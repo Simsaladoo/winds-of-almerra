@@ -1,4 +1,4 @@
-"C:/Users/simsa/AppData/Local/Programs/Python/Python39/python.exe" "D:\UE\Tailwind_R E B U I L D\Resources\Code\Website\site\configure_site.py"
+"Y:/InProd/WoA/Code/Python39_64/python.exe" "D:\UE\Tailwind_R E B U I L D\Resources\Code\Website\site\configure_site.py"
 
 @echo off
 setlocal enabledelayedexpansion

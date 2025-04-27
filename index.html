@@ -1,78 +1,78 @@
 <!DOCTYPE html>
+
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Winds of Almerra</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+        <link href="css/almerra.css" rel="stylesheet" />
+        <link rel="icon" type="image/png" href="img/favicon.ico">
+        <script src="js/marked.min.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Winds of Almerra</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
-    <link href="css/almerra.css" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="img/favicon.ico">
-    <script src="js/marked.min.js"></script>
+    </head>
+    <body>
+        <div class="tm-container">
+            <div>
+                <div class="tm-row pt-4">
+                    <div class="tm-col-left">
 
-</head>
-<body>
-    <div class="tm-container">
-        <div>
-            <div class="tm-row pt-4">
-                <div class="tm-col-left">
+                        <!-- Logo -->
+                        <img src="./img/logo.png" alt="logo" class="logo-image">
 
-                    <!-- Logo -->
-                    <img src="./img/logo.png" alt="logo" class="logo-image">
-
+                    </div>
+                    <div class="tm-col-right">
+                        <div id="navbar"></div>
+                        <script src="js/mainnavbar.js"></script> <!-- Script to load the navbar -->
+                    </div>
                 </div>
-                <div class="tm-col-right">
-                    <div id="navbar"></div>
-                    <script src="js/mainnavbar.js"></script> <!-- Script to load the navbar -->
+
+                <div class="tm-row">
+                    <div class="tm-col-left"></div>
+                    <main class="tm-col-right">
+                        <section class="tm-content">
+                            <img class="border-image" src="./img/regal.png"></img>
+                            <h2><br/>Dev Blog Updates</h2>
+                            <hr class="custom-bar">
+
+                            <div id="htmlOutput"></div>
+                            <article>
+                                <div id="markdown-container">
+                                    <div id="content"></div>
+                                    <a id="read-more" href="latestnews.html">Read More</a>
+                                </div>
+                                <script src="js/preview-script.js"></script>
+                            </article>
+
+                            <h2><br/><br/>Dev Testing Clips & Battles</h2>
+                            <hr class="custom-bar">
+                            <div class="video-container">
+                                <iframe
+                                    src="https://www.youtube.com/embed/videoseries?list=PLLcxd4soKLM6ebqlardgRkrnSnlG_CmT_"
+                                    frameborder="0"
+                                    allow="autoplay; encrypted-media"
+                                    allowfullscreen>
+                                </iframe>
+                                </div>
+                        </section>
+                    </main>
                 </div>
             </div>
-            
-            <div class="tm-row">
-                <div class="tm-col-left"></div>
-                <main class="tm-col-right">
-                    <section class="tm-content">
-                        <img class="border-image" src="./img/regal.png"></img>
-                        <h2><br/>Dev Blog Updates</h2>
-                        <hr class="custom-bar">
 
-                        <div id="htmlOutput"></div>
-                        <article>
-                            <div id="markdown-container">
-                                <div id="content"></div>
-                                <a id="read-more" href="latestnews.html">Read More</a>
-                            </div>
-                            <script src="js/preview-script.js"></script>
-                        </article>
+            <footer class="tm-site-footer">
+                <img src="./img/simslab.png"></img>
+                <p class="small-p">Copyright <span id="year"></span> SimsLab</p>
+            </footer>
 
-                        <h2><br/><br/>Dev Testing Clips & Battles</h2>
-                        <hr class="custom-bar">
-                        <div class="video-container">
-                            <iframe
-                                src="https://www.youtube.com/embed/videoseries?list=PLLcxd4soKLM6ebqlardgRkrnSnlG_CmT_"
-                                frameborder="0"
-                                allow="autoplay; encrypted-media"
-                                allowfullscreen>
-                            </iframe>
-                            </div>
-                    </section>
-                </main>
+            <div class="tm-bg">
+                <div class="tm-bg-left"></div>
+                <div class="tm-bg-right"></div>
             </div>
         </div>
-
-        <footer class="tm-site-footer">
-            <img src="./img/simslab.png"></img>
-            <p class="small-p">Copyright <span id="year"></span> SimsLab</p>
-        </footer>
-
-        <div class="tm-bg">
-            <div class="tm-bg-left"></div>
-            <div class="tm-bg-right"></div>
-        </div>
-    </div>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/almerra-script.js"></script>
-</body>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/almerra-script.js"></script>
+    </body>
 </html>

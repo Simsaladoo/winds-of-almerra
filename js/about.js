@@ -1,9 +1,10 @@
 // Paths to the Markdown files (e.g., files in the same directory or a server)
 const markdownFiles = [
-    'https://simsaladoo.github.io/winds-of-almerra/js/about/about_about.md',
-    'https://simsaladoo.github.io/winds-of-almerra/js/about/about_nations.md',
-    'https://simsaladoo.github.io/winds-of-almerra/js/about/about_world.md',
-    'https://simsaladoo.github.io/winds-of-almerra/js/about/about_combat.md',
+    'https://almerra.com/js/about/about_about.md',
+    'https://almerra.com/js/about/about_combat.md',
+    'https://almerra.com/js/about/about_media.md',
+    'https://almerra.com/js/about/about_nations.md',
+    'https://almerra.com/js/about/about_world.md'
 ];
 
 const itemsPerPage = 1; // Number of files per page

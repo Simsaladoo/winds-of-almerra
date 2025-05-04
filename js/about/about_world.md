@@ -1,3 +1,7 @@
+### Interacting with the World
+
+https://www.youtube.com/watch?v=jku7vaf1ppU&list=PLLcxd4soKLM7Wa4h2sFvUjYCaAIBJf5Lb
+
 ### World Travel
 
 Accessed via the World Map, time compression in Almerra allows for unrestricted passage to anywhere in the world within a short time as long as you are not in combat.

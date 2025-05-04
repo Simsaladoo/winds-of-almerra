@@ -1,3 +1,4 @@
+### WIP
 ### Interacting with the World
 
 Every Nation, City and Village in the world is fully simluated across multiple Threads that operate their economy and AI whether the player is present or not.  Each one has its own regional attributes, military units and trade operations that respond to their surroundings.  Some are near to hostile Nations and Tribes and must focus on defense and martial professions, whereas some others prioritise peaceful trade and order.  Depending on what actions the player may take, they can all be influenced to forge future Alliances to differing goals. 

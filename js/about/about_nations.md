@@ -1,10 +1,9 @@
-### The Nations of Almerra
+### WIP
 
 ### Alyssakin Freetribe
 ![Nation0](https://simsaladoo.github.io/winds-of-almerra/img/flags/FlagNative.png)
 
 Alyssakin carry on the old ways of the Alyssakin Freetribe, focusing their lives into their spears.  They hunt with spears, fish with spears and live off the far reaching lands of the world.  The Alyssakin have developed their own styles of ship creation and combat, making them a versatile foe in any battle.  Their civilization has problems with bandits and finding natural minerals, but, being ungoverned, also have no respect among any other nations.
-
 
 
 ### Rowani Empire

@@ -1,5 +1,7 @@
 ### What is Almerra?
 
+![Teaser](https://www.youtube.com/watch?v=A6aebT5WpS8)
+
 **Almerra is an WIP open-world, iron age action rpg that puts the player in command of the conquest of rival nations with troops, cavalry and naval vessels thru branching storylines, battles and historically-based events.**
 
 The vast, unforgiving lands of Almerra are built on the unique islands and continents scattered across the oceanic world.  A diverse set of climates separate the landscapes ranging from dry hot deserts to swampy jungles and frozen northlands.  Many cultures inhabit the world and learning how to effectively cooperate or conquer these rivals will be the deciding factor in which peoples suffer and which ones prosper.  

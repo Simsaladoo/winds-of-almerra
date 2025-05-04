@@ -3,8 +3,7 @@ const markdownFiles = [
     'https://almerra.com/js/about/about_about.md',
     'https://almerra.com/js/about/about_nations.md',
     'https://almerra.com/js/about/about_world.md',
-    'https://almerra.com/js/about/about_combat.md',
-    'https://almerra.com/js/about/about_media.md'
+    'https://almerra.com/js/about/about_combat.md'
 ];
 
 const itemsPerPage = 1; // Number of files per page

@@ -1,8 +1,5 @@
 ### The Nations of Almerra
 
-This is the header for the page.
-
-
 ### Alyssakin Freetribe
 ![Nation0](https://simsaladoo.github.io/winds-of-almerra/img/flags/FlagNative.png)
 

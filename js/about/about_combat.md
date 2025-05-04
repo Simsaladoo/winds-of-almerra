@@ -4,6 +4,7 @@ This gameplay is then placed into an expansive, seamless open-world, with multip
 [![Mount & Blade](https://img.youtube.com/vi/lVD4xHvw8l0/0.jpg)](https://www.youtube.com/watch?v=lVD4xHvw8l0&list=PLLcxd4soKLM4e8CncVTpEXcbgPh8Cy9rZ "Mount & Blade")
 
 ### AI Combat Testing
+Almerra is heavily inspired by the Mount & Blade series, using player-driven directional movement and attacks with velocity modifiers to dictate the force behind each swing.  This is partnered with physical materials and other features within Unreal to model the combat stat structures.
+
 [![Arena](https://img.youtube.com/vi/8-PKAH59Xqk/0.jpg)](https://www.youtube.com/watch?v=8-PKAH59Xqk&list=PLLcxd4soKLM6ebqlardgRkrnSnlG_CmT_ "Arena AI Combat Testing")
 
-Almerra is heavily inspired by the Mount & Blade series, using player-driven directional movement and attacks with velocity modifiers to dictate the force behind each swing.  This is partnered with physical materials and other features within Unreal to model the combat stat structures.

@@ -1,6 +1,5 @@
 ### What is Almerra?
-
-![](https://youtu.be/A6aebT5WpS8)
+[![Teaser](https://img.youtube.com/vi/A6aebT5WpS8/0.jpg)](https://youtu.be/A6aebT5WpS8 "Teaser")
 
 **Almerra is an WIP open-world, iron age action rpg that puts the player in command of the conquest of rival nations with troops, cavalry and naval vessels thru branching storylines, battles and historically-based events.**
 

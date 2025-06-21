@@ -57,7 +57,7 @@
 }
 
 .selfie {
-    background-image: url('https://david-miller.life/images/logo.png');
+    background-image: url('https://almerra.com/img/logo.png');
     min-height: 256px;
     min-width: 256px;
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@ h1 a:hover {
 }
 
 .bordorange {
-    background-image: url('https://david-miller.life/images/border.png');
+    background-image: url('https://almerra.com/img/border.png');
     background-repeat: repeat-x;
     min-height: 24px;
 }
@@ -129,7 +129,7 @@ h1 a:hover {
 
 
 .image1 {
-    /*background-image: url('https://david-miller.life/images/cotw.jpg');*/
+    /*background-image: url('https://almerra.com/img/cotw.jpg');*/
     position: relative;
     overflow: hidden;
 }
@@ -145,14 +145,6 @@ h1 a:hover {
     transform: translate(-50%, -50%);
     z-index: -1;
     object-fit: cover;
-}
-
-.image2 {
-    background-image: url('https://david-miller.life/images/woa.png');
-}
-
-.image3 {
-    background-image: url('https://david-miller.life/images/buoyancy.gif');
 }
 
 .text-section-right {
@@ -529,7 +521,7 @@ body.is-preload #header.alt {
 }
 
 .banner {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("https://david-miller.life/images/banner.png");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("https://almerra.com/img/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 ;

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-21T12:58:01-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Winds of Almerra</title><subtitle>Winds of Almerra</subtitle><entry><title type="html">P4 Mapping Views to Streams</title><link href="http://localhost:4000/blog/view-mapping" rel="alternate" type="text/html" title="P4 Mapping Views to Streams" /><published>2025-06-07T00:00:00-07:00</published><updated>2025-06-07T00:00:00-07:00</updated><id>http://localhost:4000/blog/view-mapping</id><content type="html" xml:base="http://localhost:4000/blog/view-mapping"><![CDATA[<h3 id="perforce-stream-view-mapping">Perforce Stream View Mapping</h3>
+
+<p>Earlier this year at Halon, we participated in a case study with Perforce to talk about how we manage our Unreal master material library and custom plugins.  The material library is a centrally-managed package of shaders that we previously had to manually migrate from project to project, and would sometimes get messed up from naming collisions or missing redirectors.</p>
+
+<p>We found that by using view mappings and putting them into their own stream, we could then import them into the projects as part of our startup phase and have more concise control over the content.  The initial migration had some issues, but once we cleaned up existing assets it made the pipeline a lot more streamlined and LOT less error-prone.</p>
+
+<p>It also made us take up a lot less space in our AWS-managed server when it came to Plugins, as storing the binaries and content can add up quickly.  Setting up the plugins this way also allowed for a more sophisticated update process by utilizing development streams to do internal updates and new features instead of working directly on the mainline and potentially breaking existing projects.</p>
+
+<p>If you have a stream depot with an Unreal engine project, you can easily setup this kind of infrastructure by copying all the Plugins into one stream, and Master Materials into another–then adding their paths to the project’s views.  You can read more about this functionality in the docs: <a href="https://help.perforce.com/helix-core/server-apps/p4v/current/Content/P4V/streams.views.html">https://help.perforce.com/helix-core/server-apps/p4v/current/Content/P4V/streams.views.html</a></p>
+
+<hr />
+
+<p>Editing the view can be done in the GUI through the Stream View, under the Advanced tab and looks something like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>share ...
+import NewProject/Unreal_532/Plugins/... //Depot/Plugins-Main/5.3.2/Plugins...
+</code></pre></div></div>
+
+<p>The “share …” is required for the files in the stream to be retrieved and any other paths we need can be added under it as seen here.
+To map our Plugins from their self-contained depot to our project, we use the “import” type view.  This allows us to source the plugins from their location, but not allow them to submit changes (although this can be changed to import+ to get around that).</p>
+
+<p>This imported path inherits its view from the parent and all the files can be mapped to a location within the client’s workspace.  Imported files will then be shown with the “halo” icon within the client workspace:
+<a href="https://david-miller.life/images/halo.png"><img src="https://david-miller.life/images/halo.png" alt="Halo" /></a></p>
+
+<p>You can read more about the case-study here:
+<a href="https://www.perforce.com/customers/case-studies/vcs/halon">https://www.perforce.com/customers/case-studies/vcs/halon</a></p>
+
+<p><strong>Summary:</strong><br />
+Halon used Perforce Helix Core to manage their growing codebase and streamline collaboration. By adopting streams and advanced version control features, they improved workflow efficiency, reduced integration issues, and enabled faster product delivery. The case study highlights how mapping views and stream imports helped Halon scale development while maintaining control and flexibility.</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[Linking depots into other streams with import to decrease maintainance and costs.]]></summary></entry><entry><title type="html">CSV Importer &amp;amp; Asset Tagging</title><link href="http://localhost:4000/blog/asset_tagging" rel="alternate" type="text/html" title="CSV Importer &amp;amp; Asset Tagging" /><published>2025-04-29T00:00:00-07:00</published><updated>2025-04-29T00:00:00-07:00</updated><id>http://localhost:4000/blog/asset_tagging</id><content type="html" xml:base="http://localhost:4000/blog/asset_tagging"><![CDATA[<h3 id="csv-importer--asset-tagging">CSV Importer &amp; Asset Tagging</h3>
+
+<p>Many times when dealing with converting data in-engine into lightweight gameplay assets or when having to do execute small tasks on many types of assets all at once, we utilize Python.  Depending on the project and requirement we may run this headlessly through the UE4Editor-Cmd.exe, or through an in-editor script–but it will generally use the same classes either way.</p>
+
+<p>To read/write a datable previously imported, we simply pass an in-engine asset’s package path in through a load_object in order to cast to the datatable class, like you would for an import of the asset.  From here we can then play with parameters:</p>
+
+<p><a href="https://david-miller.life/images/datalayer_load.png"><img src="https://david-miller.life/images/datalayer_load.png" alt="Tagging" /></a></p>
+
+<p>You can then find out the type of struct used by any Data Table by reading the “row_struct” property of the object we casted to:</p>
+
+<p><a href="https://david-miller.life/images/tags_popup.png"><img src="https://david-miller.life/images/get_struct.png" alt="Tagging" /></a>
+<a href="https://david-miller.life/images/tags_set.png"><img src="https://david-miller.life/images/tags_set.png" alt="Tagging" /></a></p>
+
+<p>The known struct can then be added to the params of the unreal.CSVImportFactory()’s automated import settings, as part of the unreal.AssetImportTask():</p>
+
+<p><a href="https://david-miller.life/images/datalayer_import.png"><img src="https://david-miller.life/images/datalayer_import.png" alt="Tagging" /></a></p>
+
+<p>With the import settings in place, we can use the same object cast to set tags within the Editor Asset Library.  In this case the table itself is used during game play to store localized  arrays of vectors, so it gets a tag to denote its purpose and feature:</p>
+
+<p><a href="https://david-miller.life/images/tags_show.png"><img src="https://david-miller.life/images/tags_show.png" alt="MainImage" /></a></p>
+
+<p><a href="https://david-miller.life/images/tags_popup.png"><img src="https://david-miller.life/images/tags_popup.png" alt="Tagging" /></a></p>
+
+<p>Using tags we can track not only whether an asset is mission-critical, but also implement things like asset timestamps, changelists, or hooks for other scripting processes.</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[Using tags we can track not only whether an asset is mission-critical, but also implement things like asset timestamps, changelists, or hooks for other scripting processes.]]></summary></entry><entry><title type="html">Asset Renderer for Turntable Automation</title><link href="http://localhost:4000/blog/asset_renderer" rel="alternate" type="text/html" title="Asset Renderer for Turntable Automation" /><published>2024-09-03T00:00:00-07:00</published><updated>2024-09-03T00:00:00-07:00</updated><id>http://localhost:4000/blog/asset_renderer</id><content type="html" xml:base="http://localhost:4000/blog/asset_renderer"><![CDATA[<h3 id="asset-renderer-for-turntable-automation">Asset Renderer for Turntable Automation</h3>
+
+<p>In some projects, the sheer amount of static mesh and skeletal mesh content used to make a show, movie or a game can be substantial.  For times when lots of custom art is being updated, it will also be important to produce new renders for review.  This widget is a python script configuration tool to run the package which scours the registry, and produces sequencers, then adds them to a movie render queue for every asset of whatever things we want to select.</p>
+
+<p>How it works</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[In some projects, the sheer amount of static mesh and skeletal mesh content used to make a show, movie or a game can be substantial.]]></summary></entry><entry><title type="html">Static Mesh Masking</title><link href="http://localhost:4000/blog/static_mesh_masking" rel="alternate" type="text/html" title="Static Mesh Masking" /><published>2023-10-08T00:00:00-07:00</published><updated>2023-10-08T00:00:00-07:00</updated><id>http://localhost:4000/blog/static_mesh_masking</id><content type="html" xml:base="http://localhost:4000/blog/static_mesh_masking"><![CDATA[<h3 id="static-mesh-masking">Static Mesh Masking</h3>
+
+<p>For a KSP2 trailer I worked on, we needed a cheap easy way to animate a time-lapse building up of a moon base.  The assets in the environment all used basic default collision and were laid out in-engine with centered pivots.  Easy work!</p>
+
+<p><a href="https://david-miller.life/images/tags_popup.png"><img src="https://david-miller.life/images/tags_popup.png" alt="MainImage" /></a></p>
+
+<p>How it works</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[For a KSP2 trailer I worked on, we needed a cheap easy way to animate a time-lapse building up of a moon base.]]></summary></entry><entry><title type="html">Foliage Converter</title><link href="http://localhost:4000/blog/foliage_copier" rel="alternate" type="text/html" title="Foliage Converter" /><published>2023-08-12T00:00:00-07:00</published><updated>2023-08-12T00:00:00-07:00</updated><id>http://localhost:4000/blog/foliage_copier</id><content type="html" xml:base="http://localhost:4000/blog/foliage_copier"><![CDATA[<h3 id="foliage-converter">Foliage Converter</h3>
+
+<p>The purpose of this tool is to provide a simple work around for being able to re-use instances of meshes by copying in-engine painted foliage into new actors that we can control as normal.</p>
+
+<p>Many Tools already exist for this on the marketplace, especially ones more powerful like the Instance Tool, which is used from time to time. This Foliage Copier tool however is not a plugin, and can be freely copied with its actor component across to any projects without needing to edit configs. It even works in UE5 projects since it is created in 4.27.2.
+Below is a test scene created with multiple sublevels all containing foliage, and will be used to demonstrate the process. The scene contains a few thousand trees, grasses and sandbags.</p>
+
+<p><a href="https://david-miller.life/images/foliage_ui.png"><img src="https://david-miller.life/images/foliage_ui.png" alt="Tagging" /></a></p>
+
+<p><a href="https://david-miller.life/images/foliageactor.png"><img src="https://david-miller.life/images/foliageactor.png" alt="Tagging" /></a></p>
+
+<p>The Tool itself is relatively simple, you simply click the drop-down and select the foliage instance type you’d like to copy.
+With it selected, your can click ‘Create Copy’ and create an Instanced static mesh class object with the same foliage geometry, material and transforms copied over.</p>
+
+<p><a href="https://david-miller.life/images/foliage_ui.gif"><img src="https://david-miller.life/images/foliage_ui.gif" alt="MainImage" /></a></p>
+
+<p>The tool can convert the copied instances into meshes back and forth as needed to make layout pruning a breeze.</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[The tool can convert the copied instances into meshes back and forth as needed to make layout pruning a breeze.]]></summary></entry><entry><title type="html">Sequence Pass Generator</title><link href="http://localhost:4000/blog/sequence_pass_generation" rel="alternate" type="text/html" title="Sequence Pass Generator" /><published>2023-02-17T00:00:00-08:00</published><updated>2023-02-17T00:00:00-08:00</updated><id>http://localhost:4000/blog/sequence_pass_generation</id><content type="html" xml:base="http://localhost:4000/blog/sequence_pass_generation"><![CDATA[<h3 id="sequence-pass-generator">Sequence Pass Generator</h3>
+
+<p>Sometimes in post-viz, its necessary to bake out other unreal passes so they could be used in editing for extra shadow, reflections and effects work.  This becomes a huge task when there are hundreds of cameras and episodes, so finding a means of automating the changing of level sequencer tracks, level streaming settings, and manicuring pass settings and rendering them is a massive time-saver.</p>
+
+<p><a href="https://david-miller.life/images/sequence_tool.gif"><img src="https://david-miller.life/images/sequence_tool.gif" alt="MainImage" /></a></p>
+
+<p>This tool utilizes python to make copies of selected level sequences in order to tag and associate Render Queue settings with individual shots.  This lets you make any adjustments to, say FX passes, separate from your existing shot’s settings, as well as for Reflections and shadows.</p>
+
+<p>In the gif above, we select all 3 of the project’s shots, and generate 4 separate passes for each one.  Not shown here, the newly created assets also receive metadata tags to associate each one with a specific Render Queue Setting, so that various rendering tricks for each one can be applied.  Also not shown, the tool adds Level Visibility Tracks for each pass to know which sublevels can be turned on and off–required for creating FX and shadow passes.</p>
+
+<p>The paths on each shot-object in the UI also act as links to make finding the sequences more easily in the editor.  It makes use of a super-fun Editor Asset Library class method called ‘sync_browser_to_objects’ that lets you point the content browser to any /Game/ asset path:</p>
+
+<p><a href="https://david-miller.life/images/sync_browser.png"><img src="https://david-miller.life/images/sync_browser.png" alt="Tagging" /></a></p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[The paths on each shot-object in the UI also act as links to make finding the sequences more easily in the editor.]]></summary></entry><entry><title type="html">Screenshot Tool</title><link href="http://localhost:4000/blog/screenshot_tool" rel="alternate" type="text/html" title="Screenshot Tool" /><published>2022-11-03T00:00:00-07:00</published><updated>2022-11-03T00:00:00-07:00</updated><id>http://localhost:4000/blog/screenshot_tool</id><content type="html" xml:base="http://localhost:4000/blog/screenshot_tool"><![CDATA[<h3 id="screenshot-tool">Screenshot Tool</h3>
+
+<p>As you select cameras from the list, the bottom of the Tool will display the preconstructed directory and name of each image to be exported. It will create this from the path beginning with the show:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Show Name\artists\User Name\Screenshots\Level Name\Current Date\
+</code></pre></div></div>
+
+<p>Then it will append the following to be used as each screenshots name:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EnvironmentName_CameraName_VolumeStatus_Date_UserName
+</code></pre></div></div>
+
+<p>You can see this functionality in the below image:</p>
+
+<p>It requires the basic python scripting plugin to be enabled, and an export location to be specified in the Tool’s python package:</p>
+
+<p><a href="https://david-miller.life/images/plugin.png"><img src="https://david-miller.life/images/plugin.png" alt="MainImage" /></a></p>
+
+<p>How it works</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[As you select cameras from the list, the bottom of the Tool will display the preconstructed directory and name of each image to be exported.]]></summary></entry><entry><title type="html">Deterministic Ocean Buoyancy</title><link href="http://localhost:4000/blog/buoyancy" rel="alternate" type="text/html" title="Deterministic Ocean Buoyancy" /><published>2021-05-22T00:00:00-07:00</published><updated>2021-05-22T00:00:00-07:00</updated><id>http://localhost:4000/blog/buoyancy</id><content type="html" xml:base="http://localhost:4000/blog/buoyancy"><![CDATA[<h3 id="deterministic-ocean-buoyancy">Deterministic Ocean Buoyancy</h3>
+
+<p>Implementing walkable boats for player &amp; AI</p>
+
+<p><a href="https://david-miller.life/images/bounce.gif"><img src="https://david-miller.life/images/bounce.gif" alt="MainImage" /></a></p>
+
+<p>The result at a flat z=26000</p>
+
+<p>I began with using a hidden static mesh as physical collision for characters–and a skeletal mesh copy of the same geo with jointed components for the on-screen representation.  The purpose being to separate the “stable” platform for movement and collisions while still allowing for simple rigged animations for oars, sail direction and other interact-able components.</p>
+
+<p>For the buoyancy calculation, it is extremely simplified using an array of 4 relative vectors shown in the gif above as attached spheres.  While above water they turn yellow and blue when floating, doing so then makes a little splash on the bow and stern (hoping to futher map more types of splashes based on the type of hull in the future).</p>
+
+<p>Physics in-engine is used on the actor as a whole, implemented on the same vector array of points by utilizing:
+UPrimitiveComponent::AddForceAtLocation(FVector Force, FVector Location)
+to give us the bounce!</p>
+
+<p>Mapping Buoyancy Arrays to Hulls</p>
+
+<p><a href="https://david-miller.life/images/types.gif"><img src="https://david-miller.life/images/types.gif" alt="Tagging" /></a></p>
+
+<p>The various types of boats available then presented a new set of factors where the mass &amp; volume needed to be accounted for without adding further calculation.  The current solution was to simply map out vector translators and other vessel attributes to a datatable to hold and use those static properties.</p>
+
+<p>Using an enum of each vessel’s name then gave it a simple drop-down per craft type to able to switch between all of them on the fly as we can see above.</p>
+
+<p>A floating point for floating time</p>
+
+<p><a href="https://david-miller.life/images/floating.gif"><img src="https://david-miller.life/images/floating.gif" alt="Tagging" /></a></p>
+
+<p>Part of the scope in this buoyancy system is allowing for in-game ‘time compression’ to show up on the waves while the player is travelling across the 3D worldmap,  similarly done in Silent Hunter and other tactical submarine games that have a 3D view.</p>
+
+<p>To allow for wind speed and direction changes from weather events as well as time compression from the player, we have two separate floats to multiply against the global amplitude, velocity and orientation of the ocean’s gerstner waves.</p>
+
+<p>The result is now letting us turn on the waves at any time, shown in the above picture,by setting new values into amplitude</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[To allow for wind speed and direction changes from weather events as well as time compression from the player, we have two separate floats to multiply against the global amplitude, velocity and orientation of the ocean's gerstner waves.]]></summary></entry><entry><title type="html">Data Layering with Image to CSV Conversion</title><link href="http://localhost:4000/blog/image_data_layering" rel="alternate" type="text/html" title="Data Layering with Image to CSV Conversion" /><published>2018-03-26T00:00:00-07:00</published><updated>2018-03-26T00:00:00-07:00</updated><id>http://localhost:4000/blog/image_data_layering</id><content type="html" xml:base="http://localhost:4000/blog/image_data_layering"><![CDATA[<h3 id="data-layering-using-image-to-csv-conversion">Data Layering using Image to CSV Conversion</h3>
+
+<p><a href="https://david-miller.life/images/datalayer_diagram.png"><img src="https://david-miller.life/images/datalayer_diagram.png" alt="MainImage" /></a></p>
+
+<p>(Happy data generated using ‘B’ color values, slightly warped just due to my column sizing in excel :) )</p>
+
+<p><a href="https://david-miller.life/images/datalayer_happy.png"><img src="https://david-miller.life/images/datalayer_happy.png" alt="Tagging" /></a></p>
+
+<p><a href="https://david-miller.life/images/datalayer_load.png"><img src="https://david-miller.life/images/datalayer_num.png" alt="Tagging" /></a></p>
+
+<p>This is easy peasy in C#!  The struct for the Y alignment columns needs be to setup in Unreal according to the image’s resolution.  The above is using a 64 x 64 image, and is read/wrote using System.Data; and System.Drawing;</p>
+
+<p>The method involves taking a specific pixel via:
+System.Drawing.Color pixelColor = testimage.GetPixel(x, y);</p>
+
+<p>and breaking it into its R,G,B component via:
+string pixelColorStringValue = pixelColor.B.ToString(“D3”);</p>
+
+<p>From there its as simple as adding the image, using Width and Height into loops based on a set image size to bookend the comma deliminator.  Now you can draw any kind of data within Photoshop!</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[From there its as simple as adding the image, using Width and Height into loops based on a set image size to bookend the comma deliminator. Now you can draw any kind of data within Photoshop!]]></summary></entry></feed>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-25T12:06:50-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Winds of Almerra</title><subtitle>Winds of Almerra</subtitle><entry><title type="html">Humble Beginnings</title><link href="http://localhost:4000/blog/humble_beginnings" rel="alternate" type="text/html" title="Humble Beginnings" /><published>2025-06-25T00:00:00-07:00</published><updated>2025-06-25T00:00:00-07:00</updated><id>http://localhost:4000/blog/humble_beginnings</id><content type="html" xml:base="http://localhost:4000/blog/humble_beginnings"><![CDATA[<h3 id="humble-beginnings">Humble beginnings</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-25T12:17:45-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Winds of Almerra</title><subtitle>Winds of Almerra</subtitle><entry><title type="html">Humble Beginnings</title><link href="http://localhost:4000/blog/humble_beginnings" rel="alternate" type="text/html" title="Humble Beginnings" /><published>2025-06-25T00:00:00-07:00</published><updated>2025-06-25T00:00:00-07:00</updated><id>http://localhost:4000/blog/humble_beginnings</id><content type="html" xml:base="http://localhost:4000/blog/humble_beginnings"><![CDATA[<h3 id="humble-beginnings">Humble beginnings</h3>
 
 <p>The development of a fully open-world RPG has so many ingredients.  From the core gameplay loops to the mechanics and are generally easier said than done.  Take Witcher 3, for example–Take a contract, investigate, resolve it, get paid (or not), and repeat.  But in doing each of those steps the player will utilize movement, UI, NPC interactions, combat system, inventory, world/level design, shader performance and tech and SO much more.</p>
 
@@ -36,91 +36,4 @@
 
 <p><a href="https://youtu.be/8-PKAH59Xqk"><img src="https://img.youtube.com/vi/8-PKAH59Xqk/0.jpg" alt="Arena" /></a></p>
 
-<p><strong>Stay tuned, stay excited, and stay connected!</strong> 🚀🎮</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[We’ve been hard at work behind the scenes, and we can’t wait to share everything we’ve been building with you. Whether you're an early supporter or just discovered our game, we’re thrilled to have you along for the ride!]]></summary></entry><entry><title type="html">About</title><link href="http://localhost:4000/blog/about_about" rel="alternate" type="text/html" title="About" /><published>2000-01-01T00:00:00-08:00</published><updated>2000-01-01T00:00:00-08:00</updated><id>http://localhost:4000/blog/about_about</id><content type="html" xml:base="http://localhost:4000/blog/about_about"><![CDATA[<h3 id="wip">WIP</h3>
-<h3 id="what-is-almerra">What is Almerra?</h3>
-<p><a href="https://youtu.be/A6aebT5WpS8" title="Teaser"><img src="https://img.youtube.com/vi/A6aebT5WpS8/0.jpg" alt="Teaser" /></a></p>
-
-<p><strong>Almerra is an WIP open-world, iron age action rpg that puts the player in command of the conquest of rival nations with troops, cavalry and naval vessels thru branching storylines, battles and historically-based events.</strong></p>
-
-<p>The vast, unforgiving lands of Almerra are built on the unique islands and continents scattered across the oceanic world.  A diverse set of climates separate the landscapes ranging from dry hot deserts to swampy jungles and frozen northlands.  Many cultures inhabit the world and learning how to effectively cooperate or conquer these rivals will be the deciding factor in which peoples suffer and which ones prosper.</p>
-
-<p>Supported by a fully open-world environment, real-time actions can alter the history of any nation from global superpower to national tragedy.  Governance, Military and Economical decisions drive the development of each Nation as the player’s choices become pivotal events thru the march of time.  Who will rise?  Who will fall?</p>
-
-<h3 id="the-peoples-of-almerra">The Peoples of Almerra</h3>
-
-<p>Winds of Almerra has many cultures, some originating from a religion, some an idealistic vision of a grand civilization, and some simply looking to survive by any means.</p>
-
-<p>The world features over 60 mi² of fully detailed, traverse-able ocean and land inhabited by all manners of nature and civilization from undeveloped tribes surviving in harsh rainforests to sprawling city-states with sophisticated government and architecture.  Many will need to depend on each other to thrive.  The player’s leadership thru combat and choices can alter the course of history for all.</p>
-
-<h3 id="procedural-economies-and-conquest">Procedural Economies and Conquest</h3>
-
-<p>At the heart of Almerra is the desire for a fully-living iron age world driven by global conquest.  Every city and capitol act as their own power–much like a traditional RTS strategy game like in Age of Empires.  Each hinges on it’s ability to feed its people, protect itself thru defenses, and by establishing trade and a healthy economy to achieve prosperity and population.</p>
-
-<p>Nations wage wars thru raids, sieges and naval engagements in real-time, seamless combat.  Command or lead, fight or flight, attack or ambush, sea or land.</p>
-
-<p>Conquer or be conquered.</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[WIP What is Almerra?]]></summary></entry><entry><title type="html">About</title><link href="http://localhost:4000/blog/about_nations" rel="alternate" type="text/html" title="About" /><published>2000-01-01T00:00:00-08:00</published><updated>2000-01-01T00:00:00-08:00</updated><id>http://localhost:4000/blog/about_nations</id><content type="html" xml:base="http://localhost:4000/blog/about_nations"><![CDATA[<h3 id="wip">WIP</h3>
-
-<h3 id="alyssakin-freetribe">Alyssakin Freetribe</h3>
-<p><img src="https://simsaladoo.github.io/winds-of-almerra/img/flags/FlagNative.png" alt="Nation0" /></p>
-
-<p>Alyssakin carry on the old ways of the Alyssakin Freetribe, focusing their lives into their spears.  They hunt with spears, fish with spears and live off the far reaching lands of the world.  The Alyssakin have developed their own styles of ship creation and combat, making them a versatile foe in any battle.  Their civilization has problems with bandits and finding natural minerals, but, being ungoverned, also have no respect among any other nations.</p>
-
-<h3 id="rowani-empire">Rowani Empire</h3>
-<p><img src="https://simsaladoo.github.io/winds-of-almerra/img/flags/FlagRowani.png" alt="Nation1" /></p>
-
-<p>The Rowani occupy the old city of Peruge, which was slowly rebuilt over the last 5 years as most of the city was destroyed. Unfortunately many peoples suffer in this nation under the rule of Emporer Sepitus, who seeks to rebuild the old kingdom in his own vision.  The Rowani possess the greatest amount of natural resources in their lands, but the nation is constantly engulfed in civil war.</p>
-
-<h3 id="republic-of-graata">Republic of Graata</h3>
-<p><img src="https://simsaladoo.github.io/winds-of-almerra/img/flags/FlagGraata.png" alt="Nation2" /></p>
-
-<p>The Graata are a democratic Republic in the northeastern corners of the world, and are the second largest continent of Almerra.  The Republic of Graata has been at war with the Rowani since the Great Migration, headed by a council of elected Lords from the surrounding lands.  Graatian Lords have long been trying to help overthrow the reign of the Rowani Emporer Sepitus to help restore balance to the world, but they face constant adversity in the seas from the Neagese to their North.</p>
-
-<h3 id="neagese-dynasty">Neagese Dynasty</h3>
-<p><img src="https://simsaladoo.github.io/winds-of-almerra/img/flags/FlagNeagese.png" alt="Nation3" /></p>
-
-<p>The Neagese are a hardy nation of swordsmen and survivors that live in the harsh frozen northern lands of Almerra.  They have talent with building hardy ships to help resist the extreme climate, but are also very stubborn as a people.  Their nation is ruled by a democratic round-table of Lords, each with their own motivations and relations.  The Neagese trade with the Rowani almost exclusively due to their shared faith in the Sect of the 8 Gods.  Some of the Lords hold grudges against the Graata, and constantly cause them problems.</p>
-
-<h3 id="monayan-kingdom">Monayan Kingdom</h3>
-<p><img src="https://simsaladoo.github.io/winds-of-almerra/img/flags/FlagMons.png" alt="Nation4" /></p>
-
-<p>The Monayans have lived in near-isolation to the Southeast of the rest of Almerra for centuries.  A godless mountain-dwelling people, the Monayans are the most creative in their engineering and in their art forms.  The Monaya are talented swimmers and fighters, but face problems with natural resources being raided by bandits and Rowani forces.  Mons trade with and have a fairly positive relationship with the Graata, but are typically more isolated and untraveled culturally.</p>
-
-<h3 id="other-uncontacted-tribes">Other Uncontacted Tribes</h3>
-
-<p>There are also still many undeveloped territories in Almerra where wild, tribal peoples inhabit the harsh wilds.  Some are told to be somewhat peaceful but the latter never leave any evidence otherwise.</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[WIP]]></summary></entry><entry><title type="html">About</title><link href="http://localhost:4000/blog/about_world" rel="alternate" type="text/html" title="About" /><published>2000-01-01T00:00:00-08:00</published><updated>2000-01-01T00:00:00-08:00</updated><id>http://localhost:4000/blog/about_world</id><content type="html" xml:base="http://localhost:4000/blog/about_world"><![CDATA[<h3 id="wip">WIP</h3>
-<h3 id="interacting-with-the-world">Interacting with the World</h3>
-
-<p>Every Nation, City and Village in the world is fully simluated across multiple Threads that operate their economy and AI whether the player is present or not.  Each one has its own regional attributes, military units and trade operations that respond to their surroundings.  Some are near to hostile Nations and Tribes and must focus on defense and martial professions, whereas some others prioritise peaceful trade and order.  Depending on what actions the player may take, they can all be influenced to forge future Alliances to differing goals.</p>
-
-<p>Below is a short clip of entering the town and having the data come to life, with a small number of inhabitants in a work-in-progress Village.</p>
-
-<p><a href="https://www.youtube.com/watch?v=jku7vaf1ppU&amp;list=PLLcxd4soKLM7Wa4h2sFvUjYCaAIBJf5Lb" title="Dev Scrolls - Threaded AI LODs and Dialogues"><img src="http://img.youtube.com/vi/jku7vaf1ppU/0.jpg" alt="Interaction" /></a></p>
-
-<h3 id="world-travel">World Travel</h3>
-
-<p>Accessed via the World Map, time compression in Almerra allows for unrestricted passage to anywhere in the world within a short time as long as you are not in combat.  This is built upon on a grid-based data system, able to access any world-specific data via its coordinate in a database.  While in Auto-Travel, every square travelled consumes turns that advances the AI as well, and decisions will have sometimes unforseen impacts that can cause turmoil and topple reigemes.</p>
-
-<p>World Travel via the map is usable at anytime while travelling via a Landcraft or Watercraft, the latter behind the only way of <em>affectively</em> crossing the seas.  <em>(Mistakes have been made)</em></p>
-
-<p><a href="https://www.youtube.com/watch?v=QeITXEhehkc&amp;list=PLLcxd4soKLM7Wa4h2sFvUjYCaAIBJf5Lb&amp;index=12" title="DataBuilder"><img src="http://img.youtube.com/vi/QeITXEhehkc/0.jpg" alt="Worlddata" /></a></p>
-
-<h3 id="watercraft">Watercraft</h3>
-<p>The various Nations all employ some forms of Nautical vessels in their Economy and Military, with each one being based on their regional resources and historical experience.  They use them to haul specific goods which require different considerations for how they build them, and also have differences in how theyre used tactically by their respective military doctrines.</p>
-
-<p>Below are some initial Player-Controller tests for climbing aboard, interacting and riding the base class which is still under heavy development.</p>
-
-<p><a href="https://www.youtube.com/watch?v=R-2igygUVRc&amp;list=PLLcxd4soKLM7Wa4h2sFvUjYCaAIBJf5Lb&amp;index=4" title="Seamanship"><img src="http://img.youtube.com/vi/R-2igygUVRc/0.jpg" alt="Seamanship" /></a></p>
-
-<h3 id="landcraft">Landcraft</h3>
-<p>There are all sorts of operational objects within the world including Ballistas, Siege Catapults, and War Elephants beyond the usual Horse and Camel.  Master of them all through commanding your troops will ensure no enemies stand in your way!</p>
-
-<p><img src="https://simsaladoo.github.io/winds-of-almerra/img/mounts.jpg" alt="Mounts" /></p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[WIP Interacting with the World]]></summary></entry><entry><title type="html">About</title><link href="http://localhost:4000/blog/about_combat" rel="alternate" type="text/html" title="About" /><published>2000-01-01T00:00:00-08:00</published><updated>2000-01-01T00:00:00-08:00</updated><id>http://localhost:4000/blog/about_combat</id><content type="html" xml:base="http://localhost:4000/blog/about_combat"><![CDATA[<h3 id="wip">WIP</h3>
-<h3 id="mount--blade-influenced">Mount &amp; Blade influenced</h3>
-<p>This gameplay is then placed into an expansive, seamless open-world, with multiple continents only explorable through sailing the vast seas of Almerra.  The vessels are both in-use by the many Nations and purchase-able by the player to be used to freely roam and transport forces and goods.  Certain larger vessels can even transport the various Mounts (within reason) used by heavy cavalry for that extra Age of Empires-influenced kick.</p>
-
-<p><a href="https://www.youtube.com/watch?v=lVD4xHvw8l0&amp;list=PLLcxd4soKLM4e8CncVTpEXcbgPh8Cy9rZ" title="Mount &amp; Blade"><img src="https://img.youtube.com/vi/lVD4xHvw8l0/0.jpg" alt="Mount &amp; Blade" /></a></p>
-
-<h3 id="ai-combat-testing">AI Combat Testing</h3>
-<p>Almerra is heavily inspired by the Mount &amp; Blade series, using player-driven directional movement and attacks with velocity modifiers to dictate the force behind each swing.  This is partnered with physical materials and other features within Unreal to model the combat stat structures.</p>
-
-<p><a href="https://www.youtube.com/watch?v=8-PKAH59Xqk&amp;list=PLLcxd4soKLM6ebqlardgRkrnSnlG_CmT_" title="Arena AI Combat Testing"><img src="https://img.youtube.com/vi/8-PKAH59Xqk/0.jpg" alt="Arena" /></a></p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[WIP Mount &amp; Blade influenced This gameplay is then placed into an expansive, seamless open-world, with multiple continents only explorable through sailing the vast seas of Almerra. The vessels are both in-use by the many Nations and purchase-able by the player to be used to freely roam and transport forces and goods. Certain larger vessels can even transport the various Mounts (within reason) used by heavy cavalry for that extra Age of Empires-influenced kick.]]></summary></entry></feed>
+<p><strong>Stay tuned, stay excited, and stay connected!</strong> 🚀🎮</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[We’ve been hard at work behind the scenes, and we can’t wait to share everything we’ve been building with you. Whether you're an early supporter or just discovered our game, we’re thrilled to have you along for the ride!]]></summary></entry></feed>

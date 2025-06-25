@@ -1,158 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-25T00:29:30-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Winds of Almerra</title><subtitle>Winds of Almerra</subtitle><entry><title type="html">P4 Mapping Views to Streams</title><link href="http://localhost:4000/blog/view-mapping" rel="alternate" type="text/html" title="P4 Mapping Views to Streams" /><published>2025-06-07T00:00:00-07:00</published><updated>2025-06-07T00:00:00-07:00</updated><id>http://localhost:4000/blog/view-mapping</id><content type="html" xml:base="http://localhost:4000/blog/view-mapping"><![CDATA[<h3 id="perforce-stream-view-mapping">Perforce Stream View Mapping</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-25T12:06:50-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Winds of Almerra</title><subtitle>Winds of Almerra</subtitle><entry><title type="html">Humble Beginnings</title><link href="http://localhost:4000/blog/humble_beginnings" rel="alternate" type="text/html" title="Humble Beginnings" /><published>2025-06-25T00:00:00-07:00</published><updated>2025-06-25T00:00:00-07:00</updated><id>http://localhost:4000/blog/humble_beginnings</id><content type="html" xml:base="http://localhost:4000/blog/humble_beginnings"><![CDATA[<h3 id="humble-beginnings">Humble beginnings</h3>
 
-<p>Earlier this year at Halon, we participated in a case study with Perforce to talk about how we manage our Unreal master material library and custom plugins.  The material library is a centrally-managed package of shaders that we previously had to manually migrate from project to project, and would sometimes get messed up from naming collisions or missing redirectors.</p>
+<p>The development of a fully open-world RPG has so many ingredients.  From the core gameplay loops to the mechanics and are generally easier said than done.  Take Witcher 3, for example–Take a contract, investigate, resolve it, get paid (or not), and repeat.  But in doing each of those steps the player will utilize movement, UI, NPC interactions, combat system, inventory, world/level design, shader performance and tech and SO much more.</p>
 
-<p>We found that by using view mappings and putting them into their own stream, we could then import them into the projects as part of our startup phase and have more concise control over the content.  The initial migration had some issues, but once we cleaned up existing assets it made the pipeline a lot more streamlined and LOT less error-prone.</p>
+<p>Almerra has had very few people putting in thousands of hours to fully flesh out and understand how to accomplish similar systems, and they were uninteresting and just bad through the majority of the development.</p>
 
-<p>It also made us take up a lot less space in our AWS-managed server when it came to Plugins, as storing the binaries and content can add up quickly.  Setting up the plugins this way also allowed for a more sophisticated update process by utilizing development streams to do internal updates and new features instead of working directly on the mainline and potentially breaking existing projects.</p>
+<p>[<img src="https://almerra.com/img/bg-2.png" alt="DialogueTest" /></p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[The development of a fully open-world RPG has so many ingredients. From the core gameplay loops to the mechanics and are generally easier said than done. Take Witcher 3, for example--Take a contract, investigate, resolve it, get paid (or not), and repeat. But in doing each of those steps the player will utilize movement, UI, NPC interactions, combat system, inventory, world/level design, shader performance and tech and SO much more.]]></summary></entry><entry><title type="html">New Website!</title><link href="http://localhost:4000/blog/new_website" rel="alternate" type="text/html" title="New Website!" /><published>2025-03-26T00:00:00-07:00</published><updated>2025-03-26T00:00:00-07:00</updated><id>http://localhost:4000/blog/new_website</id><content type="html" xml:base="http://localhost:4000/blog/new_website"><![CDATA[<h3 id="welcome-almerran-citizens">Welcome Almerran citizens!</h3>
 
-<p>If you have a stream depot with an Unreal engine project, you can easily setup this kind of infrastructure by copying all the Plugins into one stream, and Master Materials into another–then adding their paths to the project’s views.  You can read more about this functionality in the docs: <a href="https://help.perforce.com/helix-core/server-apps/p4v/current/Content/P4V/streams.views.html">https://help.perforce.com/helix-core/server-apps/p4v/current/Content/P4V/streams.views.html</a></p>
+<p>Welcome to the new <strong>Almerra</strong> website – your one-stop hub for all the latest news, updates, and exclusive content about the game.</p>
 
-<hr />
+<p>We’ve been hard at work behind the scenes, and we can’t wait to share everything we’ve been building with you. Whether you’re an early supporter or just discovered our game, we’re thrilled to have you along for the ride!</p>
 
-<p>Editing the view can be done in the GUI through the Stream View, under the Advanced tab and looks something like this:</p>
+<h3 id="join-us-on-this-journey">Join Us on This Journey</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>share ...
-import NewProject/Unreal_532/Plugins/... //Depot/Plugins-Main/5.3.2/Plugins...
-</code></pre></div></div>
+<p>The game is still under heavy development, but we’ve got tons of exciting things about its progress to share. We’ll be rolling out more updates, adding new features to the site, and preparing for the next big milestone in the game’s development. Be sure to check back here for all the latest info. Our goal is simple: To make this the best place for everything related to development of the game.</p>
 
-<p>The “share …” is required for the files in the stream to be retrieved and any other paths we need can be added under it as seen here.
-To map our Plugins from their self-contained depot to our project, we use the “import” type view.  This allows us to source the plugins from their location, but not allow them to submit changes (although this can be changed to import+ to get around that).</p>
+<ul>
+  <li>
+    <p><strong>Community News:</strong> We’re building something special here, and we want you to be a part of it. Our community is where you can connect with fellow fans, share feedback, discuss gameplay mechanics, and even take part in early playtests. Your input is invaluable, and we’re all ears.</p>
+  </li>
+  <li>
+    <p><strong>Development Updates:</strong> Stay in the loop with regular updates straight from the development. You’ll get insight into new features, ongoing changes, and sneak peeks at what’s coming next. We’re committed to keeping you informed every step of the way.</p>
+  </li>
+</ul>
 
-<p>This imported path inherits its view from the parent and all the files can be mapped to a location within the client’s workspace.  Imported files will then be shown with the “halo” icon within the client workspace:
-<a href="https://david-miller.life/images/halo.png"><img src="https://david-miller.life/images/halo.png" alt="Halo" /></a></p>
+<p><a href="https://youtu.be/jku7vaf1ppU"><img src="https://img.youtube.com/vi/jku7vaf1ppU/0.jpg" alt="DialogueTest" /></a></p>
 
-<p>You can read more about the case-study here:
-<a href="https://www.perforce.com/customers/case-studies/vcs/halon">https://www.perforce.com/customers/case-studies/vcs/halon</a></p>
+<ul>
+  <li>
+    <p><strong>Features &amp; Gameplay:</strong> Want to know more about the mechanics of <strong>Winds of Almerra</strong>? We’ve got you covered. Check out detailed articles, videos, and tutorials that explore the gameplay systems, world-building, and storylines you’ll encounter.</p>
+  </li>
+  <li>
+    <p><strong>Demo Content:</strong> Watch AI combat arena testing rounds running the latest code updates, and more in-depth gameplay excerpts behind <strong>Winds of Almerra</strong>. We share every stage of the journey!</p>
+  </li>
+</ul>
 
-<p><strong>Summary:</strong><br />
-Halon used Perforce Helix Core to manage their growing codebase and streamline collaboration. By adopting streams and advanced version control features, they improved workflow efficiency, reduced integration issues, and enabled faster product delivery. The case study highlights how mapping views and stream imports helped Halon scale development while maintaining control and flexibility.</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[Linking depots into other streams with import to decrease maintainance and costs.]]></summary></entry><entry><title type="html">CSV Importer &amp;amp; Asset Tagging</title><link href="http://localhost:4000/blog/asset_tagging" rel="alternate" type="text/html" title="CSV Importer &amp;amp; Asset Tagging" /><published>2025-04-29T00:00:00-07:00</published><updated>2025-04-29T00:00:00-07:00</updated><id>http://localhost:4000/blog/asset_tagging</id><content type="html" xml:base="http://localhost:4000/blog/asset_tagging"><![CDATA[<h3 id="csv-importer--asset-tagging">CSV Importer &amp; Asset Tagging</h3>
+<p><a href="https://youtu.be/8-PKAH59Xqk"><img src="https://img.youtube.com/vi/8-PKAH59Xqk/0.jpg" alt="Arena" /></a></p>
 
-<p>Many times when dealing with converting data in-engine into lightweight gameplay assets or when having to do execute small tasks on many types of assets all at once, we utilize Python.  Depending on the project and requirement we may run this headlessly through the UE4Editor-Cmd.exe, or through an in-editor script–but it will generally use the same classes either way.</p>
+<p><strong>Stay tuned, stay excited, and stay connected!</strong> 🚀🎮</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[We’ve been hard at work behind the scenes, and we can’t wait to share everything we’ve been building with you. Whether you're an early supporter or just discovered our game, we’re thrilled to have you along for the ride!]]></summary></entry><entry><title type="html">About</title><link href="http://localhost:4000/blog/about_about" rel="alternate" type="text/html" title="About" /><published>2000-01-01T00:00:00-08:00</published><updated>2000-01-01T00:00:00-08:00</updated><id>http://localhost:4000/blog/about_about</id><content type="html" xml:base="http://localhost:4000/blog/about_about"><![CDATA[<h3 id="wip">WIP</h3>
+<h3 id="what-is-almerra">What is Almerra?</h3>
+<p><a href="https://youtu.be/A6aebT5WpS8" title="Teaser"><img src="https://img.youtube.com/vi/A6aebT5WpS8/0.jpg" alt="Teaser" /></a></p>
 
-<p>To read/write a datable previously imported, we simply pass an in-engine asset’s package path in through a load_object in order to cast to the datatable class, like you would for an import of the asset.  From here we can then play with parameters:</p>
+<p><strong>Almerra is an WIP open-world, iron age action rpg that puts the player in command of the conquest of rival nations with troops, cavalry and naval vessels thru branching storylines, battles and historically-based events.</strong></p>
 
-<p><a href="https://david-miller.life/images/datalayer_load.png"><img src="https://david-miller.life/images/datalayer_load.png" alt="Tagging" /></a></p>
+<p>The vast, unforgiving lands of Almerra are built on the unique islands and continents scattered across the oceanic world.  A diverse set of climates separate the landscapes ranging from dry hot deserts to swampy jungles and frozen northlands.  Many cultures inhabit the world and learning how to effectively cooperate or conquer these rivals will be the deciding factor in which peoples suffer and which ones prosper.</p>
 
-<p>You can then find out the type of struct used by any Data Table by reading the “row_struct” property of the object we casted to:</p>
+<p>Supported by a fully open-world environment, real-time actions can alter the history of any nation from global superpower to national tragedy.  Governance, Military and Economical decisions drive the development of each Nation as the player’s choices become pivotal events thru the march of time.  Who will rise?  Who will fall?</p>
 
-<p><a href="https://david-miller.life/images/tags_popup.png"><img src="https://david-miller.life/images/get_struct.png" alt="Tagging" /></a>
-<a href="https://david-miller.life/images/tags_set.png"><img src="https://david-miller.life/images/tags_set.png" alt="Tagging" /></a></p>
+<h3 id="the-peoples-of-almerra">The Peoples of Almerra</h3>
 
-<p>The known struct can then be added to the params of the unreal.CSVImportFactory()’s automated import settings, as part of the unreal.AssetImportTask():</p>
+<p>Winds of Almerra has many cultures, some originating from a religion, some an idealistic vision of a grand civilization, and some simply looking to survive by any means.</p>
 
-<p><a href="https://david-miller.life/images/datalayer_import.png"><img src="https://david-miller.life/images/datalayer_import.png" alt="Tagging" /></a></p>
+<p>The world features over 60 mi² of fully detailed, traverse-able ocean and land inhabited by all manners of nature and civilization from undeveloped tribes surviving in harsh rainforests to sprawling city-states with sophisticated government and architecture.  Many will need to depend on each other to thrive.  The player’s leadership thru combat and choices can alter the course of history for all.</p>
 
-<p>With the import settings in place, we can use the same object cast to set tags within the Editor Asset Library.  In this case the table itself is used during game play to store localized  arrays of vectors, so it gets a tag to denote its purpose and feature:</p>
+<h3 id="procedural-economies-and-conquest">Procedural Economies and Conquest</h3>
 
-<p><a href="https://david-miller.life/images/tags_show.png"><img src="https://david-miller.life/images/tags_show.png" alt="MainImage" /></a></p>
+<p>At the heart of Almerra is the desire for a fully-living iron age world driven by global conquest.  Every city and capitol act as their own power–much like a traditional RTS strategy game like in Age of Empires.  Each hinges on it’s ability to feed its people, protect itself thru defenses, and by establishing trade and a healthy economy to achieve prosperity and population.</p>
 
-<p><a href="https://david-miller.life/images/tags_popup.png"><img src="https://david-miller.life/images/tags_popup.png" alt="Tagging" /></a></p>
+<p>Nations wage wars thru raids, sieges and naval engagements in real-time, seamless combat.  Command or lead, fight or flight, attack or ambush, sea or land.</p>
 
-<p>Using tags we can track not only whether an asset is mission-critical, but also implement things like asset timestamps, changelists, or hooks for other scripting processes.</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[Using tags we can track not only whether an asset is mission-critical, but also implement things like asset timestamps, changelists, or hooks for other scripting processes.]]></summary></entry><entry><title type="html">Asset Renderer for Turntable Automation</title><link href="http://localhost:4000/blog/asset_renderer" rel="alternate" type="text/html" title="Asset Renderer for Turntable Automation" /><published>2024-09-03T00:00:00-07:00</published><updated>2024-09-03T00:00:00-07:00</updated><id>http://localhost:4000/blog/asset_renderer</id><content type="html" xml:base="http://localhost:4000/blog/asset_renderer"><![CDATA[<h3 id="asset-renderer-for-turntable-automation">Asset Renderer for Turntable Automation</h3>
+<p>Conquer or be conquered.</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[WIP What is Almerra?]]></summary></entry><entry><title type="html">About</title><link href="http://localhost:4000/blog/about_nations" rel="alternate" type="text/html" title="About" /><published>2000-01-01T00:00:00-08:00</published><updated>2000-01-01T00:00:00-08:00</updated><id>http://localhost:4000/blog/about_nations</id><content type="html" xml:base="http://localhost:4000/blog/about_nations"><![CDATA[<h3 id="wip">WIP</h3>
 
-<p>In some projects, the sheer amount of static mesh and skeletal mesh content used to make a show, movie or a game can be substantial.  For times when lots of custom art is being updated, it will also be important to produce new renders for review.  This widget is a python script configuration tool to run the package which scours the registry, and produces sequencers, then adds them to a movie render queue for every asset of whatever things we want to select.</p>
+<h3 id="alyssakin-freetribe">Alyssakin Freetribe</h3>
+<p><img src="https://simsaladoo.github.io/winds-of-almerra/img/flags/FlagNative.png" alt="Nation0" /></p>
 
-<p>How it works</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[In some projects, the sheer amount of static mesh and skeletal mesh content used to make a show, movie or a game can be substantial.]]></summary></entry><entry><title type="html">Static Mesh Masking</title><link href="http://localhost:4000/blog/static_mesh_masking" rel="alternate" type="text/html" title="Static Mesh Masking" /><published>2023-10-08T00:00:00-07:00</published><updated>2023-10-08T00:00:00-07:00</updated><id>http://localhost:4000/blog/static_mesh_masking</id><content type="html" xml:base="http://localhost:4000/blog/static_mesh_masking"><![CDATA[<h3 id="static-mesh-masking">Static Mesh Masking</h3>
+<p>Alyssakin carry on the old ways of the Alyssakin Freetribe, focusing their lives into their spears.  They hunt with spears, fish with spears and live off the far reaching lands of the world.  The Alyssakin have developed their own styles of ship creation and combat, making them a versatile foe in any battle.  Their civilization has problems with bandits and finding natural minerals, but, being ungoverned, also have no respect among any other nations.</p>
 
-<p>For a KSP2 trailer I worked on, we needed a cheap easy way to animate a time-lapse building up of a moon base.  The assets in the environment all used basic default collision and were laid out in-engine with centered pivots.  Easy work!</p>
+<h3 id="rowani-empire">Rowani Empire</h3>
+<p><img src="https://simsaladoo.github.io/winds-of-almerra/img/flags/FlagRowani.png" alt="Nation1" /></p>
 
-<p><a href="https://david-miller.life/images/tags_popup.png"><img src="https://david-miller.life/images/tags_popup.png" alt="MainImage" /></a></p>
+<p>The Rowani occupy the old city of Peruge, which was slowly rebuilt over the last 5 years as most of the city was destroyed. Unfortunately many peoples suffer in this nation under the rule of Emporer Sepitus, who seeks to rebuild the old kingdom in his own vision.  The Rowani possess the greatest amount of natural resources in their lands, but the nation is constantly engulfed in civil war.</p>
 
-<p>How it works</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[For a KSP2 trailer I worked on, we needed a cheap easy way to animate a time-lapse building up of a moon base.]]></summary></entry><entry><title type="html">Foliage Converter</title><link href="http://localhost:4000/blog/foliage_copier" rel="alternate" type="text/html" title="Foliage Converter" /><published>2023-08-12T00:00:00-07:00</published><updated>2023-08-12T00:00:00-07:00</updated><id>http://localhost:4000/blog/foliage_copier</id><content type="html" xml:base="http://localhost:4000/blog/foliage_copier"><![CDATA[<h3 id="foliage-converter">Foliage Converter</h3>
+<h3 id="republic-of-graata">Republic of Graata</h3>
+<p><img src="https://simsaladoo.github.io/winds-of-almerra/img/flags/FlagGraata.png" alt="Nation2" /></p>
 
-<p>The purpose of this tool is to provide a simple work around for being able to re-use instances of meshes by copying in-engine painted foliage into new actors that we can control as normal.</p>
+<p>The Graata are a democratic Republic in the northeastern corners of the world, and are the second largest continent of Almerra.  The Republic of Graata has been at war with the Rowani since the Great Migration, headed by a council of elected Lords from the surrounding lands.  Graatian Lords have long been trying to help overthrow the reign of the Rowani Emporer Sepitus to help restore balance to the world, but they face constant adversity in the seas from the Neagese to their North.</p>
 
-<p>Many Tools already exist for this on the marketplace, especially ones more powerful like the Instance Tool, which is used from time to time. This Foliage Copier tool however is not a plugin, and can be freely copied with its actor component across to any projects without needing to edit configs. It even works in UE5 projects since it is created in 4.27.2.
-Below is a test scene created with multiple sublevels all containing foliage, and will be used to demonstrate the process. The scene contains a few thousand trees, grasses and sandbags.</p>
+<h3 id="neagese-dynasty">Neagese Dynasty</h3>
+<p><img src="https://simsaladoo.github.io/winds-of-almerra/img/flags/FlagNeagese.png" alt="Nation3" /></p>
 
-<p><a href="https://david-miller.life/images/foliage_ui.png"><img src="https://david-miller.life/images/foliage_ui.png" alt="Tagging" /></a></p>
+<p>The Neagese are a hardy nation of swordsmen and survivors that live in the harsh frozen northern lands of Almerra.  They have talent with building hardy ships to help resist the extreme climate, but are also very stubborn as a people.  Their nation is ruled by a democratic round-table of Lords, each with their own motivations and relations.  The Neagese trade with the Rowani almost exclusively due to their shared faith in the Sect of the 8 Gods.  Some of the Lords hold grudges against the Graata, and constantly cause them problems.</p>
 
-<p><a href="https://david-miller.life/images/foliageactor.png"><img src="https://david-miller.life/images/foliageactor.png" alt="Tagging" /></a></p>
+<h3 id="monayan-kingdom">Monayan Kingdom</h3>
+<p><img src="https://simsaladoo.github.io/winds-of-almerra/img/flags/FlagMons.png" alt="Nation4" /></p>
 
-<p>The Tool itself is relatively simple, you simply click the drop-down and select the foliage instance type you’d like to copy.
-With it selected, your can click ‘Create Copy’ and create an Instanced static mesh class object with the same foliage geometry, material and transforms copied over.</p>
+<p>The Monayans have lived in near-isolation to the Southeast of the rest of Almerra for centuries.  A godless mountain-dwelling people, the Monayans are the most creative in their engineering and in their art forms.  The Monaya are talented swimmers and fighters, but face problems with natural resources being raided by bandits and Rowani forces.  Mons trade with and have a fairly positive relationship with the Graata, but are typically more isolated and untraveled culturally.</p>
 
-<p><a href="https://david-miller.life/images/foliage_ui.gif"><img src="https://david-miller.life/images/foliage_ui.gif" alt="MainImage" /></a></p>
+<h3 id="other-uncontacted-tribes">Other Uncontacted Tribes</h3>
 
-<p>The tool can convert the copied instances into meshes back and forth as needed to make layout pruning a breeze.</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[The tool can convert the copied instances into meshes back and forth as needed to make layout pruning a breeze.]]></summary></entry><entry><title type="html">Sequence Pass Generator</title><link href="http://localhost:4000/blog/sequence_pass_generation" rel="alternate" type="text/html" title="Sequence Pass Generator" /><published>2023-02-17T00:00:00-08:00</published><updated>2023-02-17T00:00:00-08:00</updated><id>http://localhost:4000/blog/sequence_pass_generation</id><content type="html" xml:base="http://localhost:4000/blog/sequence_pass_generation"><![CDATA[<h3 id="sequence-pass-generator">Sequence Pass Generator</h3>
+<p>There are also still many undeveloped territories in Almerra where wild, tribal peoples inhabit the harsh wilds.  Some are told to be somewhat peaceful but the latter never leave any evidence otherwise.</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[WIP]]></summary></entry><entry><title type="html">About</title><link href="http://localhost:4000/blog/about_world" rel="alternate" type="text/html" title="About" /><published>2000-01-01T00:00:00-08:00</published><updated>2000-01-01T00:00:00-08:00</updated><id>http://localhost:4000/blog/about_world</id><content type="html" xml:base="http://localhost:4000/blog/about_world"><![CDATA[<h3 id="wip">WIP</h3>
+<h3 id="interacting-with-the-world">Interacting with the World</h3>
 
-<p>Sometimes in post-viz, its necessary to bake out other unreal passes so they could be used in editing for extra shadow, reflections and effects work.  This becomes a huge task when there are hundreds of cameras and episodes, so finding a means of automating the changing of level sequencer tracks, level streaming settings, and manicuring pass settings and rendering them is a massive time-saver.</p>
+<p>Every Nation, City and Village in the world is fully simluated across multiple Threads that operate their economy and AI whether the player is present or not.  Each one has its own regional attributes, military units and trade operations that respond to their surroundings.  Some are near to hostile Nations and Tribes and must focus on defense and martial professions, whereas some others prioritise peaceful trade and order.  Depending on what actions the player may take, they can all be influenced to forge future Alliances to differing goals.</p>
 
-<p><a href="https://david-miller.life/images/sequence_tool.gif"><img src="https://david-miller.life/images/sequence_tool.gif" alt="MainImage" /></a></p>
+<p>Below is a short clip of entering the town and having the data come to life, with a small number of inhabitants in a work-in-progress Village.</p>
 
-<p>This tool utilizes python to make copies of selected level sequences in order to tag and associate Render Queue settings with individual shots.  This lets you make any adjustments to, say FX passes, separate from your existing shot’s settings, as well as for Reflections and shadows.</p>
+<p><a href="https://www.youtube.com/watch?v=jku7vaf1ppU&amp;list=PLLcxd4soKLM7Wa4h2sFvUjYCaAIBJf5Lb" title="Dev Scrolls - Threaded AI LODs and Dialogues"><img src="http://img.youtube.com/vi/jku7vaf1ppU/0.jpg" alt="Interaction" /></a></p>
 
-<p>In the gif above, we select all 3 of the project’s shots, and generate 4 separate passes for each one.  Not shown here, the newly created assets also receive metadata tags to associate each one with a specific Render Queue Setting, so that various rendering tricks for each one can be applied.  Also not shown, the tool adds Level Visibility Tracks for each pass to know which sublevels can be turned on and off–required for creating FX and shadow passes.</p>
+<h3 id="world-travel">World Travel</h3>
 
-<p>The paths on each shot-object in the UI also act as links to make finding the sequences more easily in the editor.  It makes use of a super-fun Editor Asset Library class method called ‘sync_browser_to_objects’ that lets you point the content browser to any /Game/ asset path:</p>
+<p>Accessed via the World Map, time compression in Almerra allows for unrestricted passage to anywhere in the world within a short time as long as you are not in combat.  This is built upon on a grid-based data system, able to access any world-specific data via its coordinate in a database.  While in Auto-Travel, every square travelled consumes turns that advances the AI as well, and decisions will have sometimes unforseen impacts that can cause turmoil and topple reigemes.</p>
 
-<p><a href="https://david-miller.life/images/sync_browser.png"><img src="https://david-miller.life/images/sync_browser.png" alt="Tagging" /></a></p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[The paths on each shot-object in the UI also act as links to make finding the sequences more easily in the editor.]]></summary></entry><entry><title type="html">Screenshot Tool</title><link href="http://localhost:4000/blog/screenshot_tool" rel="alternate" type="text/html" title="Screenshot Tool" /><published>2022-11-03T00:00:00-07:00</published><updated>2022-11-03T00:00:00-07:00</updated><id>http://localhost:4000/blog/screenshot_tool</id><content type="html" xml:base="http://localhost:4000/blog/screenshot_tool"><![CDATA[<h3 id="screenshot-tool">Screenshot Tool</h3>
+<p>World Travel via the map is usable at anytime while travelling via a Landcraft or Watercraft, the latter behind the only way of <em>affectively</em> crossing the seas.  <em>(Mistakes have been made)</em></p>
 
-<p>As you select cameras from the list, the bottom of the Tool will display the preconstructed directory and name of each image to be exported. It will create this from the path beginning with the show:</p>
+<p><a href="https://www.youtube.com/watch?v=QeITXEhehkc&amp;list=PLLcxd4soKLM7Wa4h2sFvUjYCaAIBJf5Lb&amp;index=12" title="DataBuilder"><img src="http://img.youtube.com/vi/QeITXEhehkc/0.jpg" alt="Worlddata" /></a></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Show Name\artists\User Name\Screenshots\Level Name\Current Date\
-</code></pre></div></div>
+<h3 id="watercraft">Watercraft</h3>
+<p>The various Nations all employ some forms of Nautical vessels in their Economy and Military, with each one being based on their regional resources and historical experience.  They use them to haul specific goods which require different considerations for how they build them, and also have differences in how theyre used tactically by their respective military doctrines.</p>
 
-<p>Then it will append the following to be used as each screenshots name:</p>
+<p>Below are some initial Player-Controller tests for climbing aboard, interacting and riding the base class which is still under heavy development.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EnvironmentName_CameraName_VolumeStatus_Date_UserName
-</code></pre></div></div>
+<p><a href="https://www.youtube.com/watch?v=R-2igygUVRc&amp;list=PLLcxd4soKLM7Wa4h2sFvUjYCaAIBJf5Lb&amp;index=4" title="Seamanship"><img src="http://img.youtube.com/vi/R-2igygUVRc/0.jpg" alt="Seamanship" /></a></p>
 
-<p>You can see this functionality in the below image:</p>
+<h3 id="landcraft">Landcraft</h3>
+<p>There are all sorts of operational objects within the world including Ballistas, Siege Catapults, and War Elephants beyond the usual Horse and Camel.  Master of them all through commanding your troops will ensure no enemies stand in your way!</p>
 
-<p>It requires the basic python scripting plugin to be enabled, and an export location to be specified in the Tool’s python package:</p>
+<p><img src="https://simsaladoo.github.io/winds-of-almerra/img/mounts.jpg" alt="Mounts" /></p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[WIP Interacting with the World]]></summary></entry><entry><title type="html">About</title><link href="http://localhost:4000/blog/about_combat" rel="alternate" type="text/html" title="About" /><published>2000-01-01T00:00:00-08:00</published><updated>2000-01-01T00:00:00-08:00</updated><id>http://localhost:4000/blog/about_combat</id><content type="html" xml:base="http://localhost:4000/blog/about_combat"><![CDATA[<h3 id="wip">WIP</h3>
+<h3 id="mount--blade-influenced">Mount &amp; Blade influenced</h3>
+<p>This gameplay is then placed into an expansive, seamless open-world, with multiple continents only explorable through sailing the vast seas of Almerra.  The vessels are both in-use by the many Nations and purchase-able by the player to be used to freely roam and transport forces and goods.  Certain larger vessels can even transport the various Mounts (within reason) used by heavy cavalry for that extra Age of Empires-influenced kick.</p>
 
-<p><a href="https://david-miller.life/images/plugin.png"><img src="https://david-miller.life/images/plugin.png" alt="MainImage" /></a></p>
+<p><a href="https://www.youtube.com/watch?v=lVD4xHvw8l0&amp;list=PLLcxd4soKLM4e8CncVTpEXcbgPh8Cy9rZ" title="Mount &amp; Blade"><img src="https://img.youtube.com/vi/lVD4xHvw8l0/0.jpg" alt="Mount &amp; Blade" /></a></p>
 
-<p>How it works</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[As you select cameras from the list, the bottom of the Tool will display the preconstructed directory and name of each image to be exported.]]></summary></entry><entry><title type="html">Deterministic Ocean Buoyancy</title><link href="http://localhost:4000/blog/buoyancy" rel="alternate" type="text/html" title="Deterministic Ocean Buoyancy" /><published>2021-05-22T00:00:00-07:00</published><updated>2021-05-22T00:00:00-07:00</updated><id>http://localhost:4000/blog/buoyancy</id><content type="html" xml:base="http://localhost:4000/blog/buoyancy"><![CDATA[<h3 id="deterministic-ocean-buoyancy">Deterministic Ocean Buoyancy</h3>
+<h3 id="ai-combat-testing">AI Combat Testing</h3>
+<p>Almerra is heavily inspired by the Mount &amp; Blade series, using player-driven directional movement and attacks with velocity modifiers to dictate the force behind each swing.  This is partnered with physical materials and other features within Unreal to model the combat stat structures.</p>
 
-<p>Implementing walkable boats for player &amp; AI</p>
-
-<p><a href="https://david-miller.life/images/bounce.gif"><img src="https://david-miller.life/images/bounce.gif" alt="MainImage" /></a></p>
-
-<p>The result at a flat z=26000</p>
-
-<p>I began with using a hidden static mesh as physical collision for characters–and a skeletal mesh copy of the same geo with jointed components for the on-screen representation.  The purpose being to separate the “stable” platform for movement and collisions while still allowing for simple rigged animations for oars, sail direction and other interact-able components.</p>
-
-<p>For the buoyancy calculation, it is extremely simplified using an array of 4 relative vectors shown in the gif above as attached spheres.  While above water they turn yellow and blue when floating, doing so then makes a little splash on the bow and stern (hoping to futher map more types of splashes based on the type of hull in the future).</p>
-
-<p>Physics in-engine is used on the actor as a whole, implemented on the same vector array of points by utilizing:
-UPrimitiveComponent::AddForceAtLocation(FVector Force, FVector Location)
-to give us the bounce!</p>
-
-<p>Mapping Buoyancy Arrays to Hulls</p>
-
-<p><a href="https://david-miller.life/images/types.gif"><img src="https://david-miller.life/images/types.gif" alt="Tagging" /></a></p>
-
-<p>The various types of boats available then presented a new set of factors where the mass &amp; volume needed to be accounted for without adding further calculation.  The current solution was to simply map out vector translators and other vessel attributes to a datatable to hold and use those static properties.</p>
-
-<p>Using an enum of each vessel’s name then gave it a simple drop-down per craft type to able to switch between all of them on the fly as we can see above.</p>
-
-<p>A floating point for floating time</p>
-
-<p><a href="https://david-miller.life/images/floating.gif"><img src="https://david-miller.life/images/floating.gif" alt="Tagging" /></a></p>
-
-<p>Part of the scope in this buoyancy system is allowing for in-game ‘time compression’ to show up on the waves while the player is travelling across the 3D worldmap,  similarly done in Silent Hunter and other tactical submarine games that have a 3D view.</p>
-
-<p>To allow for wind speed and direction changes from weather events as well as time compression from the player, we have two separate floats to multiply against the global amplitude, velocity and orientation of the ocean’s gerstner waves.</p>
-
-<p>The result is now letting us turn on the waves at any time, shown in the above picture,by setting new values into amplitude</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[To allow for wind speed and direction changes from weather events as well as time compression from the player, we have two separate floats to multiply against the global amplitude, velocity and orientation of the ocean's gerstner waves.]]></summary></entry><entry><title type="html">Data Layering with Image to CSV Conversion</title><link href="http://localhost:4000/blog/image_data_layering" rel="alternate" type="text/html" title="Data Layering with Image to CSV Conversion" /><published>2018-03-26T00:00:00-07:00</published><updated>2018-03-26T00:00:00-07:00</updated><id>http://localhost:4000/blog/image_data_layering</id><content type="html" xml:base="http://localhost:4000/blog/image_data_layering"><![CDATA[<h3 id="data-layering-using-image-to-csv-conversion">Data Layering using Image to CSV Conversion</h3>
-
-<p><a href="https://david-miller.life/images/datalayer_diagram.png"><img src="https://david-miller.life/images/datalayer_diagram.png" alt="MainImage" /></a></p>
-
-<p>(Happy data generated using ‘B’ color values, slightly warped just due to my column sizing in excel :) )</p>
-
-<p><a href="https://david-miller.life/images/datalayer_happy.png"><img src="https://david-miller.life/images/datalayer_happy.png" alt="Tagging" /></a></p>
-
-<p><a href="https://david-miller.life/images/datalayer_load.png"><img src="https://david-miller.life/images/datalayer_num.png" alt="Tagging" /></a></p>
-
-<p>This is easy peasy in C#!  The struct for the Y alignment columns needs be to setup in Unreal according to the image’s resolution.  The above is using a 64 x 64 image, and is read/wrote using System.Data; and System.Drawing;</p>
-
-<p>The method involves taking a specific pixel via:
-System.Drawing.Color pixelColor = testimage.GetPixel(x, y);</p>
-
-<p>and breaking it into its R,G,B component via:
-string pixelColorStringValue = pixelColor.B.ToString(“D3”);</p>
-
-<p>From there its as simple as adding the image, using Width and Height into loops based on a set image size to bookend the comma deliminator.  Now you can draw any kind of data within Photoshop!</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[From there its as simple as adding the image, using Width and Height into loops based on a set image size to bookend the comma deliminator. Now you can draw any kind of data within Photoshop!]]></summary></entry></feed>
+<p><a href="https://www.youtube.com/watch?v=8-PKAH59Xqk&amp;list=PLLcxd4soKLM6ebqlardgRkrnSnlG_CmT_" title="Arena AI Combat Testing"><img src="https://img.youtube.com/vi/8-PKAH59Xqk/0.jpg" alt="Arena" /></a></p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[WIP Mount &amp; Blade influenced This gameplay is then placed into an expansive, seamless open-world, with multiple continents only explorable through sailing the vast seas of Almerra. The vessels are both in-use by the many Nations and purchase-able by the player to be used to freely roam and transport forces and goods. Certain larger vessels can even transport the various Mounts (within reason) used by heavy cavalry for that extra Age of Empires-influenced kick.]]></summary></entry></feed>

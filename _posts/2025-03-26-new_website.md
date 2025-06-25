@@ -1,3 +1,14 @@
+---
+title: New Website!
+layout: post
+post-image: "https://img.youtube.com/vi/jku7vaf1ppU/0.jpg"
+description: We’ve been hard at work behind the scenes, and we can’t wait to share everything we’ve been building with you. Whether you're an early supporter or just discovered our game, we’re thrilled to have you along for the ride!
+tags:
+- sample
+- post
+- test
+---
+
 ### Welcome Almerran citizens!
 
 Welcome to the new **Almerra** website – your one-stop hub for all the latest news, updates, and exclusive content about the game.   

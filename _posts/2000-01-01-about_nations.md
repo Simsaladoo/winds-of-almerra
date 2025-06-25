@@ -1,3 +1,14 @@
+---
+title: About
+layout: post
+post-image: "https://almerra.com/img/bg-3.png"
+description:   
+tags:
+- sample
+- post
+- test
+---
+
 ### WIP
 
 ### Alyssakin Freetribe

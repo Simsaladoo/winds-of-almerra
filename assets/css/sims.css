@@ -20,6 +20,8 @@
     min-width: 150px;
     width: 300px;
     height: 300px;
+    justify-content: center;
+    align-items: center;
 }
 
 .mainlogo img {

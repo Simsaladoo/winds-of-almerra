@@ -84,3 +84,7 @@
 .card-content {
     padding: 1.25rem!important;
 }
+
+.image.is-3by1 {
+    padding-top:100%!important;
+}

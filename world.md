@@ -1,7 +1,7 @@
 ---
 title: World
 layout: post
-post-image: "https://almerra.com/asssets/images/bg-1.png"
+post-image: "https://almerra.com/assets/images/mounts.jpg"
 description:   
 tags:
 - sample
@@ -39,5 +39,5 @@ Below are some initial Player-Controller tests for climbing aboard, interacting 
 There are all sorts of operational objects within the world including Ballistas, Siege Catapults, and War Elephants beyond the usual Horse and Camel.  Master of them all through commanding your troops will ensure no enemies stand in your way!
 
 
-![Mounts](https://simsaladoo.github.io/winds-of-almerra/img/mounts.jpg)
+![Mounts](https://almerra.com/assets/images/mounts.jpg)
 

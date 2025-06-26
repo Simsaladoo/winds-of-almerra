@@ -10,6 +10,13 @@
     background: linear-gradient(0deg, #000 0%, rgba(0,0,0,0.0) 100%)!important;
 }
 
+.mainlogo {
+    background-image: url('https://almerra.com/assets/images/logo.png');
+    width: auto;
+    height: auto;
+}
+
+
 .footer a img {
     width: 26px;
     height: 26px;

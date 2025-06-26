@@ -1,7 +1,7 @@
 ---
 title: World
 layout: post
-post-image: "https://almerra.com/img/bg-3.png"
+post-image: "https://almerra.com/asssets/images/bg-1.png"
 description:   
 tags:
 - sample

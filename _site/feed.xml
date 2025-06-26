@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-25T16:14:36-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Winds of Almerra</title><subtitle>Winds of Almerra</subtitle><entry><title type="html">Humble Beginnings</title><link href="http://localhost:4000/blog/humble_beginnings" rel="alternate" type="text/html" title="Humble Beginnings" /><published>2025-06-25T00:00:00-07:00</published><updated>2025-06-25T00:00:00-07:00</updated><id>http://localhost:4000/blog/humble_beginnings</id><content type="html" xml:base="http://localhost:4000/blog/humble_beginnings"><![CDATA[<h3 id="humble-beginnings">Humble beginnings</h3>
+
+<p>The development of a fully open-world RPG has so many ingredients.  From the core gameplay loops to the mechanics and are generally easier said than done.  Take Witcher 3, for example–Take a contract, investigate, resolve it, get paid (or not), and repeat.  But in doing each of those steps the player will utilize movement, UI, NPC interactions, combat system, inventory, world/level design, shader performance and tech and SO much more.</p>
+
+<p>Almerra has had very few people putting in thousands of hours to fully flesh out and understand how to accomplish similar systems, and they were uninteresting and just bad through the majority of the development.</p>
+
+<p>[<img src="https://almerra.com/img/bg-2.png" alt="DialogueTest" /></p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[The development of a fully open-world RPG has so many ingredients. From the core gameplay loops to the mechanics and are generally easier said than done. Take Witcher 3, for example--Take a contract, investigate, resolve it, get paid (or not), and repeat. But in doing each of those steps the player will utilize movement, UI, NPC interactions, combat system, inventory, world/level design, shader performance and tech and SO much more.]]></summary></entry><entry><title type="html">New Website!</title><link href="http://localhost:4000/blog/new_website" rel="alternate" type="text/html" title="New Website!" /><published>2025-03-26T00:00:00-07:00</published><updated>2025-03-26T00:00:00-07:00</updated><id>http://localhost:4000/blog/new_website</id><content type="html" xml:base="http://localhost:4000/blog/new_website"><![CDATA[<h3 id="welcome-almerran-citizens">Welcome Almerran citizens!</h3>
+
+<p>Welcome to the new <strong>Almerra</strong> website – your one-stop hub for all the latest news, updates, and exclusive content about the game.</p>
+
+<p>We’ve been hard at work behind the scenes, and we can’t wait to share everything we’ve been building with you. Whether you’re an early supporter or just discovered our game, we’re thrilled to have you along for the ride!</p>
+
+<h3 id="join-us-on-this-journey">Join Us on This Journey</h3>
+
+<p>The game is still under heavy development, but we’ve got tons of exciting things about its progress to share. We’ll be rolling out more updates, adding new features to the site, and preparing for the next big milestone in the game’s development. Be sure to check back here for all the latest info. Our goal is simple: To make this the best place for everything related to development of the game.</p>
+
+<ul>
+  <li>
+    <p><strong>Community News:</strong> We’re building something special here, and we want you to be a part of it. Our community is where you can connect with fellow fans, share feedback, discuss gameplay mechanics, and even take part in early playtests. Your input is invaluable, and we’re all ears.</p>
+  </li>
+  <li>
+    <p><strong>Development Updates:</strong> Stay in the loop with regular updates straight from the development. You’ll get insight into new features, ongoing changes, and sneak peeks at what’s coming next. We’re committed to keeping you informed every step of the way.</p>
+  </li>
+</ul>
+
+<p><a href="https://youtu.be/jku7vaf1ppU"><img src="https://img.youtube.com/vi/jku7vaf1ppU/0.jpg" alt="DialogueTest" /></a></p>
+
+<ul>
+  <li>
+    <p><strong>Features &amp; Gameplay:</strong> Want to know more about the mechanics of <strong>Winds of Almerra</strong>? We’ve got you covered. Check out detailed articles, videos, and tutorials that explore the gameplay systems, world-building, and storylines you’ll encounter.</p>
+  </li>
+  <li>
+    <p><strong>Demo Content:</strong> Watch AI combat arena testing rounds running the latest code updates, and more in-depth gameplay excerpts behind <strong>Winds of Almerra</strong>. We share every stage of the journey!</p>
+  </li>
+</ul>
+
+<p><a href="https://youtu.be/8-PKAH59Xqk"><img src="https://img.youtube.com/vi/8-PKAH59Xqk/0.jpg" alt="Arena" /></a></p>
+
+<p><strong>Stay tuned, stay excited, and stay connected!</strong> 🚀🎮</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[We’ve been hard at work behind the scenes, and we can’t wait to share everything we’ve been building with you. Whether you're an early supporter or just discovered our game, we’re thrilled to have you along for the ride!]]></summary></entry></feed>

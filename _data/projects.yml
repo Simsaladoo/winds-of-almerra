@@ -1,20 +1,17 @@
 - name: Strategic Hack & Slash Combat
-  image: https://almerra.com/img/bg-1.png
-  link: https://almerra.com/blog/humble_beginnings.html
+  image: https://almerra.com/assets/images/bg-1.png
+  link: https://almerra.com/combat
   description: Hack n' Slash Combat with battalions of early iron-age troops clashing across land and sea.
 - name: About the Game
-  link: https://almerra.com/blog/humble_beginnings.html
-  image: https://almerra.com/img/bg-1.png
+  link: https://almerra.com/about
+  image: https://almerra.com/assets/images/bg-1.png
   description: TBD
 - name: Nations of Almerra
-  link: https://almerra.com/blog/humble_beginnings.html
-  image: https://almerra.com/img/bg-1.png
+  link: https://almerra.com/nations
+  image: https://almerra.com/assets/images/bg-1.png
   description: TBD
 - name: The World
-  link: https://almerra.com/blog/humble_beginnings.html
-  image: https://almerra.com/img/bg-1.png
+  link: https://almerra.com/world
+  image: https://almerra.com/assets/images/bg-1.png
   description: TBD
-- name: TBD
-  link: https://almerra.com/blog/humble_beginnings.html
-  image: https://almerra.com/img/bg-1.png
-  description: TBD
+

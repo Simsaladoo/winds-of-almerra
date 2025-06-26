@@ -1,0 +1,96 @@
+markdown: kramdown
+
+# URL of the Site
+url: ''
+# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
+baseurl:
+
+# Title of the Site
+title: Winds of Almerra
+# Description of the Site
+description: Winds of Almerra
+# URL of Image of the Site
+site-image: /assets/images/bg-1.png
+# Keywords of the Site
+site-keywords: Winds of Almerra, RPG, Unreal Engine
+# URL for the Image of custom Favicon
+favicon-url: 'http://almerra.com/assets/images/favicon.ico'
+
+# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
+heroimage: /assets/images/LS_0040.0124.png
+
+# Social Media and Contact
+# If you don't want to use any icon, you can leave them blank.
+email: simsaladoo@hotmail.com
+facebook_username: simsaladoo
+twitter_username: simsaladoo
+instagram_username: simsaladoo
+linkedin_username: simsaladoo
+github_username:  Simsaladoo
+youtube_channel_id: UCKc9LeuyYEmf89ZrEE3ilfw
+reddit_username: /
+behance_username: /
+dribbble_username: /
+spotify_username: /
+
+# Google Analytics
+google-analytics: G-FV79JWVKLW
+
+# Disqus
+disqus-shortname: simsaladoo
+
+# Name of the Author
+author-name: Simsaladoo
+# URL for the Image of the Author
+author-image: /assets/images/bg-1.png
+# 60 Words About the Author
+author-about: A displaced young soldier, a character of your creation, begins his tale scrounging across early Iron-age continents in the world of Almerra. Learn friend from foe as you navigate native tribal islands and vibrant capitols among the 5 warring nations. Sooner or later, your nation’s cities and villages will need your help and call on you to make your place in their history, advancing their tale of conquering the vast world through sword, board, and bow combat across plains, deserts, mountains and oceans. Nation-unique warships will crash on the high seas while Fire ballistas, catapults and spiked rams crash against city walls--marking victory for the daft, and defeat for the cautious. Head over to Almerra.com to learn more!
+# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
+author-url: https://github.com/Simsaladoo
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
+plugins:
+  - jekyll-admin
+  - jekyll-feed
+
+# Permalink
+permalink: "blog/:title"
+
+# Compress
+compress_html:
+  clippings: all
+
+# Defaults
+defaults:
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
+
+# Exclude
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

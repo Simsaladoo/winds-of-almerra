@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Winds of Almerra - Builds</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+    <link href="css/almerra.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/github-calendar.css">
+
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <script src="js/marked.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="tm-container">
+        <div>
+             <div class="cropped-image">
+                 <img src="./img/banner.png" alt="banner" class="banner">
+             </div>
+
+            <!-- Logo -->
+            <div class="tm-col-left-tiny">
+                <img src="./img/logo.png" alt="logo" class="logo-image-tiny">
+            </div>
+
+            <!-- End of Menu Area -->
+            <div class="tm-col-center">
+                <div id="navbar"></div>
+                <script src="js/mainnavbar.js"></script> <!-- Script to load the navbar -->
+            </div>
+
+            <!-- Area -->
+            <div class="tm-center-page tm-content">
+                <div class="content">
+                    <img class="border-image" src="./img/regal.png"></img>
+				    <h2><br/>Latest News</h2>
+                    <hr class="custom-bar">
+
+                    <div class="blogcontent" id="blogcontent"></div>
+                    <div class="pagination" id="pagination"></div>
+
+                    <script type="module" src="js/blog.js"></script> <!-- External JS File -->
+
+
+
+                </div>
+
+                <footer class="tm-site-footer">
+                    <img src="./img/simslab.png"></img>
+                    <p class="small-p">Copyright <span id="year"></span> SimsLab</p>
+                </footer>
+
+            </div>
+
+        </div>
+        <div class="tm-row">
+
+        </div>
+        <div class="tm-bg-center"></div><!-- Center page design -->
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+</body>
+</html>

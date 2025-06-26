@@ -12,6 +12,7 @@
 
 .mainlogo {
     background-image: url('https://almerra.com/assets/images/logo.png');
+    min-height: 150px;
     width: auto;
     height: auto;
 }

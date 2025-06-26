@@ -10,11 +10,10 @@
     background: linear-gradient(0deg, #000 0%, rgba(0,0,0,0.0) 100%)!important;
 }
 
-.mainlogo {
+.mainlogowrapper {
     background-position: center;
     background-image: url('https://almerra.com/assets/images/logo.png');
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     min-height: 150px;
     min-width: 150px;
@@ -25,7 +24,7 @@
     align-items: center;     /* vertically center */
 }
 
-.mainlogo img {
+.mainlogo {
     overflow: hidden;
       width: 300px;
       height: 300px;

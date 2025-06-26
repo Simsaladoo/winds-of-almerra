@@ -11,12 +11,20 @@
 }
 
 .mainlogo {
+    background-position: center;
     background-image: url('https://almerra.com/assets/images/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: 150px;
-    width: auto;
-    height: auto;
+    min-height: 150px;
+    width: 300px;
+    height: 300px;
 }
 
+.mainlogo img {
+
+}
 
 .footer a img {
     width: 26px;

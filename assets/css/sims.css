@@ -11,10 +11,6 @@
 }
 
 .mainlogowrapper {
-    background-position: center;
-    background-image: url('https://almerra.com/assets/images/logo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
     min-height: 150px;
     min-width: 150px;
     width: 100%;
@@ -25,7 +21,11 @@
 }
 
 .mainlogo {
-    overflow: hidden;
+      overflow: hidden;
+      background-position: center;
+      background-image: url('https://almerra.com/assets/images/logo.png');
+      background-size: cover;
+      background-repeat: no-repeat;
       width: 300px;
       height: 300px;
       border-radius: 8px;

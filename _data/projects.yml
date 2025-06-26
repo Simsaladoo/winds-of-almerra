@@ -1,17 +1,17 @@
-- name: Strategic Hack & Slash Combat
-  image: https://almerra.com/assets/images/bg-3.png
-  link: https://almerra.com/combat
-  description: Hack n' Slash Combat with battalions of early iron-age troops clashing across land and sea.
 - name: About the Game
   link: https://almerra.com/about
   image: https://almerra.com/assets/images/bg-1.png
-  description: TBD
+  description: As a rising warlord, your allegiances will tip the balance of power among the nations of Almerra.  Will you unite the lands or reduce them to ashes?
+- name: Strategic Hack & Slash Combat
+  image: https://almerra.com/assets/images/bg-3.png
+  link: https://almerra.com/combat
+  description: Large-scale battles utilize more strategy than brute-force, and challenges you not just to win battles—but to define the legacy of a world on the edge of ruin.
 - name: Nations of Almerra
   link: https://almerra.com/nations
   image: https://almerra.com/assets/images/bg-2.png
-  description: TBD
+  description: Five rival nations clash for dominance over Almerra—each with their own ambitions, cultures, and secrets.
 - name: The World
   link: https://almerra.com/world
   image: https://almerra.com/assets/images/mounts.jpg
-  description: TBD
+  description: Sprawling continents and treacherous seas separate the ancient world, which now burns beneath the banners of five rival nations, each desperate to claim the legacy of a fallen age.
 

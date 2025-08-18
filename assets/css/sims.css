@@ -29,7 +29,7 @@
     background-repeat: no-repeat;
     width: 160px;
     height: 160px;
-    border-radius: 8px;
+    border-radius: 0px;
      display: flex; /* ensure inner div fills */
     align-items: center;
     justify-content: center;

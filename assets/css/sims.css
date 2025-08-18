@@ -30,7 +30,7 @@
     width: 160px;
     height: 160px;
     border-radius: 8px;
-    display: flex; /* ensure inner div fills */
+     display: flex; /* ensure inner div fills */
     align-items: center;
     justify-content: center;
     margin-left:50%;

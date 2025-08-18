@@ -20,6 +20,21 @@
     align-items: center;     /* vertically center */
 }
 
+
+.pagecrest {
+    overflow: hidden;
+    background-position: center;
+    background-image: url('https://almerra.com/assets/images/Winds-of-Almerra-Icon-v4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    display: flex; /* ensure inner div fills */
+    align-items: center;
+    justify-content: center;
+}
+
 .mainlogo {
       overflow: hidden;
       background-position: center;

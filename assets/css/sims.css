@@ -10,6 +10,18 @@
     background: linear-gradient(0deg, #000 0%, rgba(0,0,0,0.0) 100%)!important;
 }
 
+
+
+
+
+
+.highlighter-rouge .highlight pre,
+.highlighter-rouge .highlight code {
+    white-space: pre-wrap;      /* allow wrapping */
+    word-wrap: break-word;      /* break long tokens */
+}
+
+
 .mainlogowrapper {
     min-height: 150px;
     min-width: 150px;

@@ -20,5 +20,15 @@ Almerra has had very few people putting in tens of thousands of hours to researc
 
 This research eventually leads to a heap of technical debt, and gets discouraging when the design mistakes only results in unwieldly code and awful tech.  Sometimes it can be good to look back and appreciate the distance that has been covered to avoid burnout.  
 
+```
+attribute_count = cmds.getAttr(f'{node}.location{index}', size=True)
+for attribute in range(attribute_count):
+	location = cmds.getAttr(f"{node}.location{index}{[attribute]}")
+	rotation = cmds.getAttr(f"{node}.rotation{index}{[attribute]}")
+	scale = cmds.getAttr(f"{node}.scale{index}{[attribute]}")
+	row = location+rotation+scale
+	writer.writerow(row)
+```
+
 [![DialogueTest](https://almerra.com/assets/images/20160905_201941.jpg)
  The above image was experimenting with navmeshes for example.  Creation of these only involves adding a volume to generate them, but they can't be shifting during world origin rebasing for large worlds.  Experiments were done to try and offset them, re-create and generate them during runtime and removing them and baking down the information to little success.  It was only after testing out navigation invokes that an appropriate solution was found.  It took lots of time, but was well worth it in the end as it hasn't needed to be touched for many years now!

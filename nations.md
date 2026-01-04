@@ -34,7 +34,7 @@ The Neagese are a hardy nation of swordsmen and survivors that live in the harsh
 
 
 ### Monayan Kingdom
-![Nation4](https://almerra.com/asssts/images/flags/FlagMons.png)
+![Nation4](https://almerra.com/assets/images/flags/FlagMons.png)
 
 The Monayans have lived in near-isolation to the Southeast of the rest of Almerra for centuries.  A godless mountain-dwelling people, the Monayans are the most creative in their engineering and in their art forms.  The Monaya are talented swimmers and fighters, but face problems with natural resources being raided by bandits and Rowani forces.  Mons trade with and have a fairly positive relationship with the Graata, but are typically more isolated and untraveled culturally.
 

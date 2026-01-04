@@ -9,7 +9,6 @@ tags:
 - test
 ---
 
-### WIP
 ### Mount & Blade influences
 This gameplay is set within an expansive, seamless open-world, with multiple continents only explorable through sailing across the vast seas of Almerra.  Diverse classes of vessels are in-use by the many Nations and purchase-able by the player to be used to freely roam and transport forces and goods.  Larger vessels can even transport Mounts (within reason) used by heavy cavalry for that extra Age of Empires-influenced kick.
 
@@ -19,6 +18,8 @@ Hundreds of units may be involved in every battle as the different Nations attem
 
 ### AI Combat Testing
 Player-driven directional movement and attacks with velocity modifiers to dictate the force behind each swing are also 1:1 how the AI fights eachother.  This is partnered with physical materials and other features within Unreal to model the combat stat structures which can inflict damage per limb using a custom-developed wounding and knockdown system.
+
+Since the combat system is shared by the player, AI Arena is run monthly for brute force testing of the code and animation updates and anyone can watch!  Early tests were laughably bad, and it is slow to progress but has improved greatly over time.  You can always see the latest test on the homepage, or head over to the youtube channel to see the entire chronology.
 
 [![Arena](https://img.youtube.com/vi/8-PKAH59Xqk/0.jpg)](https://www.youtube.com/watch?v=8-PKAH59Xqk&list=PLLcxd4soKLM6ebqlardgRkrnSnlG_CmT_ "Arena AI Combat Testing")
 

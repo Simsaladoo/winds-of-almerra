@@ -1,7 +1,7 @@
 ---
 title: Nations
 layout: post
-post-image: "https://almerra.com/asssets/images/bg-2.png"
+post-image: "https://almerra.com/assets/images/bg-2.png"
 description:   
 tags:
 - sample

@@ -1,7 +1,7 @@
 ---
 title: Combat
 layout: post
-post-image: "https://almerra.com/asssets/images/bg-3.png"
+post-image: "https://almerra.com/assets/images/bg-3.png"
 description:   
 tags:
 - sample

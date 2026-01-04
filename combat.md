@@ -18,7 +18,7 @@ Hundreds of units may be involved in every battle as the different Nations attem
 [![Mount & Blade](https://almerra.com/assets/images/warband.jpg)](https://almerra.com/assets/images/warband.jpg "Mount & Blade")
 
 ### AI Combat Testing
-Almerra is heavily inspired by the Mount & Blade series, using player-driven directional movement and attacks with velocity modifiers to dictate the force behind each swing.  This is partnered with physical materials and other features within Unreal to model the combat stat structures.
+Player-driven directional movement and attacks with velocity modifiers to dictate the force behind each swing are also 1:1 how the AI fights eachother.  This is partnered with physical materials and other features within Unreal to model the combat stat structures which can inflict damage per limb using a custom-developed wounding and knockdown system.
 
 [![Arena](https://img.youtube.com/vi/8-PKAH59Xqk/0.jpg)](https://www.youtube.com/watch?v=8-PKAH59Xqk&list=PLLcxd4soKLM6ebqlardgRkrnSnlG_CmT_ "Arena AI Combat Testing")
 

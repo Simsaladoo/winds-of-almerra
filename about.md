@@ -9,7 +9,6 @@ tags:
 - test
 ---
 
-### WIP
 ### What is Almerra?
 [![Teaser](https://img.youtube.com/vi/A6aebT5WpS8/0.jpg)](https://youtu.be/A6aebT5WpS8 "Teaser")
 

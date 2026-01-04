@@ -9,7 +9,6 @@ tags:
 - test
 ---
 
-### WIP
 
 ### Alyssakin Freetribe
 ![Nation0](https://almerra.com/assets/images/flags/FlagNative.png)

@@ -1,14 +1,13 @@
 ---
-title: Nations
+title: Nations of Almerra
 layout: post
 post-image: "https://almerra.com/assets/images/bg-2.png"
-description:   
+description: Five rival nations clash for dominance over Almerra—each with their own ambitions, cultures, and secrets.
 tags:
-- sample
+- almerra
 - post
-- test
+- about
 ---
-
 
 ### Alyssakin Freetribe
 ![Nation0](https://almerra.com/assets/images/flags/FlagNative.png)

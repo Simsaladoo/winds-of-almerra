@@ -1,12 +1,12 @@
 ---
-title: World
+title: The World of Almerra
 layout: post
 post-image: "https://almerra.com/assets/images/bg-4.png"
-description:   
+description: An Iron-Age Waterworld with sprawling continents and stormy seas separate the warring kingdoms, each seeking their claim to the legacy of a fallen ancient legacy.
 tags:
-- sample
+- almerra
 - post
-- test
+- about
 ---
 
 ### Interacting with the World

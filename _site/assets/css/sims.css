@@ -10,6 +10,14 @@
     background: linear-gradient(0deg, #000 0%, rgba(0,0,0,0.0) 100%)!important;
 }
 
+
+.highlighter-rouge .highlight pre,
+.highlighter-rouge .highlight code {
+    white-space: pre-wrap;      /* allow wrapping */
+    word-wrap: break-word;      /* break long tokens */
+}
+
+
 .mainlogowrapper {
     min-height: 150px;
     min-width: 150px;
@@ -18,6 +26,23 @@
     display:flex;
     justify-content: center; /* horizontally center */
     align-items: center;     /* vertically center */
+}
+
+
+.pagecrest {
+    overflow: hidden;
+    background-position: center;
+    background-image: url('https://almerra.com/assets/images/Winds-of-Almerra-Icon-v4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 160px;
+    border-radius: 0px;
+     display: flex; /* ensure inner div fills */
+    align-items: center;
+    justify-content: center;
+    margin-left:44%;
+    margin-right:44%;
 }
 
 .mainlogo {
@@ -57,7 +82,7 @@
     min-height: 100vh;
     width: auto;
     height: auto;
-    top: -15px;
+    top: auto;
     right: 0px;
     bottom: 0px;
     left: 0px;
@@ -87,4 +112,65 @@
 
 .image.is-3by1 {
     padding-top:100%!important;
+}
+
+
+
+/* Dark mode additions */
+
+.body-sim {
+    background: rgba(50,50,50,100.0) !important;
+}
+
+.hero-sim {
+    color: white !important;
+}
+
+.hero-sim-button {
+    color: white !important;
+}
+
+.hero-sim p {
+    color: white !important;
+}
+
+.hero-sim h1 {
+    color: white;
+}
+
+.hero-sim h2 {
+    color: white;
+}
+
+.hero-sim h3 {
+    color: white;
+}
+
+.hero-sim h4 {
+    color: white;
+}
+
+.hero-sim strong {
+    color: white;
+}
+
+.hero-sim a {
+    color: white;
+}
+
+.hero-sim subtitle {
+    color: white !important;
+}
+
+.hero-sim-card {
+    color: white !important;
+    background: rgba(70, 70, 70, 255);
+}
+
+.hero-sim-card h1 {
+    color: white !important;
+}
+
+.hero-sim-a-text {
+    color: white !important;
 }

@@ -10,8 +10,8 @@ layout: compress
 <body>
     {% include navbar.html %}
 
-    <section class="hero is-fullheight" id="blog">
-        <div class="hero-body">
+    <section class="hero is-fullheight body-sim" id="blog">
+        <div class="hero-body body-sim">
             <div class="container">
                 {% include blogpage-heading.html %}
             </div>
@@ -23,7 +23,6 @@ layout: compress
         {% endfor %}
         </div>
     </section>
-    <br>
     <!--Footer begins here-->
     {% include footer.html %}
     <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.js"></script>

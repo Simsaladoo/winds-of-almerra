@@ -1,10 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-26T18:26:12-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Winds of Almerra</title><subtitle>Command armies. Conquer seas. Shape the fate of a shattered world.</subtitle><entry><title type="html">Humble Beginnings</title><link href="http://localhost:4000/blog/humble_beginnings" rel="alternate" type="text/html" title="Humble Beginnings" /><published>2025-06-25T00:00:00-07:00</published><updated>2025-06-25T00:00:00-07:00</updated><id>http://localhost:4000/blog/humble_beginnings</id><content type="html" xml:base="http://localhost:4000/blog/humble_beginnings"><![CDATA[<h3 id="humble-beginnings">Humble beginnings</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-03-21T12:44:14-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Winds of Almerra</title><subtitle>Command the siege or join the shield wall. Conquer the seas and wilds as you write the history of nations in conflict.</subtitle><entry><title type="html">Humble Beginnings</title><link href="http://localhost:4000/blog/humble_beginnings" rel="alternate" type="text/html" title="Humble Beginnings" /><published>2025-06-25T00:00:00-07:00</published><updated>2025-06-25T00:00:00-07:00</updated><id>http://localhost:4000/blog/humble_beginnings</id><content type="html" xml:base="http://localhost:4000/blog/humble_beginnings"><![CDATA[<h3 id="humble-beginnings">Humble beginnings</h3>
 
-<p>The development of a fully open-world RPG has so many ingredients.  From the core gameplay loops to the mechanics and are generally easier said than done.  Take Witcher 3, for example–Take a contract, investigate, resolve it, get paid (or not), and repeat.  But in doing each of those steps the player will utilize movement, UI, NPC interactions, combat system, inventory, world/level design, shader performance and tech and SO much more.</p>
+<p>The development of a fully open-world RPG has so many ingredients.<br />
+From the core gameplay loops to the mechanics and are generally easier said than done.<br />
+Take Witcher 3, for example–Take a contract, investigate, resolve it, get paid (or not), and repeat.<br />
+But in doing each of those steps the player will utilize movement, UI, NPC interactions, an engaging combat system, managing inventory, world/level design, shader performance and SO much more.</p>
 
-<p>Almerra has had very few people putting in thousands of hours to fully flesh out and understand how to accomplish similar systems, and they were uninteresting and just bad through the majority of the development.</p>
+<p>Almerra has had very few people putting in tens of thousands of hours to research, test and understand how to implement these kinds of systems, and they were uninteresting and just bad through the majority of the development.</p>
 
-<p>[<img src="https://almerra.com/assets/images/20160905_201941.jpg" alt="DialogueTest" /></p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[The development of a fully open-world RPG has so many ingredients. From the core gameplay loops to the mechanics and are generally easier said than done. Take Witcher 3, for example--Take a contract, investigate, resolve it, get paid (or not), and repeat. But in doing each of those steps the player will utilize movement, UI, NPC interactions, combat system, inventory, world/level design, shader performance and tech and SO much more.]]></summary></entry><entry><title type="html">New Website!</title><link href="http://localhost:4000/blog/new_website" rel="alternate" type="text/html" title="New Website!" /><published>2025-03-26T00:00:00-07:00</published><updated>2025-03-26T00:00:00-07:00</updated><id>http://localhost:4000/blog/new_website</id><content type="html" xml:base="http://localhost:4000/blog/new_website"><![CDATA[<h3 id="welcome-almerran-citizens">Welcome Almerran citizens!</h3>
+<p>This research eventually leads to a heap of technical debt, and gets discouraging when the design mistakes only results in unwieldly code and awful tech.  Sometimes it can be good to look back and appreciate the distance that has been covered to avoid burnout.</p>
+
+<p><a href="https://almerra.com/assets/images/20160905_201941.jpg"><img src="https://almerra.com/assets/images/20160905_201941.jpg" alt="DialogueTest" /></a>
+ The above image was experimenting with navmeshes for example.  Creation of these only involves adding a volume to generate them, but they can’t be shifting during world origin rebasing for large worlds.  Experiments were done to try and offset them, re-create and generate them during runtime and removing them and baking down the information to little success.  It was only after testing out navigation invokes that an appropriate solution was found.  It took lots of time, but was well worth it in the end as it hasn’t needed to be touched for many years now!</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[The development of a fully open-world RPG has so many ingredients. From the core gameplay loops to the mechanics and are generally easier said than done. Take Witcher 3, for example--Take a contract, investigate, resolve it, get paid (or not), and repeat. But in doing each of those steps the player will utilize movement, UI, NPC interactions, combat system, inventory, world/level design, shader performance and tech and SO much more.]]></summary></entry><entry><title type="html">New Website!</title><link href="http://localhost:4000/blog/new_website" rel="alternate" type="text/html" title="New Website!" /><published>2025-03-26T00:00:00-07:00</published><updated>2025-03-26T00:00:00-07:00</updated><id>http://localhost:4000/blog/new_website</id><content type="html" xml:base="http://localhost:4000/blog/new_website"><![CDATA[<h3 id="welcome-almerran-citizens">Welcome Almerran citizens!</h3>
 
 <p>Welcome to the new <strong>Almerra</strong> website – your one-stop hub for all the latest news, updates, and exclusive content about the game.</p>
 
@@ -36,4 +42,246 @@
 
 <p><a href="https://youtu.be/8-PKAH59Xqk"><img src="https://img.youtube.com/vi/8-PKAH59Xqk/0.jpg" alt="Arena" /></a></p>
 
-<p><strong>Stay tuned, stay excited, and stay connected!</strong> 🚀🎮</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[We’ve been hard at work behind the scenes, and we can’t wait to share everything we’ve been building with you. Whether you're an early supporter or just discovered our game, we’re thrilled to have you along for the ride!]]></summary></entry></feed>
+<p><strong>Stay tuned, stay excited, and stay connected!</strong> 🚀🎮</p>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[We’ve been hard at work behind the scenes, and we can’t wait to share everything we’ve been building with you. Whether you're an early supporter or just discovered our game, we’re thrilled to have you along for the ride!]]></summary></entry><entry><title type="html">Wheels keep turning</title><link href="http://localhost:4000/blog/wheels_keep_turning" rel="alternate" type="text/html" title="Wheels keep turning" /><published>2020-05-14T00:00:00-07:00</published><updated>2020-05-14T00:00:00-07:00</updated><id>http://localhost:4000/blog/wheels_keep_turning</id><content type="html" xml:base="http://localhost:4000/blog/wheels_keep_turning"><![CDATA[<p>Greetings, travelers!</p>
+
+<p>Simsaladoo here with another update.</p>
+
+<p>What a year it has been thus far. The COVID outbreak really added problems to most of Hollywood’s film and CG production houses, but thankfully I work in games! Work from home has not been without its own troubles, but it’s definitely given me more free time to clean up wonky code, add new animations, new rigging updates and many more new developments in the world of Almerra! Performance and Optimization have been the name of the game for the last 3 months and the progress is really showing in the latest dev builds. Up to #0085 now! Let’s take a look at some of the recent additions and breakthroughs in Winds of Almerra!</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/OpimizationPass.gif" alt="Shaders" /></p>
+
+<p><strong>Shader Optimization Pass</strong></p>
+
+<p>First, some major performance improvements achieved these last 2 months concerned NPCs and foliage, which were the 3rd and 4th biggest performance killers respectively. The ocean shader also got an overhaul, which is still a work in progress but its only half the instruction count so far. Some basic but significant improvements to the NPCs involved adding new LODs to skin, clothing, hair, and weapons, which was much easier with the recent engine update. The trick was converting all the previous shaders to one master type and then parameterizing the useful variables so that all actors on-screen only have to compile their shader once. It serves as an up-front memory reduction which reduces overhead for garbage colllection and compile time—i.e., makes it go faster!</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/optimizationLandscape2.gif" alt="Landscapes" /></p>
+
+<p>The same master-shader methodology was applied to foliage, which can get EXTREMELY expensive with all the overdraw from transparency. The geometry is always instanced, which reduces draw calls, however every unique material shader also adds to memory and increases the upfront compile time—making levels load and objects spawn slower. Reducing the amount of overdraw is always the key for foliage, but when you can’t–making use of material instancing is also the way to go as you’ll be able to share the compile time between grass, trees, bushes, etc. As an added boost this new master foliage shader now uses dithering which helps the transparency not be quite as expensive. This will be invaluable when I start really getting into building the heavily forested areas of the Monayan Jungles!</p>
+
+<p><strong>Weather Functions</strong></p>
+
+<p>A new weather system has been getting worked on in the latest builds, using curve tables genereated from real world annual rainfall, pressure gradients, cloud cover and temperature. This makes for a fairly believable weather spawner with some added variables to enable direct control by other subsystems. Adverse weather affects movement speed, archery effectiveness and overall exposure. So don’t let your war-torn, veteran shield wall catch the sniffles! Recently added to the list of growing weather patterns are now Light and Heavy rainstorms, Light snowfall and light fog. Some of these will need to affect only visual effects while some will also directly affect arrow drag, movement speed, and exposure ratings depending on equipment type. This is basically a long, growing list of various weather particle events to trigger from the curve data. Sand storms are still on the list but need other considerations like the local climate (wouldn’t want a sandstorm in the open ocean now would we?).</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/OptimizationWeather2.gif" alt="Weathers" /></p>
+
+<p><strong>Rig &amp; Facial Blends Update</strong></p>
+
+<p>Another major milestone was concerning the authoring of Morph Targets for character expressions, character builder settings, and speech integration. This involves a huge network of controllers for rigging and blueprinting of modifiers, so developing a usable pipeline has been a challenging task. I’ve recently sharpened some of my MEL skills in Maya and I have developed a way to modify all individual shape files seamlessly. This means I can now freely update and work on all the expressions, character builder settings and speech models and not have to worry about binding &amp; skin weights. The polishing phase can now begin on existing controllers and shapes in the near future and I hope to be able to show more complex expressions in the coming months.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/faces2.gif" alt="Faces" /></p>
+
+<p>In closing, the progress since the beginning of this project still amazes me. I am lucky to have the opportunities I’ve had to get the chance to work on this project and with every post the content creation gets a little easier. I’d like to introduce the official Instagram for the game <a href="https://www.instagram.com/sims.lab/">@sims.lab</a> so be sure to follow us for interesting and humorous looks into the development of the game.</p>
+
+<p>Thanks for reading, and stay safe!<br />
+Sim</p>]]></content><author><name></name></author><category term="post" /><category term="almerra" /><category term="devnotes" /><summary type="html"><![CDATA[New developments in the world of Almerra! Performance and Optimization have been the name of the game for the last 2 months and the progress has already made it way into the latest dev builds. Let’s take a look at some of the recent additions and breakthroughs in Winds of Almerra!]]></summary></entry><entry><title type="html">Beasts of Burden</title><link href="http://localhost:4000/blog/beasts_of_burden" rel="alternate" type="text/html" title="Beasts of Burden" /><published>2020-01-02T00:00:00-08:00</published><updated>2020-01-02T00:00:00-08:00</updated><id>http://localhost:4000/blog/beasts_of_burden</id><content type="html" xml:base="http://localhost:4000/blog/beasts_of_burden"><![CDATA[<p>Greetings travelers!</p>
+
+<p>Simsaladoo here with another update! Still feeling refreshed after my own adventures to Dubai, Sri Lanka and the Maldives, I now have some exciting new developments to cover! Almerra has always been a nature-heavy development in terms of the climates and features, and some of the recent work accomplished helped add a lot more diversity and life to it. Many improvements on the AI and coding side have made it into the latest build (#0075) and there’s even some new cinematic sequences that are in progress but today, I’d like to show some climate and animals that have made it into the wilds.</p>
+
+<h3 id="new-climate-type"><strong>New Climate Type</strong></h3>
+
+<p><em><strong>Desert (Dahlak)</strong></em></p>
+
+<p>The Rowani lands are mostly desert with some lush tropics, from which I’ve taken references from the Dahlak Archipelago in the Red Sea. Acacia trees, sandstone, cactus, desert grasses and shrubs are all setup for this climate. The weather record is also setup for the islands this climate is used with, meaning the rate for a year is setup for triggering the reduced rainfall and increased sandstorms. The exposure is also increased in these areas which will add to the chance of heat exhaustion and dehydration debuffs, affecting your agility and animation speeds. Resting during the hottest parts of the day and staying in shaded areas naturally will reduce the exposure, as sun ray traces continually check for your sun-lit stealth rating.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_f75b6db224f74.jpg" alt="Desert" /></p>
+
+<h3 id="new-creatures"><strong>New Creatures</strong></h3>
+
+<p><em><strong>Camels</strong></em></p>
+
+<p>Camels have been setup and more animations in progress! The lovely camels are also close to being ready for the mount system, still needing mounting and riding animations and some back end data for the physics based reigns. Camels are home in the Rowani Empire’s lands and make for a much more stable shooting platform than the horse, sacrificing some dexterity for increased health and rider stability. Camels are also slower than horses but much smarter so they will not act up as badly as the horse may under critical stress situations.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_84689cf5a6cd47248b62734ac8dac86a~mv2.png" alt="Elephant" /></p>
+
+<p><em><strong>Elephants</strong></em></p>
+
+<p>The Elephants are coming! Wild elephants have already been setup in the wilds, but now Elephants are equipped to be mounted units in-game. The elephants in Almerra are originally from the Graatian lands, but have found their way to many other parts of the map mostly by trade. They are the slowest and highest health units in the game, able to take on just about any other mounted units since they offer the most health, most stable archery shooting platform and the most protection from opposing troops, mounted or not. Their tusks are usable by the driver, and up to two archers can ride and freely walk around on the castle. AI-riding units still need more work naturally but the player driven/owned setup is working well. Getting into the castle on its back is done via the interaction system and still needs climb animation, but works behind the scenes already since all the mounts use the same base class. Once in the tower you can move around and practice archery and throwing weapons as usual, using crouch to duck behind the sides. You can also drive the Elephant directly by ‘using’ the reigns, which puts you into the Landcraft camera mode following the animal.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_44ee4c4d1a064e6db777ef35595b3516~mv2.png" alt="Horses" /></p>
+
+<p><em><strong>Horses</strong></em></p>
+
+<p>Horses are also working and slowly creating variations! Riding mounts of any kind is extremely essential in Almerra since the lands are so vast and unforgiving with creatures and bandits. Horses are a staple for every nation due to their abundance and speed, and also come in a variety of breeds and pedigree, depending on your coin. They offer an efficient mode of transportation with their high speed over other mount types, while also having a good amount of dexterity.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_d60be8f30dd74c559fe0b268cf4ffdac~mv2.png" alt="Sharks" /></p>
+
+<p><em><strong>White Sharks</strong></em></p>
+
+<p>Sharks! Sharks! Sharks! This was a very fun and simple asset to implement as it will just spawn in and one shot AI or the player if left out in deep sea for too long. You could also try to bait yourself off of a vessel, and when they come andl circle the area it will make them open for harpooning. Just don’t try to swim across the ocean and you’ll be fine.</p>
+
+<h3 id="ai-combat-development">AI Combat Development</h3>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_546e71a7d59a4269913095f39560cf2c~mv2.png" alt="Combat" /></p>
+
+<p>Many other AI combat aspects have been getting worked on, namely their decision tree for fighting solo vs. in formations, their weapon choices from inventory, and AI’s footwork patterns using said weapon choice. The Green traces above represent the actor’s target and Red are Throwing weapon trajectories for debugging, and with some more footwork scripting and formation following, I think the system will be very fun. More work needs to be done to help prevent the friendly-fire though. X-D</p>
+
+<p>More unique weapons like the katana, sabres, yew bows and many other items have been added to the growing inventory list and are coming into play when simulating AI battles for debugging. On that note, 2019 was an exciting year and this year has many exciting things on the horizon. 2020 brings the final roadmap for the development pipeline for the game, beginning grant applications for unreal engine and the beginning of steam implementation before finally applying to the steam greenlight program. As such, this means Winds of Almerra should be on course for a 2021 release build if all goes smoothly. I’d like to thank everyone for reading and showing interest in the project, and safe travels.</p>
+
+<p>Cheers,<br />
+Simsaladoo</p>]]></content><author><name></name></author><category term="post" /><category term="almerra" /><category term="devnotes" /><summary type="html"><![CDATA[Greetings travelers! Simsaladoo here with another update! Still feeling refreshed after my own adventures to Dubai, Sri Lanka and the Maldives, I now have some exciting new developments to cover! Many improvements on the AI and coding side have made it into the latest build (#0075) and there's even some new cinematic sequences that are in progress but today, I'd like to show some climate and animals that have made it into the wilds.]]></summary></entry><entry><title type="html">Ready to Embark</title><link href="http://localhost:4000/blog/ready_to_embark" rel="alternate" type="text/html" title="Ready to Embark" /><published>2019-07-14T00:00:00-07:00</published><updated>2019-07-14T00:00:00-07:00</updated><id>http://localhost:4000/blog/ready_to_embark</id><content type="html" xml:base="http://localhost:4000/blog/ready_to_embark"><![CDATA[<p><strong><em>Greetings travelers!</em></strong></p>
+
+<p>Freshly returned from a diving trip out to Grand Cayman Islands, I’m fully re-invigorated with a passion to keep chaining together all of the complexity of this immense project. Spending days in the Caribbean sun drinking with friends and diving with sea turtles and giant rays definitely has a way of inspiring you! It’s always a toss-up as to when I decide there are enough new features and if I’ve hit enough development milestones to make another post that has any real meat to it (I’m my own worst enemy on this), but enough screenshots from the latest build really excited me so I figured it was time for an update. Let’s check out what’s been going on in Almerra!</p>
+
+<p><strong>Cave Networks</strong></p>
+
+<p>Although fairly straightforward, getting the lighting and navigation pathing kinks worked out made this a significant development milestone. No silly teleporting doors between levels (Skyrim) will ever force you to face hours of loading screens so this seamless setup from exterior forests into deep dark cave networks is really nice and adds a lot of future storyline elements! The Rowani Salt Mines that is run using numerous slaves and prisoners will be striking to behold graphically, but will also provide many branching scenarios in the nation’s dark storyline. The first cave system is now setup and working properly, the Ferrite Mines outside Rhougan Village which is the largest iron mine available to the Alyssakin Natives.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/HighresScreenshot00002.png" alt="Caves" /></p>
+
+<p><strong>AI/Player Inventory -&gt; Combat systems -&gt; UI systems</strong><br />
+OMG This is such a milestone on the back-end. These are the connections between what your character is actually wearing, the stats system for incoming damage, the stats system for outgoing damage, the UI systems for your inventory, including NPC merchants, looting, containers and stowage on horses and crafts. This doesn’t just govern displaying the items, but their relevant actions along with it. Taking/Stowing, dropping, using, repairing, equipping, etc. Overall now I’m really enjoying using the system as it feels very responsive and intuitive. All it needs now is a few column sorting buttons and filters and then some controller additions for examining items and rotating them in the UI. Below is a short gameplay video to introduce how it’s all looking so far!</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GyTdQL8Bz8Y?si=XwMLKzdJpEPwA9VA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+<p><strong>Stealth Mechanics</strong><br />
+The overall goal concerning stealth in Almerra is as close to something like a Splinter Cell, Death to Spies, MGS or other stealth strategy mechanic as I can reasonably get it. What’s functioning right now is a fairly simple tracking system which performs as follows: AI do their tasks and things until the player is within range, then what fires off are FOV and LOS trace checks against the players feet, head, chest and arms. If your head is poking out they’ll spot you. The trace will then check your allegiance towards their home village and decide whether you are friend or foe and direct the AI decision-chart to go to attack or emote. Friendlies will simply look at the the player and possibly speak or continue quest and dialogue stuff which I can build into later with storyline elements.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/HighresScreenshot00000.png" alt="Stealth" /></p>
+
+<p>If foe, the AI will begin to update a marker with the player’s location and begin their attack graph. If you run away out of LOS, the AI can also continue tracking you for a small period of time, but if LOS is not achieved again they will simply do a basic search pattern around their last known location for a time until finally going back idle. So the basic “Huh? What was that noise?” is working perfectly! What’s not hooked up yet is their ability to inform OTHER guards of your location (which should be a fairly simple addition), and the update of your location through footsteps &amp; dead bodies which AI can see right now but don’t react to (and will be weather/ground-type dependent). Currently all of the AI that have spotted you add themselves to a special list of tracking actors that are either in Combat or in Caution, so parsing that list to update other guards or retrieve the nearest footprint will be easy to build in later. It’s coming along very nicely, and it will be truly exciting once the incoming damage is setup properly so you have a real NEED to run and hide.</p>
+
+<p>It’s so exciting to see this many systems working well together, and every new addition now is incredibly enriching to the experience–keeping me very motivated! More world locations are getting boxed out and storyboard bits are also starting to get into the dialogue. Aquatic life is also starting to really take off as I have been working towards getting various species to take on their unique movement patterns within the AI systems. I hope you enjoyed this update on what’s going on in Winds of Almerra!</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/HighresScreenshot00001.png" alt="Night" /></p>
+
+<p>Cheers,<br />
+Simsaladoo</p>]]></content><author><name></name></author><category term="post" /><category term="almerra" /><category term="devnotes" /><summary type="html"><![CDATA[It's always a toss-up as to when I decide there are enough new features and if I've hit enough development milestones to make another post that has any real meat to it (I'm my own worst enemy on this), but enough screenshots from the latest build really excited me so I figured it was time for an update. Let's check out what's been going on in Almerra!]]></summary></entry><entry><title type="html">Mr. International</title><link href="http://localhost:4000/blog/mr_international" rel="alternate" type="text/html" title="Mr. International" /><published>2018-10-12T00:00:00-07:00</published><updated>2018-10-12T00:00:00-07:00</updated><id>http://localhost:4000/blog/mr_international</id><content type="html" xml:base="http://localhost:4000/blog/mr_international"><![CDATA[<p><strong>Greetings once again,</strong><br />
+Been fairly busy the last month and even took a trip to the Philippines to go diving, but I managed to make quite a bit more progress in creating more Fauna AI features, humanoid creation pipeline improvements and even did some more environment sculpting. The sculpting isn’t quite ready to show yet, :-) but I can show a cool new Fauna generation setup and some of the latest gameplay ui screens and it’ll give you a vision into what’s coming.</p>
+
+<p><strong>Fauna AI formations</strong></p>
+
+<p>Many times when a Fauna was spawning into the world, they would end up spread out and not really reacting properly to each other–most notably with fish. They needed to school! So I integrated some basic formations with vectors that are saved as relatives to a single leader fish. This even helps for optimization down the line as well as I can easily fade out certain parts of larger schools to reduce calls, yet no change is AI has occurred. The below octahedrons are those waypoint locations of where each fish should swim towards–with the lowest right-most fish being the leader of the school. Only this single AI is directly detecting for other actors and aggressors, just like a Total War-style unit. The locations also have some change between their relative formation, since it shouldn’t be static, but I am still writing more of those data tables. ​​</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_957dd1bee83f4d36a9a68dc852437f64~mv2_d_2824_1543_s_2.png" alt="Fauna" /></p>
+
+<p><strong>World Map</strong></p>
+
+<p>Getting the whole world working! Below is the new setup for the World Map, which updates with information from notable cities, shows your character and lets you move him around, and also allows you to attack and control other units that show up in range. That range will be fairly small at first, and improved with your Navigation skill which I’ll leave for later along with the other skills available. The menu below is just dummy data for now, obviously this is all still a WIP, but the better your skill improves the more info will show up. That even includes just clicking on the terrain somewhere as it will tell you geographical, fauna and useful foliage available in the area. Controlling the map is very easy and responsive, with regular wasd and shift + WASD for increased speed. There will be more useful buttons added later on, and more of those will become obvious once I have the player’s craft setup finished. Controlling your own fleet on this map will be so much fun, as at anytime you can exit and fight :-D​​</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_7ae5b80fb6ac41b78969fb847553cd06~mv2_d_2844_1603_s_2.png" alt="Worldmap" /></p>
+
+<p><strong>Commander Mode</strong></p>
+
+<p>The basics of rts control is functioning as well as hk droid is the Commander Mode controls setup. Sometimes buttons just decide they don’t want you to be their master and they leave mysteriously. But the click-to-move is working perfectly at least. Next up will be adding a right-click menu like World Map has above to include a UI space for extra controls. The fun part will be adding the stealth kill prompt to that little window :-D The hired follower system will be where this comes more into play once it’s working, as this interface will let you marquee select and command troops similar to your everyday RTS. ​​</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_5053012d0b454.png" alt="Commander" /></p>
+
+<p>Still working on improving some more Fauna and adding more species to the bestiary, and still have more Character blend shapes to finish but progress still going smoothly on all fronts. I’m also testing out some new animation software for auto-narration to animation which I hope I can add to really start making people come alive. These blend shapes I’ve been working on for quite a long time as so many different sliders have to be connected directly to the UI and then some have to fix OTHER sliders.</p>
+
+<p>But it’s coming along nicely and I can’t wait to finally hit the spawn button :-D</p>
+
+<p>Until next time,</p>
+
+<p>Cheers!</p>
+
+<p>Sim</p>]]></content><author><name></name></author><category term="post" /><category term="almerra" /><category term="devnotes" /><summary type="html"><![CDATA[Been fairly busy the last month and even took a trip to the Philippines to go diving, but I managed to make quite a bit more progress in creating more Fauna AI features, humanoid creation pipeline improvements and even did some more environment sculpting. The sculpting isn't quite ready to show yet, :-) but I can show a cool new Fauna generation setup and some of the latest gameplay ui screens and it'll give you a vision into what's coming.]]></summary></entry><entry><title type="html">Tales from the crypt</title><link href="http://localhost:4000/blog/tales_from_the_crypt" rel="alternate" type="text/html" title="Tales from the crypt" /><published>2018-09-05T00:00:00-07:00</published><updated>2018-09-05T00:00:00-07:00</updated><id>http://localhost:4000/blog/tales_from_the_crypt</id><content type="html" xml:base="http://localhost:4000/blog/tales_from_the_crypt"><![CDATA[<p><strong>Greetings, once again!</strong></p>
+
+<p>Over a year and a half ago was my last post as I have been quite busy ;-)Part of the reason for my absence has been advancing my career out here in LA which is going VERY well. I’ve gotten the chance to hone my skills tenfold with C#, modelling and sculpting and LOADS of material work with Unreal. I’m also happy to say the game is still being updated regularly with the latest engine, currently in 4.20.1 which was just released in July. So although a great deal of time has passed, progress has never stopped and I am beginning to really see the end of the tunnel in terms of what it should look like, how it should play and everything in between. But enough chit chat, let’s take a look at a few things I’d like to talk about.</p>
+
+<p><strong>Landscape and Ocean shader overhaul</strong></p>
+
+<p>Many parts of the previous community setup did not have the features I was looking for, so I worked on getting a natural looking ocean color &amp; depth. The color also needed a specific location’s ocean color independent of depth so this took a lot of tweaking but I’m very happy with how it has turned out. The landscape is also all redone with my own 14 layer system for painting, 5 of which being applied automatically from world machine and the slope of the geometry. Everything is also using the industry standard world space UVs for texturing so there are never any seams for making very steep cliffs from other geometry. :-)</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_ab95d331e3bf4.png" alt="Ocean" /></p>
+
+<p><strong>Procedural Fauna</strong></p>
+
+<p>The first waves of Fauna are now in and more are close to being ready for import! The art behind this is the simple part though. It has taken me a few months to come up with a C# way of creating migration patterns and data points for when and where all fauna should exist. Nothing is placed in Editor manually :-)</p>
+
+<p>What it came down to was taking a massive image from World Machine, copping it up into cells, then having a C# script to sample everything and assign it into datasheets. Completing this has allowed me to create over 3000 data tables for varying levels of placement accuracy ontop of what should spawn, and where it should spawn. To put this into context, Large open areas have a placement accuracy of 550 feet, slightly grown areas are 105 feet, and specialized areas of interest I can spawn individual species at every 50 feet. These will help me create believable forests, oceans, and just about anything as this is an extremely powerful pipeline. Photoshop -&gt; Excel en masse.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_dc7ee60604d84.jpg" alt="Whales" /></p>
+
+<p><strong>I have Crabs</strong><br />
+This is just true.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/untitled-1.gif" alt="Crabs" /></p>
+
+<p><strong>Alyssakin Freetribe Architecture</strong></p>
+
+<p>On other fronts, the architecture of the first nation has come very far taking on a Viking style with clay roofs and wood walls. But of course, the art was the easy part. Each one of these buildings is not just Geometry, in fact they are each their own Actors contained within a managing Village Actor. Every city is now mapped from nation to location to buildings to professions to people so that every single person and his story can all be properly tracked. The blacksmith KNOWS where his house is, where his job is and the areas of interest in those regions. He also knows the next town over in proximity and other locations that are unique to that town where could could travel and get ore or go off on his own story. Guards KNOW the areas that overlook the city and where all the locked doors are in town, and can act upon that information.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_398d159f236d4.png" alt="Architecture" /></p>
+
+<p><strong>Interior Shadowing</strong></p>
+
+<p>Part of the challenge in making a Dynamically lit open world is getting interiors to still have dark areas without a lot of light bleed, and with the new architecture it made it a breeze! And if you’ve been paying attention, the art was the easy part ;-) Each of these lights are dynamic when in range and regular emit when far away for performance purposes, but also each track the player’s stealth rating! The sun and moon also contribute, but getting these indoor placed ones working was essentially to achieve that old Thief style gameplay. They can be set to always on, or just at night depending on where I end up placing them in buildings and they also have global settings applied that are changeable in the options menu for further performance tweaking.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_25c0cf27f1e54.png" alt="Shadows" /></p>
+
+<p><strong>Main Menu Overhaul</strong></p>
+
+<p>Part of finding the look and feel is getting back into making a combined style for all UI elements for every stage of the game. Happily I think I’ve found the look. There are also two brand new setups with the Character Creator, Options, World map and Command map, but I’ll save those for next time.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/0cc0b4_8bcf4dddaf944.png" alt="Menu" /></p>
+
+<p>In general the project to me has really become clearer in the past year, much of it due to my work here in LA. The Character Creator is working with all the necessary blendshapes so can customize your face and features, and both sexes are using the same animations just with offsets so my efficient pipeline game is strong. As I continue doing more wildlife and complete more player movement in the future, I’ll also be doing a lot of character writing and creating specific characters so that’ll be fun.</p>
+
+<p>As always.</p>
+
+<p>Cheers!</p>
+
+<p>D</p>]]></content><author><name></name></author><category term="post" /><category term="almerra" /><category term="devnotes" /><summary type="html"><![CDATA[Greetings, once again! Here with a new update on all the latest features for Winds of Almerra.]]></summary></entry><entry><title type="html">Very good, much progress</title><link href="http://localhost:4000/blog/much_good_very_progress" rel="alternate" type="text/html" title="Very good, much progress" /><published>2017-05-14T00:00:00-07:00</published><updated>2017-05-14T00:00:00-07:00</updated><id>http://localhost:4000/blog/much_good_very_progress</id><content type="html" xml:base="http://localhost:4000/blog/much_good_very_progress"><![CDATA[<p>Greetings again! It has been a while since my last update, but fear not, as many great things have transpired in the dark nights of Almerra!</p>
+
+<p>Biggest news of all is that I finally upgraded the engine to the latest build from Unreal with 4.15.2, which gave me significant bonuses over the previous 4.11 engine–namely the dynamic lighting and landscape improvements. Filling up a world this vast requires some trickery to make it top-down manageable, editable throughout development, and make it integrate with other required gameplay systems like the inventory or survival skills. The world also encompasses a full year of seasons that must influence these systems in some way, the weather must have consequences for npcs so they aren’t lumberjacking during a snowstorm. As such, most of the development I have accomplished in the last few months is all under the hood to establish more robust tools for myself to build Almerra into a very diverse world.</p>
+
+<p>The landscapes and weather are now linked, through their materials, and all are populated from a database of 365 days of climate data. Using this large database I can create weather patterns for an entire year of gameplay, with updates on the hour. You can se the sped-up gif below of the dynamic material on one demo map below:</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/weather1.gif" alt="Weather" /></p>
+
+<p>The world of Almerra, however, is vast and actually required more than one type of climate so the material also had to power multiple different materials. So here is an example of the 7 climates all on their own landscape layer, with each being powered from separate tables:</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/weather2.gif" alt="More Weather" /></p>
+
+<p>​​The snow is just the first layer I have built to be affected but now I can expand the same function to also influence water and specular highlights for wetness from rain and even add some world offset onto the snow so that it can actually build up a little too! The texturing of trees and grasses for this will have to be separately treated for that to work well, but it’s coming!</p>
+
+<p>Ontop of just weather, I also needed to build out how fauna will populate across the mountains, plains, deserts, oceans, and everything! This was a major undertaking but the system I now have functioning is very robust and I’m continuing to press it on! Here is a quick explanation on how it works. The map of almerra is a large 16k bmp image that I can draw specific rgb colors onto. These specific colors are read by the engine and then translated into groups of animals that I choose. So instead of like in Skyrim where you find a herds of a single type of animal, I can instead use the r, g and b values to spawn different species like a herd of cows, with a donkey and some egrets all doing their thing. When you get nearer the shores, the ocean data table takes over and spawns appropriate life for that region, like some crabs, seagulls and cranes.</p>
+
+<p>Now pulling from a table this large had to be scaled down, and I’ve found a comfortable size at about 827 x 827. What this all looks like is pictured below. The large red spheres update onto your character, all laid out as if you were #5 in the center of a tick-tack-toe board. When you hit any other number, the area relocates to your position, and each sphere assess it’s own region from the table which is firing the small red squares below:​​</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/fauna1.gif" alt="Fauna" /></p>
+
+<p>Every one of the “cells” will update the appropriate fauna from the correct climate table wherever you choose to go. Birds in the skies, foxes and deer in the wilds, whales in the oceans, and goats and lions in the mountains!</p>
+
+<p>I’m currently working at a new studio here in LA, which is also giving me some delicious industry experience! Working weekends to upgrade the engine and plan out all these systems was a major pain, but some of the worst is now over and I can continue with more interesting stuff like getting AI taxi services started on land and air, as well as improving the inventory system and get it ready to populate all the types of citizens in Almerra. There’ll be some more animation updates to the character rig and many improvements to how it’s powered so I can make the player’s character movement more fluid and more ready for stealthing action.</p>
+
+<p>As always, be sure to check back again for more updates in the near future. And I hope to have some cooler stuff to show throughout this summer.</p>
+
+<p>Cheers!</p>
+
+<p>D</p>]]></content><author><name></name></author><category term="post" /><category term="almerra" /><category term="devnotes" /><summary type="html"><![CDATA[Greetings again! It has been a while since my last update, but fear not, as many great things have transpired in the dark nights of Almerra! Biggest news of all is that I finally upgraded the engine to the latest build from Unreal with 4.15.2, which gave me significant bonuses over the previous 4.11 engine--namely the dynamic lighting and landscape improvements.]]></summary></entry><entry><title type="html">Humble Beginnings</title><link href="http://localhost:4000/blog/off_into_the_wild_blue_yonder" rel="alternate" type="text/html" title="Humble Beginnings" /><published>2017-02-09T00:00:00-08:00</published><updated>2017-02-09T00:00:00-08:00</updated><id>http://localhost:4000/blog/off_into_the_wild_blue_yonder</id><content type="html" xml:base="http://localhost:4000/blog/off_into_the_wild_blue_yonder"><![CDATA[<p>Greetings, Simsaladoo here bringing you a much nicer treat than werds. Youtube links!</p>
+
+<p>I’ve been putting off starting to make more media and show the progress because, well I’m my own worst critic. But that means there’s perfection to be sought! So I still have more work to do, but here are two clips to help give you a better idea of whats been cooking in Sim’s lab.</p>
+
+<p>This first vid introduces you to the menu and building a character with some high-level background info on the story:ouraging when the design mistakes only results in unwieldly code and awful tech.  Sometimes it can be good to look back and appreciate the distance that has been covered to avoid burnout.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eW1GMnIpuRo?si=-GutNCDQK27xTxTN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+<p>And this one is me running around the world, beginning from the starting lands (with a dev-mode airship waiting for me to get around) and taking you over two friendly towns on the Island:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jNrhQ8dFsog?si=jepywjUre_0TSBXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+<p>More coming!</p>
+
+<p>Cheers,</p>
+
+<p>Sim</p>]]></content><author><name></name></author><category term="post" /><category term="almerra" /><category term="devnotes" /><summary type="html"><![CDATA[Sim here. I've been putting off starting to make more media and show the progress because, well I'm my own worst critic. But that means there's perfection to be sought! So I still have more work to do, but here are two clips to help give you a better idea of whats been cooking in Sim's lab. This first vid introduces you to the menu and building a character with some high-level background info on the story:aladoo here with more updates!]]></summary></entry><entry><title type="html">Stances and Inventory</title><link href="http://localhost:4000/blog/stances_and_inventory" rel="alternate" type="text/html" title="Stances and Inventory" /><published>2016-12-14T00:00:00-08:00</published><updated>2016-12-14T00:00:00-08:00</updated><id>http://localhost:4000/blog/stances_and_inventory</id><content type="html" xml:base="http://localhost:4000/blog/stances_and_inventory"><![CDATA[<p>Greetings again! Simsaladoo here with another update in a new apartment, new city, new state, and with many new classes and actors functioning within the world. Love LA.</p>
+
+<p>So the inventory system is now functioning, the player and npcs can utilize weapons and armor drawn from a database. Your basic system for interface within the world will be fairly simple, but a hybrid of systems you’ve no doubt played and are familiar with. Your Character page, like in Wow, will display your equipped armor and equipment and your primary, secondary, tertiary and quaternary weapons. Wut?</p>
+
+<p>It’s a 4 slot weapon hotbar system. A quiver of 30 bolts counts as a weapon, and a large bag of throwing axes counts as a weapon just like in Warband. But instead of being on the side of the screen, it is simply part of your character page. Scrolling through those weapons will behave as it did in Warband (mouse up for next offense, down for next defense), but you’ll also be able to set food, torches and other equipment there to use as a sort of hotbar. These slots will be triggerable by the numpad and number keys for direct access to each of them.</p>
+
+<p>Your Equipment window is next, and all of these are draggable windows like in Morrowind. You have a simple loot window where what you’re carrying adds to your character’s weight—triggering Encumbrance. Here’s where it gets fun. Another slot on your Character page is for a backpack you must find or purchase within the world, and having them enables you to add more slots to your equipment window and to your carriable weight! Anything in this window can be drag and dropped back into the world of course, so if you get encumbered you’ll just have to resort to kicking the extra loot all the way back to your village. Kicking NPCs works right now just as a quick side note lol</p>
+
+<p>So Another part of this focus has been adding things TO the inventory so that the NPCs can be told apart for my own AI testing, as well as to start cultivating the looks of the different nations. As such I have a few helmets added now that work when spawned since they are part of the inventory system. The AI cannot choose how it should upgrade yet though, but in due time.</p>
+
+<p>The other part of this post I wanted to focus on was the weapon stances. No one can carry a giant two handed sword or a partisan on their back! The player will not, and the AI won’t either. Large weapons like those will be of a special class that you must pickup and carry just like they were back in the day. Wound that arm and they will be forced to only their regular weapon. Of course, some swords can still be carried on the back if they aren’t too large or heavy, and multiple normal-sized weapons can be worn on the belt.</p>
+
+<p>But AI now has access to all of the weapon animation stances from the inventory: One handed, One handed &amp; shield, two handed, polearm, spear &amp; shield, Bows, crossbows, Atlatls, and throwing. They just don’t know when to switch from their current or how to throw yet. It’s time consuming, but not difficult in its setup so again, in due time.</p>
+
+<p>Hopefully over this Christmas holiday I’ll get a chance to push out some actual media, my apologies. But that’s how perfectionists go. At least with AI being able to trace me for stealth and chase me around I know it’s a bit closer. Soon.</p>
+
+<p>[<img src="https://almerra.com/assets/images/posts/Capture.jpg" alt="Capture" />
+Safe travels.</p>
+
+<p>Sim</p>]]></content><author><name></name></author><category term="post" /><category term="almerra" /><category term="devnotes" /><summary type="html"><![CDATA[No one can carry a giant two handed sword or a partisan on their back! The player will not, and the AI won’t either. Large weapons like those will be of a special class that you must pickup and carry just like they were back in the day. Wound that arm and they will be forced to only their regular weapon. Of course, some swords can still be carried on the back if they aren’t too large or heavy, and multiple normal-sized weapons can be worn on the belt.]]></summary></entry></feed>

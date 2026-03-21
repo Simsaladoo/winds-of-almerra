@@ -11,10 +11,6 @@
 }
 
 
-
-
-
-
 .highlighter-rouge .highlight pre,
 .highlighter-rouge .highlight code {
     white-space: pre-wrap;      /* allow wrapping */
@@ -116,4 +112,65 @@
 
 .image.is-3by1 {
     padding-top:100%!important;
+}
+
+
+
+/* Dark mode additions */
+
+.body-sim {
+    background: rgba(50,50,50,100.0) !important;
+}
+
+.hero-sim {
+    color: white !important;
+}
+
+.hero-sim-button {
+    color: white !important;
+}
+
+.hero-sim p {
+    color: white !important;
+}
+
+.hero-sim h1 {
+    color: white;
+}
+
+.hero-sim h2 {
+    color: white;
+}
+
+.hero-sim h3 {
+    color: white;
+}
+
+.hero-sim h4 {
+    color: white;
+}
+
+.hero-sim strong {
+    color: white;
+}
+
+.hero-sim a {
+    color: white;
+}
+
+.hero-sim subtitle {
+    color: white !important;
+}
+
+.hero-sim-card {
+    color: white !important;
+    background: rgba(70, 70, 70, 255);
+}
+
+.hero-sim-card h1 {
+    color: white !important;
+}
+
+.hero-sim-a-text {
+    color: white !important;
 }

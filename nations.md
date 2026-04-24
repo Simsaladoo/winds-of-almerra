@@ -1,6 +1,6 @@
 ---
 title: Nations of Almerra
-layout: post
+layout: about
 post-image: "https://almerra.com/assets/images/bg-2.png"
 description: Five rival nations clash for dominance over Almerra—each with their own ambitions, cultures, and secrets.
 tags:

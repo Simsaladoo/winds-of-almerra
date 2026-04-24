@@ -10,7 +10,11 @@ tags:
 ---
 
 
-### Explore Almerra (WIP)
+
+
+### (WIP)
+
+The open-world shown below is constantly being updated through a CI/CD pipeline as development in Unreal progresses.  Mountain and coastline sculpting, fauna and flora refinements and the various biomes are being continuously built out and will be updated many more times in the future.   
 
 
 <div id="map"></div>
@@ -34,9 +38,10 @@ map.setView([-200, 200], 1);
 
 
 
+
 ### Interacting with the World
 
-Every Nation, City and Village in the world is fully simluated across multiple Threads that operate their economy and AI whether the player is present or not.  Each one has its own regional attributes, military units and trade operations that respond to their surroundings.  Some are near to hostile Nations and Tribes and must focus on defense and martial professions, whereas some others prioritise peaceful trade and order.  Depending on what actions the player may take, they can all be influenced to forge future Alliances to differing goals. 
+Every Nation, City and Village in the world is simulated across multiple threads that operate their economy and military whether the player is present or not.  Each one has its own regional attributes, military units and trade operations that respond to their surroundings.  Some are near to hostile Nations and Tribes and must focus on defense and martial professions, whereas some others prioritise peaceful trade and order.  Depending on what actions the player may take, they can all be influenced to forge future Alliances to differing goals. 
 
 Below is a short clip of entering the town and having the data come to life, with a small number of inhabitants in a work-in-progress Village.   
 

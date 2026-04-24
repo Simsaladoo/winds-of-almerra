@@ -1,6 +1,6 @@
 ---
 title: About the Game
-layout: post
+layout: about
 post-image: "https://almerra.com/assets/images/bg-1.png"
 description: As a rising warlord, your allegiances will tip the balance of power among the nations of Almerra.  Will you unite the lands or reduce them to ashes?
 tags:

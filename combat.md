@@ -5,7 +5,6 @@ post-image: "https://almerra.com/assets/images/bg-3.png"
 description: Large-scale battles utilize more strategy than brute-force, and challenges you not just to win battles—but to define the legacy of a world on the edge of ruin.
 tags:
 - almerra
-- post
 - about
 ---
 

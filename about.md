@@ -5,14 +5,13 @@ post-image: "https://almerra.com/assets/images/bg-1.png"
 description: As a rising warlord, your allegiances will tip the balance of power among the nations of Almerra.  Will you unite the lands or reduce them to ashes?
 tags:
 - almerra
-- post
 - about
 ---
 
 ### What is Almerra?
 [![Teaser](https://img.youtube.com/vi/A6aebT5WpS8/0.jpg)](https://youtu.be/A6aebT5WpS8 "Teaser")
 
-**Almerra is an WIP open-world, iron age action rpg that puts the player in command of the conquest of rival nations with troops, cavalry and naval vessels thru branching storylines, battles and historically-based events.**
+**Almerra is an open-world, Iron Age action RPG in which players lead conquering armies across rival nations. The game offers a diverse range of units—including infantry, cavalry, and naval forces—drawn from cultures around the world. Its gameplay is shaped by branching storylines, large-scale battles, and events inspired by historical conflicts.**
 
 The vast, unforgiving lands of Almerra are built on the unique islands and continents scattered across the oceanic world.  A diverse set of climates separate the landscapes ranging from dry hot deserts to swampy jungles and frozen northlands.  Many cultures inhabit the world and learning how to effectively cooperate or conquer these rivals will be the deciding factor in which peoples suffer and which ones prosper.  
 

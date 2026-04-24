@@ -7,6 +7,12 @@ layout: compress
 
 <head>
   {% include head.html %}
+  <!-- ADD LEAFLET CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    /* ADD MAP STYLING */
+    #map { width: 100%; height: 600px; background: #1a1a2e; }
+  </style>
 </head>
 
 <body class="body-sim">
@@ -36,8 +42,8 @@ layout: compress
             {%- assign tags = page.tags -%}
             {%- unless tags.size == 0 -%}
             <p class="subtitle is-uppercase">
-              <i class="fas fa-tags"></i>
               {% assign i = 0 %}
+              <i class="fas fa-tags"></i>
               {% for tags in page.tags %}
               <span class="tag is-link">{{page.tags[i]}}</span>
               {% assign i = i | plus:1 %}
@@ -53,13 +59,41 @@ layout: compress
           </div>
         </div>
         <div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile">
-          <p>{{ content }}</p>
+          <!-- CRITICAL CHANGE: Remove <p> wrapper -->
+          {{ content }}
         </div>
       </div>
     </div>
   </section>
   {% include footer.html %}
-</body>
 
+  <!-- ADD LEAFLET JS AND MAP INITIALIZATION -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // Only initialize if map div exists on this page
+    if (document.getElementById('map')) {
+      console.log('🗺️ Initializing map...');
+
+      var gameMap = L.map('map', {
+        crs: L.CRS.Simple,
+        minZoom: 0,
+        maxZoom: 5,
+        center: [6144, 6144],
+        zoom: 2
+      });
+
+      var bounds = [[0, 0], [12288, 12288]];
+
+      L.tileLayer('/assets/tiles/{z}/{x}/{y}.png', {
+        bounds: bounds,
+        noWrap: true,
+        attribution: 'Game Map'
+      }).addTo(gameMap);
+
+      gameMap.fitBounds(bounds);
+      console.log('✅ Map ready');
+    }
+  </script>
+</body>
 
 </html>

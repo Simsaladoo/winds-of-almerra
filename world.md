@@ -1,6 +1,6 @@
 ---
 title: The World of Almerra
-layout: post
+layout: map
 post-image: "https://almerra.com/assets/images/bg-4.png"
 description: An Iron-Age Waterworld with sprawling continents and stormy seas separate the warring kingdoms, each seeking their claim to the legacy of a fallen ancient legacy.
 tags:
@@ -8,6 +8,31 @@ tags:
 - post
 - about
 ---
+
+
+### Explore Almerra (WIP)
+
+
+<div id="map"></div>
+
+<script src="https://almerra.com/assets/js/leaflet.js"></script>
+<script>
+var map = L.map('map', {
+  crs: L.CRS.Simple,
+  minZoom: 1,
+  maxZoom: 5
+});
+
+L.tileLayer('/assets/images/worldmap/{z}/{x}/{y}.png', {
+  tms: true,
+  noWrap: true
+}).addTo(map);
+
+map.setView([-200, 200], 1);
+
+</script>
+
+
 
 ### Interacting with the World
 

@@ -18,6 +18,11 @@
 }
 
 
+#map {
+  background-color: #013b5e!important; /* or whatever color you want */
+}
+
+
 .mainlogowrapper {
     min-height: 150px;
     min-width: 150px;

@@ -40,11 +40,9 @@ map.setView([-200, 200], 1);
 
 ### Interacting with the World
 
-Every Nation, City and Village in the world is simulated across multiple threads that operate their economy and military whether the player is present or not.  Each one has its own regional attributes, military units and trade operations that respond to their surroundings.  Some are near to hostile Nations and Tribes and must focus on defense and martial professions, whereas some others prioritise peaceful trade and order.  Depending on what actions the player may take, they can all be influenced to forge future Alliances to differing goals. 
+Every City and Village in the world is simulated across multiple software threads that operate their economy and military whether the player is present or not.  Each one has its own regional attributes, military units and trade operations that respond to their surroundings.  Some are near to hostile Nations and Tribes and must focus on defense and martial professions, whereas some others prioritise peaceful trade and order.  Depending on what actions the player may take, they can all be influenced to forge future Alliances to differing goals. 
 
-Below is a short clip of entering the town and having the data come to life, with a small number of inhabitants in a work-in-progress Village.   
 
-[![Interaction](http://img.youtube.com/vi/jku7vaf1ppU/0.jpg)](https://www.youtube.com/watch?v=jku7vaf1ppU&list=PLLcxd4soKLM7Wa4h2sFvUjYCaAIBJf5Lb "Dev Scrolls - Threaded AI LODs and Dialogues")
 
 ### World Travel
 

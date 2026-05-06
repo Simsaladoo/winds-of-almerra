@@ -60,7 +60,19 @@ layout: compress
 
       gameMap.fitBounds(bounds);
       console.log('✅ Map ready');
-    }
+
+
+    // Fetch the JSON file
+    fetch('https://almerra.com/assets/data/markers.json')
+      .then(response => response.json())
+      .then(data => {
+        data.markers.forEach(location => {
+          const marker = L.marker([location.y, location.x]).addTo(gameMap);
+          marker.bindPopup(location.name);
+        });
+      })
+      .catch(error => console.error('Error loading locations:', error));
+  }
   </script>
 </body>
 

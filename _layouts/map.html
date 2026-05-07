@@ -39,8 +39,9 @@ layout: compress
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     // Only initialize if map div exists on this page
+    alert('Script running!');
     if (document.getElementById('map')) {
-      console.log('🗺️ Initializing map...');
+      console.log('Initializing map...');
 
       var gameMap = L.map('map', {
         crs: L.CRS.Simple,
@@ -59,7 +60,7 @@ layout: compress
       }).addTo(gameMap);
 
       gameMap.fitBounds(bounds);
-      console.log('✅ Map ready');
+      console.log('Map ready');
 
 
     // Fetch the JSON file

@@ -8,7 +8,7 @@ layout: compress
 <head>
   {% include head.html %}
   <!-- ADD LEAFLET CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://almerra.com/assets/css/leaflet.css" />
   <style>
     /* ADD MAP STYLING */
     #map { width: 100%; height: 600px; background: #1a1a2e; }
@@ -36,12 +36,21 @@ layout: compress
   {% include footer.html %}
 
   <!-- ADD LEAFLET JS AND MAP INITIALIZATION -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://almerra.com/assets/js/leaflet.js"></script>
   <script>
-    // Only initialize if map div exists on this page
-    alert('Script running!');
     if (document.getElementById('map')) {
       console.log('Initializing map...');
+
+
+      var mapElement = document.getElementById('map');
+      if (mapElement._leaflet_id) {
+        mapElement._leaflet_id = undefined;
+      }
+
+      if (window.gameMap) {
+        window.gameMap.remove();
+      }
+
 
       var gameMap = L.map('map', {
         crs: L.CRS.Simple,
@@ -56,24 +65,24 @@ layout: compress
       L.tileLayer('/assets/tiles/{z}/{x}/{y}.png', {
         bounds: bounds,
         noWrap: true,
-        attribution: 'Game Map'
+        attribution: 'Map of Almerra'
       }).addTo(gameMap);
 
       gameMap.fitBounds(bounds);
-      console.log('Map ready');
 
-
-    // Fetch the JSON file
+    console.log('Loading Cities...');
     fetch('https://almerra.com/assets/data/markers.json')
       .then(response => response.json())
       .then(data => {
         data.markers.forEach(location => {
-          const marker = L.marker([location.y, location.x]).addTo(gameMap);
+          const marker = L.marker([location.y, location.x]).addTo(window.gameMap);
           marker.bindPopup(location.name);
         });
+        console.log('Cities loaded!');
       })
       .catch(error => console.error('Error loading locations:', error));
   }
+  console.log('Almerra Map loaded!');
   </script>
 </body>
 

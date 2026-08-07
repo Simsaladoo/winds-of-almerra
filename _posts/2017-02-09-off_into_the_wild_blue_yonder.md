@@ -1,5 +1,5 @@
 ---
-title: Humble Beginnings
+title: Off into the Wild Blue Yonder
 layout: post
 post-image: https://almerra.com/assets/images/posts/CineStory_Monayans.0020.jpeg
 description: Sim here. I've been putting off starting to make more media and show the progress because, well I'm my own worst critic. But that means there's perfection to be sought! So I still have more work to do, but here are two clips to help give you a better idea of whats been cooking in Sim's lab. This first vid introduces you to the menu and building a character with some high-level background info on the story:aladoo here with more updates!

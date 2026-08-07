@@ -13,7 +13,7 @@ Greetings all, Simsaladoo here.
 Let me introduce you to the first pass at Almerra:
 
 
-[![Worldmap](https://almerra.com/assets/images/posts/AlmerraWorld_Sixteens.jpg)
+![Worldmap](https://almerra.com/assets/images/posts/AlmerraWorld_Sixteens.jpg)
 
 Almerra is split into 5 basic nations: the Graata, Rowani, Neagese, Mons, and the Freetribes. Each of these nations have their own unique lifestyles, governments and problems facing their cultures. Each also has access to their own unique resources they use to construct their cities and tools, possibly giving them few impurities in their armor and blades, more resilient wood in their bows, or stronger sails on their ships.
 

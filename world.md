@@ -2,7 +2,7 @@
 title: The World of Almerra
 layout: map
 post-image: "https://almerra.com/assets/images/bg-4.png"
-description: An Iron-Age Waterworld with sprawling continents and stormy seas separate the warring kingdoms, each seeking their claim to the legacy of a fallen ancient legacy.
+description: An Iron Age water-world with sprawling continents and stormy seas separate the major warring kingdoms, each seeking their claim to the legacy of a fallen ancient legacy.
 tags:
 - almerra
 - about
